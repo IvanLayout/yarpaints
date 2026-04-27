@@ -2570,7 +2570,139 @@ a.advantages-page__item
 }
 
 
+/*------------
+    select-city
+------------*/
+.select-city__block
+{
+	position: relative;
+	height: 835px;
 
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.select-city__wrap
+{
+	width: 375px;
+}
+
+.select-city__top
+{
+	background: #0D1387;
+	border-radius: 4px 4px 0 0;
+	padding: 30px 50px;
+	color: #fff;
+}
+
+.select-city__desc
+{
+	opacity: .8;
+	line-height: normal;
+	font-family: var(--font-family2);
+}
+
+.select-city__price
+{
+	font-family: var(--font-family3);
+	margin-top: 6px;
+	font-size: 24px;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.select-city__info
+{
+	background: #F4F9FE;
+	border-radius: 0 0 4px 4px;
+	padding: 24px 48px 30px;
+	color: #3A3B55;
+	font-family: var(--font-family2);
+}
+
+.select-city__city
+{
+	font-size: 28px;
+	line-height: normal;
+}
+
+.select-city__val
+{
+	margin-top: 3px;
+	line-height: normal;
+}
+
+.select-city__btn
+{
+	margin-top: 22px;
+}
+
+.select-city__note
+{
+	margin-top: 22px;
+	opacity: .5;
+	font-size: 12px;
+	line-height: 1.41;
+}
+
+.select-city__box
+{
+	background: #F4F9FE;
+	border-radius: 0 0 4px 4px;
+	padding: 30px 49px;
+	color: #3A3B55;
+
+	margin-top: 19px;
+}
+
+.select-city__title
+{
+	font-family: var(--font-family2);
+	line-height: 1.5;
+	opacity: .5;
+}
+
+.select-city__name
+{
+	margin-top: 6px;
+	font-size: 26px;
+	line-height: normal;
+}
+
+.select-city__contacts
+{
+	margin-top: 28px;
+}
+
+.select-city__contacts-phone
+{
+	font-size: 26px;
+	line-height: normal;
+	margin-top: 5px;
+}
+
+.select-city__contacts-phone a
+{
+	color: #3A3B55;
+	text-decoration: none;
+}
+
+.select-city__contacts-email
+{
+	margin-top: 5px;
+	line-height: 1.5;
+	font-family: var(--font-family3);
+}
+
+.select-city__contacts-email a
+{
+	color: #8D95A1;
+	text-decoration: none;
+	border-bottom: 1px solid #8D95A1;
+}
 /*------------
     Footer
 ------------*/
