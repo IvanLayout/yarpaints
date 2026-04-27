@@ -2736,6 +2736,146 @@ a.advantages-page__item
 
 	padding: 30px 30px 60px;
 }
+
+.paint-suitable__flex
+{
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
+}
+
+.paint-suitable__img
+{
+	width: 30%;
+}
+
+.paint-suitable__img img
+{
+	display: block;
+	max-width: 100%;
+}
+
+.paint-suitable__info
+{
+	width: calc(70% - 30px);
+}
+
+
+.paint-suitable__name
+{
+	font-size: 26px;
+	line-height: normal;
+}
+
+.paint-suitable__name a
+{
+	color: #3A3B55;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.paint-suitable__name a:hover
+	{
+		color: #CD1719;
+	}
+}
+
+.paint-suitable__desc
+{
+	margin-top: 24px;
+	line-height: 1.5;
+	color: #3A3B55;
+	opacity: .5;
+}
+
+/*------------
+    partners
+------------*/
+
+.partners__slider
+{
+	margin-top: 80px;
+}
+
+.partners .swiper-wrapper
+{
+	-webkit-transition-timing-function:linear!important;
+	transition-timing-function:linear!important; 
+}
+
+.partners .swiper-slide
+{
+	width: auto;
+}
+
+.partners__status
+{
+	position: absolute;
+	bottom: 100%;
+	left: -20%;
+	margin-bottom: 9px;
+
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+	white-space: nowrap;
+	font-family: var(--font-family2);
+	color: #3A3B55;
+	border-radius: 4px;
+	border: 1px solid #CD1719;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	display: inline-block;
+}
+
+.partners__status._gold
+{
+	border-color: #EFE5D2;
+}
+
+.partners__item 
+{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 61px;
+
+	position: relative;
+}
+
+.partners__item img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+	
+	transition: filter .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .partners__item:hover img
+    {
+        -webkit-filter: grayscale(0%);
+           -moz-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+             -o-filter: grayscale(0%);
+                filter: grayscale(0%);
+    }
+}
+
 /*------------
     Footer
 ------------*/

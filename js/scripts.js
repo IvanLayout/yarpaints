@@ -276,6 +276,42 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.partners__slider').length) {
+		new Swiper(".partners__slider", {
+			spaceBetween: 100,
+			speed: 5000,
+			autoplay: {
+				delay: 0,
+				reverseDirection: false,
+				disableOnInteraction: true,
+			},
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			loop: true,
+			slidesPerView:'auto',
+			allowTouchMove: false,
+			initialSlide: 1,
+			breakpoints: {
+				'320': {
+					speed: 6000,
+				},
+				'480': {
+					speed: 3900,
+				},
+				'768': {
+					speed: 6000,
+				}
+			},
+		});
+	}
 });
 
 
