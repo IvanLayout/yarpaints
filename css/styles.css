@@ -1737,7 +1737,7 @@ a.advantages-page__item
 	height: 9px;
 
 	fill: #CD1719;
-	transition: fill .2s linear;
+	transition: fill .2s linear, left .2s linear;
 }
 
 
@@ -1756,6 +1756,7 @@ a.advantages-page__item
 	.advantages-page__item:hover .advantages-page__link svg
 	{
 		fill: #fff;
+		left: 11px;
 	}
 }
 
@@ -2702,6 +2703,38 @@ a.advantages-page__item
 	color: #8D95A1;
 	text-decoration: none;
 	border-bottom: 1px solid #8D95A1;
+}
+
+
+/*------------
+    paint-suitable
+------------*/
+
+.paint-suitable .slider-button-prev,
+.paint-suitable .slider-button-next
+{
+	display: none;
+}
+
+.paint-suitable__grid._flex
+{
+	align-items: stretch;
+	align-content: stretch;
+	margin: 6px 0 0 -24px;
+}
+
+.paint-suitable__grid._flex .paint-suitable__item
+{
+	width: calc(100%/3 - 24px);
+	margin: 24px 0 0 24px;
+}
+
+.paint-suitable__item
+{
+	background: #fff;
+	border-radius: 4px;
+
+	padding: 30px 30px 60px;
 }
 /*------------
     Footer
