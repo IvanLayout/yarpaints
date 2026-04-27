@@ -1505,7 +1505,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .paints-var__item
 {
-	display: block;
 	text-decoration: none;
 	width: calc(100%/3 - 24px);
 	margin: 24px 0 0 24px;
@@ -1525,6 +1524,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #3A3B55;
 
 	transition: color .2s linear;
+	overflow: hidden;
 	
 	/* min-height: 250px; */
 }
@@ -1604,11 +1604,51 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transition: padding .2s linear;
 }
 
+.paints-var__img-box::before
+{
+	position: absolute;
+	content: '';
+	bottom: -20px;
+	left: 50%;
+
+	display: block;
+
+	transform: translateX(-50%);
+
+	width: 346px;
+	height: 82px;
+	transition: opacity .2s linear;
+
+	background: url(../images/paints_var_shadow.png) 50% no-repeat;
+}
+
+.paints-var__img-box::after
+{
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	left: 50%;
+
+	display: block;
+
+	transform: translateX(-50%);
+
+	width: 198px;
+	height: 65px;
+	opacity: 0;
+	transition: opacity .2s linear;
+
+	background: url(../images/paints_var_shadow_hover.png) 50% no-repeat;
+}
+
 .paints-var__img-box img
 {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
+
+	position: relative;
+	z-index: 1;
 }
 
 @media (any-hover: hover)
@@ -1633,6 +1673,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 	.paints-var__item:hover .paints-var__img-box
 	{
 		padding-bottom: 35px;
+	}
+
+	.paints-var__item:hover .paints-var__img-box::before
+	{
+		opacity: 0;
+	}
+
+	.paints-var__item:hover  .paints-var__img-box::after
+	{
+		opacity: 1;
 	}
 }
 
