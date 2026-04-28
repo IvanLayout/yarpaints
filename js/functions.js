@@ -176,6 +176,24 @@ $(() => {
 		})
 	})
 
+	$('body').on('click', '.header__change', function(e) {
+		e.preventDefault();
+
+		
+		
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$('.header__menu-item_ind').addClass('_show')
+			$('.header__menu-item_biz').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$('.header__menu-item_ind').removeClass('_show')
+			$('.header__menu-item_biz').addClass('_show')
+		}
+	})
 })
 
 
