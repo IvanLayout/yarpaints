@@ -2804,51 +2804,137 @@ a.advantages-page__item
 	background: #fff;
 	border-radius: 4px;
 
-	padding: 30px 30px 60px;
+	padding: 30px 30px 30px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.paint-suitable__img-abc
+{
+	position: absolute;
+	top: 30px;
+	left: 0;
+
+	display: block;
+	opacity: .3;
 }
 
 .paint-suitable__flex
 {
 	justify-content: space-between;
-	align-items: flex-end;
-	align-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
+	height: 100%;
+
+	position: relative;
+	z-index: 1;
 }
 
 .paint-suitable__img
 {
-	width: 30%;
+	width: 41%;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	padding-bottom: 70px;
+}
+
+.paint-suitable__img span
+{
+	display: block;
+	position: relative;
+	padding-bottom: 20px;
+	transition: padding .2s linear;
+}
+
+.paint-suitable__img span::before
+{
+	position: absolute;
+	content: '';
+	bottom: -25px;
+	left: 50%;
+
+	display: block;
+
+	transform: translateX(-50%);
+
+	width: 346px;
+	height: 82px;
+	transition: opacity .2s linear;
+
+	background: url(../images/paints_var_shadow.png) 50% no-repeat;
+}
+
+.paint-suitable__img span::after
+{
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	left: 50%;
+
+	display: block;
+
+	transform: translateX(-50%);
+
+	width: 198px;
+	height: 65px;
+	opacity: 0;
+	transition: opacity .2s linear;
+
+	background: url(../images/paints_var_shadow_hover.png) 50% no-repeat;
 }
 
 .paint-suitable__img img
 {
 	display: block;
 	max-width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .paint-suitable__info
 {
-	width: calc(70% - 30px);
-}
+	width: calc(59% - 30px);
 
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 174px;
+}
 
 .paint-suitable__name
 {
 	font-size: 26px;
 	line-height: normal;
-}
-
-.paint-suitable__name a
-{
 	color: #3A3B55;
-	text-decoration: none;
 	transition: color .2s linear;
 }
 
 @media (any-hover: hover)
 {
-	.paint-suitable__name a:hover
+	.paint-suitable__item:hover .paint-suitable__name
 	{
 		color: #CD1719;
+	}
+
+	.paint-suitable__item:hover .paint-suitable__img span
+	{
+		padding-bottom: 35px;
+	}
+
+	.paint-suitable__item:hover .paint-suitable__img span::before
+	{
+		opacity: 0;
+	}
+
+	.paint-suitable__item:hover .paint-suitable__img span::after
+	{
+		opacity: 1;
 	}
 }
 
@@ -2858,8 +2944,82 @@ a.advantages-page__item
 	line-height: 1.5;
 	color: #3A3B55;
 	opacity: .5;
+
+	flex: 1 0 auto;
 }
 
+.paint-suitable__arrow
+{
+	margin-top: 28px;
+	height: 9px;
+	position: relative;
+}
+
+.paint-suitable__arrow svg 
+{
+	position: absolute;
+	top: 0;
+	left: -9px;
+    display: block;
+    width: 8px;
+    height: 9px;
+    fill: #3A3B55;
+	opacity: .2;
+    transition: fill .2s linear, opacity .2s linear, left .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.paint-suitable__item:hover .paint-suitable__arrow
+	{
+		padding-left: 10px;
+	}
+
+	.paint-suitable__item:hover .paint-suitable__arrow svg
+	{
+		fill: #CD1719;
+		left: 0;
+		opacity: 1;
+	}
+}
+
+
+.paint-suitable__all-box
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+}
+
+.paint-suitable__all
+{
+	display: block;
+	width: 100%;
+
+	transition: color .2s linear;
+	color: #070936;
+	font-size: 18px;
+	line-height: 1.22;
+}
+
+.paint-suitable__all-box .paint-suitable__arrow
+{	
+	display: block;
+	margin-top: 24px;
+	width: 100%;
+}
+
+@media (any-hover: hover)
+{
+	.paint-suitable__item:hover .paint-suitable__all
+	{
+		color: #CD1719;
+	}
+}
 /*------------
     partners
 ------------*/
