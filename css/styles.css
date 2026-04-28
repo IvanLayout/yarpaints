@@ -3509,6 +3509,91 @@ a.advantages-page__item
 		border-color: transparent;
 	}
 }
+
+
+/*------------
+    download-present
+------------*/
+
+.download-present__wrap
+{
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.download-present__bg-wrap
+{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(100% - 124px);
+}
+
+.download-present__bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.download-present__cols
+{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+
+	justify-content: space-between;
+}
+
+.download-present__coll
+{
+	width: 31.34%;
+}
+
+.download-present__coll img
+{
+	display: block;
+	max-width: 100%;
+}
+
+.download-present__colr
+{
+	width: calc(68.66% - 30px);
+	max-width: 818px;
+	padding-top: 124px;
+}
+
+.download-present__box
+{
+	padding-top: 79px;
+	padding-bottom: 79px;
+}
+
+.download-present__title
+{
+	color: #3A3B55;
+	font-size: 48px;
+	line-height: 1.14;
+	letter-spacing: -0.01em;
+}
+
+.download-present__btn
+{
+	margin-top: 32px;
+}
 /*------------
     Footer
 ------------*/
