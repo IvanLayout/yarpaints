@@ -619,10 +619,11 @@ button
 
 @media (any-hover: hover){
 	.header__menu-link:hover{
-		color: #CD1719;;
+		color: #CD1719;
 	}
 	
 	.header__menu-link_opt:hover{
+		color: #fff;
 		background: #B71517;
 	}
 }
