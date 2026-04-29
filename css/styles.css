@@ -762,7 +762,7 @@ button
 {
     .btn-red:hover
     {
-        background: #0D1387;
+        background: #B71517;
     }
 
 	.btn-red:hover span::before
@@ -2195,7 +2195,7 @@ a.advantages-page__item
 {
 	a.advantages-page__item:hover
 	{
-		background: #CD1719;
+		background: #B71517;
 	}
 
 	.advantages-page__item:hover .advantages-page__link
@@ -2923,12 +2923,12 @@ a.advantages-page__item
 {
 	.projects__box:hover .projects__name
 	{
-		color: #CD1719;
+		color: #B71517;
 	}
 
 	.projects__box:hover
 	{
-		border-color: #CD1719;
+		border-color: #B71517;
 	}
 
 	.projects__box:hover .projects__desc::before
@@ -3005,7 +3005,7 @@ a.advantages-page__item
 {
 	.main-articles__name a:hover
 	{
-		color: #CD1719;
+		color: #B71517;
 	}
 
 	.main-articles__item:hover .main-articles__arrow
@@ -3015,7 +3015,7 @@ a.advantages-page__item
 
 	.main-articles__item:hover .main-articles__arrow svg
 	{
-		fill: #CD1719;
+		fill: #B71517;
 		opacity: 1;
 	}
 }
@@ -3299,7 +3299,7 @@ a.advantages-page__item
 {
 	.paint-suitable__item:hover .paint-suitable__name
 	{
-		color: #CD1719;
+		color: #B71517;
 	}
 
 	.paint-suitable__item:hover .paint-suitable__img span
