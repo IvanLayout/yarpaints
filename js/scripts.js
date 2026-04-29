@@ -360,6 +360,42 @@ $(() => {
 			},
 		});
 	}
+
+	if ($('.history').length) {
+		historyThumbs = new Swiper('.history-thumbs', {
+			spaceBetween: 75,
+			slidesPerView:'auto',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'768': {
+					spaceBetween: 75,
+					slidesPerView:'auto',
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+
+		new Swiper('.history__slider', {
+			spaceBetween: 24,
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			thumbs: {
+				swiper: historyThumbs
+			},
+		})
+	}
 });
 
 
