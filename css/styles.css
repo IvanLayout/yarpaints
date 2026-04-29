@@ -231,7 +231,7 @@ html
 body
 {
     color: #8D95A1;
-    font: 16px/1.25 var(--font-family);
+    font: 16px/1.25 var(--font-family2);
 
     height: 100%;
     min-height: -moz-available;
@@ -573,6 +573,8 @@ button
 .header__menu{
 	justify-content: center;
 	gap: 34px;
+
+	font-family: var(--font-family);
 }
 
 .header__menu-item_biz{
@@ -665,7 +667,6 @@ button
 .btn-red
 {
     position: relative;
-	font-family: var(--font-family2);
 
     color: #FFF;
     font-size: 14px;
@@ -788,7 +789,6 @@ button
 .breadcrumbs
 {
     font-size: 12px;
-	font-family: var(--font-family2);
 	color: #3A3B55;
 	line-height: normal;
 }
@@ -850,6 +850,7 @@ button
 .text-block h1,
 .text-block .title
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 30px;
     font-weight: 400;
@@ -860,6 +861,7 @@ button
 
 .text-block h2
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 26px;
     font-weight: 400;
@@ -875,6 +877,7 @@ button
 
 .text-block h3
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 22px;
     font-weight: 400;
@@ -885,6 +888,7 @@ button
 
 .text-block h4
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 20px;
     font-weight: 400;
@@ -895,6 +899,7 @@ button
 
 .text-block h5
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 18px;
     font-weight: 400;
@@ -903,8 +908,9 @@ button
     margin-bottom: 20px;
 }
 
-.text-block h5
+.text-block h6
 {
+	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 16px;
     font-weight: 400;
@@ -917,8 +923,6 @@ button
 .text-block p
 {
     margin-bottom: 20px;
-
-	font-family: var(--font-family2);
 }
 
 .text-block img
@@ -1138,7 +1142,6 @@ button
 	color: #3A3B55;
     font-size: 12px;
     line-height: 1.16;
-	font-family: var(--font-family2);
 }
 
 .form__agree a
@@ -1265,6 +1268,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 ---------------*/
 .main-title
 {
+	font-family: var(--font-family);
 	font-size: 40px;
 	line-height: normal;
 	color: #3A3B55;
@@ -1273,6 +1277,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .middle-title
 {
+	font-family: var(--font-family);
 	font-size: 32px;
 	line-height: normal;
 	color: #3A3B55;
@@ -1287,6 +1292,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .page-title
 {
+	font-family: var(--font-family);
 	font-size: 72px;
 	line-height: normal;
 	color: #3A3B55;
@@ -1305,9 +1311,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .sub-title
 {
+	font-family: var(--font-family);
 	font-size: 20px;
 	line-height: normal;
-	font-family: var(--font-family2);
 
 	margin-top: 20px;
 }
@@ -1829,6 +1835,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .achievements__info
 {
+	font-family: var(--font-family);
 	flex: 1 0 auto;
 
 	display: flex;
@@ -1961,6 +1968,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .paints-var__name
 {
+	font-family: var(--font-family);
 	font-size: 18px;
 	line-height: 1.22;
 	color: #3A3B55;
@@ -2108,7 +2116,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	max-width: 632px;
 	margin-left: 30px;
 
-	font-family: var(--font-family2);
 	color: #8D95A1;
 	line-height: 1.37;
 }
@@ -2155,6 +2162,7 @@ a.advantages-page__item
 
 .advantages-page__name
 {
+	font-family: var(--font-family);
 	font-size: 18px;
 	line-height: 1.22;
 	color: #3A3B55;
@@ -2321,8 +2329,6 @@ a.advantages-page__item
 	border-radius: 4px 4px 0 0;
 	padding: 24px 25px 27px;
 	min-width: 170px;
-
-	font-family: var(--font-family2);
 }
 
 .get-consult__name
@@ -2371,7 +2377,6 @@ a.advantages-page__item
 
 .get-consult__desc
 {
-	font-family: var(--font-family2);
 	color: #3A3B55;
 	opacity: .8;
 	margin-bottom: 24px;
@@ -2415,6 +2420,7 @@ a.advantages-page__item
 
 .new-partners__desc
 {
+	font-family: var(--font-family);
 	opacity: .5;
 	font-size: 18px;
 	margin-top: 12px;
@@ -2448,6 +2454,7 @@ a.advantages-page__item
 
 .main-info__title
 {
+	font-family: var(--font-family);
 	color: #3A3B55;
 	font-size: 26px;
 	line-height: 1.15;
@@ -2456,7 +2463,6 @@ a.advantages-page__item
 .main-info__info
 {
 	margin-top: 22px;
-	font-family: var(--font-family2);
 	line-height: 1.5;
 }
 
@@ -2598,8 +2604,6 @@ a.advantages-page__item
 	border-radius: 4px 4px 0 0;
 	padding: 24px 25px 27px;
 	min-width: 170px;
-
-	font-family: var(--font-family2);
 }
 
 .write-us__name
@@ -2633,7 +2637,6 @@ a.advantages-page__item
 	line-height: 1.5;
 	color: #3A3B55;
 	opacity: .8;
-	font-family: var(--font-family2);
 }
 
 
@@ -2664,6 +2667,7 @@ a.advantages-page__item
 
 .reviews__title
 {
+	font-family: var(--font-family);
 	font-size: 36px;
 	line-height: 1.11;
 	color: #3A3B55;
@@ -2685,7 +2689,6 @@ a.advantages-page__item
 .reviews__desc
 {
 	line-height: 1.5;
-	font-family: var(--font-family2);
 }
 
 .reviews__name
@@ -2896,6 +2899,7 @@ a.advantages-page__item
 
 .projects__name
 {
+	font-family: var(--font-family);
 	display: block;
 	font-size: 26px;
 	line-height: normal;
@@ -2989,7 +2993,6 @@ a.advantages-page__item
 	margin-top: 30px;
 	line-height: 1.44;
 	font-size: 18px;
-	font-family: var(--font-family2);
 }
 
 .main-articles__name a
@@ -3001,7 +3004,6 @@ a.advantages-page__item
 
 .main-articles__desc
 {
-	font-family: var(--font-family2);
 	margin-top: 24px;
 	line-height: 1.5;
 }
@@ -3075,7 +3077,6 @@ a.advantages-page__item
 {
 	opacity: .8;
 	line-height: normal;
-	font-family: var(--font-family2);
 }
 
 .select-city__price
@@ -3093,7 +3094,6 @@ a.advantages-page__item
 	border-radius: 0 0 4px 4px;
 	padding: 24px 48px 30px;
 	color: #3A3B55;
-	font-family: var(--font-family2);
 }
 
 .select-city__city
@@ -3133,13 +3133,13 @@ a.advantages-page__item
 
 .select-city__title
 {
-	font-family: var(--font-family2);
 	line-height: 1.5;
 	opacity: .5;
 }
 
 .select-city__name
 {
+	font-family: var(--font-family);
 	margin-top: 6px;
 	font-size: 26px;
 	line-height: normal;
@@ -3152,6 +3152,7 @@ a.advantages-page__item
 
 .select-city__contacts-phone
 {
+	font-family: var(--font-family);
 	font-size: 26px;
 	line-height: normal;
 	margin-top: 5px;
@@ -3311,6 +3312,7 @@ a.advantages-page__item
 
 .paint-suitable__name
 {
+	font-family: var(--font-family);
 	font-size: 26px;
 	line-height: normal;
 	color: #3A3B55;
@@ -3453,7 +3455,6 @@ a.advantages-page__item
 	line-height: 30px;
 	height: 30px;
 	white-space: nowrap;
-	font-family: var(--font-family2);
 	color: #3A3B55;
 	border-radius: 4px;
 	border: 1px solid #CD1719;
@@ -3629,8 +3630,6 @@ a.advantages-page__item
 	border-radius: 4px;
 	padding-left: 30px;
 	padding-right: 30px;
-
-	font-family: var(--font-family2);
 }
 
 .links-nav__items
@@ -3780,7 +3779,6 @@ a.advantages-page__item
 .about-info__box
 {
 	width: calc(79.666% - 30px);
-	font-family: var(--font-family2);
 }
 
 .about-info__title
@@ -3925,6 +3923,7 @@ a.advantages-page__item
 
 .download-present__title
 {
+	font-family: var(--font-family);
 	color: #3A3B55;
 	font-size: 48px;
 	line-height: 1.14;
@@ -3980,7 +3979,6 @@ a.advantages-page__item
 .history__info
 {
 	width: calc(46.4% - 12px);
-	font-family: var(--font-family2);
 }
 
 
@@ -3999,7 +3997,6 @@ a.advantages-page__item
 {
 	height: 88px;
 	position: relative;
-	font-family: var(--font-family2);
 	padding-bottom: 55px;
 
 	cursor: pointer;
@@ -4142,6 +4139,7 @@ a.advantages-page__item
 
 .stc-section__val
 {
+	font-family: var(--font-family);
 	font-size: 36px;
 	line-height: normal;
 	color: #3A3B55;
@@ -4150,7 +4148,6 @@ a.advantages-page__item
 .stc-section__desc
 {
 	margin-top: 13px;
-	font-family: var(--font-family2);
 }
 
 .stc-section__note
@@ -4164,7 +4161,6 @@ a.advantages-page__item
 	font-size: 20px;
 	line-height: normal;
 	color: #3A3B55;
-	font-family: var(--font-family2);
 }
 
 .stc-section__note-w
@@ -4256,6 +4252,7 @@ a.advantages-page__item
 
 .stc-services__name
 {
+	font-family: var(--font-family);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -4412,7 +4409,6 @@ a.advantages-page__item
 .our-production__name
 {
 	margin-top: 24px;
-	font-family: var(--font-family2);
 	color: #3A3B55;
 }
 /*------------
@@ -4484,7 +4480,6 @@ a.advantages-page__item
 
 .footer-menu
 {
-	font-family: var(--font-family2);
 	padding-top: 125px;
 
 	column-gap: 110px;
@@ -4527,6 +4522,7 @@ a.advantages-page__item
 
 .footer__title
 {
+	font-family: var(--font-family);
 	font-size: 26px;
 	line-height: normal;
 	color: #3A3B55;
@@ -4535,7 +4531,6 @@ a.advantages-page__item
 
 .footer-links__item
 {
-	font-family: var(--font-family2);
 	line-height: normal;
 }
 
