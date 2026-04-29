@@ -248,7 +248,7 @@
 
     border: none;
     border-radius: 50%;
-    background: rgba(204, 223, 233, 0.9) url(../images/ic_arrow.svg) 50% no-repeat;
+    background: #CD1719 url(../images/ic_arrow2.svg) 50% no-repeat;
     transition: background-color .2s linear;
 }
 
@@ -256,7 +256,7 @@
 {
     z-index: 11;
 
-    background-color: #CD1719;
+    background-color: #B71517;
 }
 
 .wheelSlider-container .wheelSlider-arrow[data-action="prev"]
