@@ -4562,6 +4562,129 @@ a.advantages-page__item
 	align-self: flex-end;
 }
 
+
+/*------------
+    achiev-awards
+------------*/
+
+.achiev-awards__wrap
+{
+	position: relative;
+	padding: 60px 20px;
+	overflow: hidden;
+}
+
+.achiev-awards__bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.achiev-awards__abc
+{
+	position: absolute;
+	top: -75px;
+	right: 50%;
+
+	display: block;
+
+	pointer-events: none;
+	margin-right: 49px;
+	opacity: .6;
+}
+
+.achiev-awards__abc img
+{
+	width: 616px;
+	height: 482px;
+}
+
+.achiev-awards__info
+{
+	max-width: 1612px;
+	width: 100%;
+	margin: 0 auto;
+
+	position: relative;
+	z-index: 2;
+}
+
+.achiev-awards__info-box
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+}
+
+.achiev-awards__slider
+{
+	padding-left: 540px;
+}
+
+.achiev-awards__slider .slider-button-prev
+{
+	top: auto;
+	bottom: 0;
+	left: 0;
+}
+
+.achiev-awards__slider .slider-button-next
+{
+	left: 44px;
+	top: auto;
+	bottom: 0;
+	right: auto;
+}
+
+.achiev-awards__item
+{
+	border-radius: 4px;
+	background: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	text-align: center;
+
+	padding: 66px 20px;
+}
+
+.achiev-awards__name
+{
+	font-family: var(--font-family);
+	color: #3A3B55;
+	font-size: 26px;
+	line-height: normal;
+}
+
+.achiev-awards__city
+{
+	line-height: 1.5;
+	color: #8D95A1;
+	margin-top: 9px;
+}
+
+.achiev-awards__year
+{
+	font-weight: 600;
+	color: #CD1719;
+	line-height: 1.5;
+	margin-top: 30px;
+}
+
 /*------------
     Footer
 ------------*/
