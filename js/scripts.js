@@ -12,41 +12,41 @@ if (document.body.clientWidth < 375) {
 $(() => {
 	
 
-	if ($('.main-slider').length) {
-		new Swiper(".main-slider", {
-			loop: true,
-			spaceBetween: 10,
-			slidesPerView: 1,
-			speed: 800,
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
-			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
-			}
-		})
-	}
+	// if ($('.main-slider').length) {
+	// 	new Swiper(".main-slider", {
+	// 		loop: true,
+	// 		spaceBetween: 10,
+	// 		slidesPerView: 1,
+	// 		speed: 800,
+	// 		watchSlidesProgress: true,
+	// 		watchOverflow: true,
+	// 		preloadImages: false,
+	// 		lazy: {
+	// 			loadPrevNext: true,
+	// 			elementClass: 'lazyload',
+	// 			enabled: true,
+	// 			loadedClass: 'loaded',
+	// 			checkInView: true,
+	// 			loadOnTransitionStart: true
+	// 		},
+	// 		navigation: {
+	// 			nextEl: '.slider-button-next',
+	// 			prevEl: '.slider-button-prev'
+	// 		},
+	// 		pagination: {
+	// 			bulletActiveClass: 'slider-dot_active',
+	// 			bulletClass: 'slider-dot',
+	// 			clickableClass: 'slider-pagination-clickable',
+	// 			el: '.slider-pagination',
+	// 			clickable: true
+	// 		},
+	// 		on: {
+	// 			init: function (swiper) {
+	// 				$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+	// 			}
+	// 		}
+	// 	})
+	// }
 
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
@@ -161,8 +161,6 @@ $(() => {
 			if (_self.val() > maximum) _self.val(maximum)
 		})
 	})
-
-
 
 	// commit
 
@@ -493,7 +491,13 @@ $(() => {
 
 
 $(window).on('load', () => {
-	
+	if ($('.main-slider').length) {
+		$('.main-slider .wheelSlider-container').wheelSlider({
+			controls: true,
+			dots: false,
+			items: 7,
+		})
+	}
 });
 
 
