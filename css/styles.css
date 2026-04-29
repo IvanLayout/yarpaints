@@ -4685,6 +4685,17 @@ a.advantages-page__item
 	margin-top: 30px;
 }
 
+
+.accordion__data
+{
+    display: none;
+}
+
+.accordion__item._active .accordion__data
+{
+    display: block;
+}
+
 /*------------
     Footer
 ------------*/

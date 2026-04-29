@@ -35,6 +35,16 @@ $(() => {
 	// Установка ширины стандартного скроллбара
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
+	$('body').on('click', '.accordion__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.accordion__item').hasClass('_active')) {
+			$(this).closest('.accordion__item').removeClass('_active')
+		} else {
+			$(this).closest('.accordion__item').addClass('_active')
+		}
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash
@@ -122,7 +132,7 @@ $(() => {
 		}
 	};
 
-	// Відкриття модалок
+	// Открытие модалок
 	$(document).on('click', '.modal-btn', function (e) {
 		e.preventDefault();
 
@@ -150,7 +160,7 @@ $(() => {
 		}, 10);
 	});
 
-	// 2. Закриття через кнопку .modal-close
+	// 2. Закритие через кнопку .modal-close
 	$('body').on('click', '.modal-close', function (e) {
 		e.preventDefault();
 		Fancybox.close();
