@@ -5287,7 +5287,9 @@ a.advantages-page__item
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
-	margin-top: 23px;
+	margin-top: 10px;
+
+	max-width: 741px;
 }
 
 .development__item
@@ -5296,7 +5298,7 @@ a.advantages-page__item
 	margin-top: 27px;
 	background: #F9FCFF;
 	border-radius: 4px;
-	padding: 20px 25px 25px;
+	padding: 19px 25px 24px;
 }
 
 .development__val
@@ -5309,14 +5311,31 @@ a.advantages-page__item
 
 .development__desc
 {
-	margin-top: 34px;
+	margin-top: 30px;
 }
 
 .development__fact
 {
 	margin-top: 35px;
 	position: relative;
-	padding: 34px 60px 34px 39px;
+	padding: 34px 60px 30px 39px;
+	max-width: 741px;
+}
+
+.development__fact::after
+{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+
+	display: block;
+
+	width: 43px;
+	height: 43px;
+
+	background: url(../images/development_square.svg) 50% no-repeat;
+	z-index: 1;
 }
 
 .development__bg
@@ -5370,7 +5389,7 @@ a.advantages-page__item
 
 .development__fact-val
 {
-	margin-top: 20px;
+	margin-top: 14px;
 
 	color: #3A3B55;
 	font-family: var(--font-family);
