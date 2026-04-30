@@ -3887,7 +3887,7 @@ a.advantages-page__item
 	line-height: 1.5;
 }
 
-.about-info__file a
+.about-info__file-link
 {
 	text-decoration: none;
 	color: #3A3B55;
@@ -3896,22 +3896,31 @@ a.advantages-page__item
 	padding-left: 27px;
 }
 
-.about-info__file a::before
+.about-info__file-icon
 {
 	position: absolute;
 	content: '';
 	top: 0;
 	left: 0;
 
-	display: block;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
 
 	width: 18px;
 	height: 22px;
-
-	background: url(../images/ic_file.svg) 50% no-repeat;
 }
 
-.about-info__file span
+.about-info__file-icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.about-info__file-name
 {
 	border-bottom: 1px solid currentColor;
 	transition: border .2s linear;
@@ -3919,7 +3928,7 @@ a.advantages-page__item
 
 @media (any-hover: hover)
 {
-	.about-info__file a:hover span
+	.about-info__file-link:hover .about-info__file-name
 	{
 		border-color: transparent;
 	}
@@ -4774,6 +4783,11 @@ a.advantages-page__item
 	cursor: pointer;
 	padding: 30px 0;
 	border-bottom: 1px solid #E0E9EE;
+}
+
+.accordion__item:first-child .files-section__open
+{
+	padding-top: 0;
 }
 
 .files-section__title
