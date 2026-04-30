@@ -2200,6 +2200,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: none;
 }
 
+.advantages__slider
+{
+	margin-top: 30px;
+}
+
 .advantages__grid._flex
 {
 	margin: 6px 0 0 -24px;
@@ -2221,6 +2226,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: flex-start;
 	flex-wrap: nowrap;
 	transition: background .2s linear;
+}
+
+.advantages__slider .advantages-page__item
+{
+	padding-bottom: 17px;
+	padding-right: 40px;
+	min-height: 150px;
 }
 
 a.advantages-page__item
@@ -2257,6 +2269,11 @@ a.advantages-page__item
 	align-items: flex-start;
 	align-content: flex-start;
 	flex-wrap: wrap;
+}
+
+.advantages__slider .advantages-page__icon
+{
+	justify-content: flex-end;
 }
 
 .advantages-page__icon img
