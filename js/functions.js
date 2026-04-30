@@ -35,15 +35,6 @@ $(() => {
 	// Установка ширины стандартного скроллбара
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
-	$('body').on('click', '.accordion__open', function (e) {
-		e.preventDefault()
-
-		if ($(this).closest('.accordion__item').hasClass('_active')) {
-			$(this).closest('.accordion__item').removeClass('_active')
-		} else {
-			$(this).closest('.accordion__item').addClass('_active')
-		}
-	})
 
 	
 	// Табы
@@ -173,6 +164,26 @@ $(() => {
 			Thumbs: false,
 		},
 	});
+
+
+	// Аккордион
+	$('body').on('click', '.accordion__open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.accordion__item')
+		let accordion = $(this).closest('.accordion')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.accordion__data').slideUp(300)
+		} else {
+			accordion.find('.accordion__item').removeClass('_active')
+			accordion.find('.accordion__data').slideUp(300)
+
+			parent.addClass('_active')
+			parent.find('.accordion__data').slideDown(300)
+		}
+	})
 
 
 	// commit
