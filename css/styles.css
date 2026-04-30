@@ -4336,6 +4336,11 @@ a.advantages-page__item
 	margin-top: 24px;
 }
 
+.get-consult .stc-services__item
+{
+	aspect-ratio: 864 / 239;
+}
+
 .stc-services__item::after
 {
 	position: absolute;
@@ -4383,6 +4388,14 @@ a.advantages-page__item
 	font-size: 26px;
 	line-height: 1.15;
 	color: #fff;
+}
+
+.get-consult .stc-services__name
+{
+	font-size: 32px;
+	padding-bottom: 35px;
+	padding-left: 40px;
+	letter-spacing: -0.01em;
 }
 
 .stc-services__name::after
