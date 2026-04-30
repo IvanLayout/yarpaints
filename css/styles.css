@@ -1804,57 +1804,66 @@ input[type=checkbox]:checked + .checkbox__text::after
 .achievements__number1
 {
 	position: absolute;
-	top: 23px;
-	left: 60px;
+	top: -19px;
+    left: 34px;
 
 	display: block;
 
 	opacity: .1;
 	pointer-events: none;
 	z-index: 1;
+
+    font-size: 332px;
+    line-height: 1;
+	color: #9FBBCA;
+	font-family: var(--font-family3);
 }
 
 .achievements__number2
 {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -61px;
+    right: -95px;
 
 	display: block;
 
 	opacity: .6;
 	pointer-events: none;
 	z-index: 1;
+
+	font-size: 387px;
+    line-height: 1;
+	color: #fff;
+
+	font-family: var(--font-family3);
 }
 
 .achievements__number3
 {
 	position: absolute;
-	top: -38px;
-	right: 0;
+	top: -86px;
+    left: 50%;
+    margin-left: -129px;
 
 	display: block;
 
 	opacity: .6;
 	pointer-events: none;
 	z-index: 1;
-}
 
-.achievements__number3 img
-{
-	display: block;
-	width: 612px;
-	height: 272px;
+	font-size: 368px;
+    line-height: 1;
+	color: #fff;
 
-	max-width: 100%;
-	max-height: 100%;
+	font-family: var(--font-family3);
 }
 
 .achievements__number4
 {
 	position: absolute;
-	top: -42px;
-    right: -140px;
+	top: -88px;
+    left: 50%;
+    margin-left: -185px;
 
 	display: block;
 
@@ -1862,28 +1871,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	pointer-events: none;
 	z-index: 1;
 
-	min-height: 43px;
-	min-width: 141px;
+	font-size: 368px;
+    line-height: 1;
+	color: #fff;
+
+	font-family: var(--font-family3);
 }
 
-.achievements__number4 img
-{
-	display: block;
-	width: 659px;
-	height: 276px;
-
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.achievements__number1 img,
-.achievements__number2 img
-{
-	display: block;
-
-	max-width: 100%;
-	max-height: 100%;
-}
 
 .achievements__map-img
 {
