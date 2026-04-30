@@ -4811,7 +4811,7 @@ a.advantages-page__item
 	width: 14px;
 	height: 1px;
 
-	background: #3A3B55;
+	background: #CD1719;
 }
 
 .files-section__btn::before
@@ -4828,6 +4828,16 @@ a.advantages-page__item
 	width: 1px;
 	height: 14px;
 
+	background: #CD1719;
+}
+
+.accordion__item._active .files-section__btn::before
+{
+	opacity: 0;
+}
+
+.accordion__item._active .files-section__btn::after
+{
 	background: #3A3B55;
 }
 
