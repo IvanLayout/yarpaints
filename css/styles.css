@@ -2339,6 +2339,11 @@ a.advantages-page__item
 	padding: 0 20px;
 }
 
+.get-consult__wrap-marg
+{
+	margin-top: -62px;
+}
+
 .get-consult__bg-wrap
 {
 	position: absolute;
@@ -2379,6 +2384,8 @@ a.advantages-page__item
 
 	width: 371px;
 	height: 556px;
+
+	opacity: .6;
 }
 
 .get-consult__cols
