@@ -852,11 +852,11 @@ button
 {
 	font-family: var(--font-family);
     color: #3A3B55;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 1.15;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .text-block h2
@@ -2099,11 +2099,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	transform: translateX(-50%);
 
-	width: 346px;
-	height: 82px;
+	/* width: 346px; */
+	width: 106%;
+	/* height: 82px; */
+	aspect-ratio: 1 / .237;
 	transition: opacity .2s linear;
 
-	background: url(../images/paints_var_shadow.png) 50% no-repeat;
+	background: url(../images/paints_var_shadow.png) 50% / contain no-repeat;
 }
 
 .paints-var__img-box::after
@@ -2117,12 +2119,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	transform: translateX(-50%);
 
-	width: 198px;
-	height: 65px;
+	/* width: 198px; */
+	width: 60.63%;
+	/* height: 65px; */
+	aspect-ratio: 1 / .329;
 	opacity: 0;
 	transition: opacity .2s linear;
 
-	background: url(../images/paints_var_shadow_hover.png) 50% no-repeat;
+	background: url(../images/paints_var_shadow_hover.png) 50% / contain no-repeat;
 }
 
 .paints-var__img-box img
@@ -3342,11 +3346,13 @@ a.advantages-page__item
 
 	transform: translateX(-50%);
 
-	width: 346px;
-	height: 82px;
+	/* width: 346px; */
+	width: 221.8%;
+	/* height: 82px; */
+	aspect-ratio: 1 / .237;
 	transition: opacity .2s linear;
 
-	background: url(../images/paints_var_shadow.png) 50% no-repeat;
+	background: url(../images/paints_var_shadow.png) 50% / contain no-repeat;
 }
 
 .paint-suitable__img span::after
@@ -3360,12 +3366,14 @@ a.advantages-page__item
 
 	transform: translateX(-50%);
 
-	width: 198px;
-	height: 65px;
+	/* width: 198px; */
+	width: 127%;
+	/* height: 65px; */
+	aspect-ratio: 1 / .329;
 	opacity: 0;
 	transition: opacity .2s linear;
 
-	background: url(../images/paints_var_shadow_hover.png) 50% no-repeat;
+	background: url(../images/paints_var_shadow_hover.png)50% / contain no-repeat;
 }
 
 .paint-suitable__img img
@@ -4198,7 +4206,13 @@ a.advantages-page__item
 
 .stc-section__w
 {
-	width: calc(65.1% - 15px);
+	width: calc(65.867% - 29px);
+}
+
+.stc-section__box
+{
+	width: calc(34.133% - 30px);
+	padding-top: 10px;
 }
 
 .stc-section__text
@@ -5096,14 +5110,161 @@ a.advantages-page__item
 	}
 }
 
-
-
 .confessions__bot
 {
 	margin-top: 30px;
 	padding-top: 40px;
 	border-top: 1px solid #E0E9EE;
 	text-align: center;
+}
+
+
+/*------------
+    employee-item
+------------*/
+
+.employee-item
+{
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.employee-item__img
+{
+	display: block;
+	aspect-ratio: 568 / 716;
+	width: 100%;
+	object-fit: cover;
+}
+
+.stc-info .employee-item__img
+{
+	aspect-ratio: 568 / 690;
+}
+
+.employee-item__info
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	background: #fff;
+	border-radius: 0 4px 0 0;
+	padding: 20px 36px 32px;
+
+	width: 74%;
+	max-width: 418px;
+}
+
+.stc-info .employee-item__info
+{
+	padding: 31px 30px 41px;
+}
+
+.employee-item__name
+{
+	font-family: var(--font-family);
+	color: #3A3B55;
+	font-size: 32px;
+	letter-spacing: -0.01em;
+}
+
+.employee-item__spec
+{
+	margin-top: 14px;
+}
+
+/*------------
+    stc-info
+------------*/
+
+.stc-info__cols
+{
+	justify-content: space-between;
+}
+
+.stc-info__coll
+{
+	width: calc(33.11% - 12px);
+}
+
+.stc-info__colr
+{
+	width: calc(66.89% - 12px);
+}
+
+.stc-info__text
+{
+	max-width: 816px;
+}
+
+.stc-info__wrap
+{
+	margin-top: 27px;
+}
+
+.stc-info__wrap .slider-button-prev, 
+.stc-info__wrap .slider-button-next 
+{
+    display: none;
+}
+
+.stc-info__grid._flex
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 994px;
+}
+
+.stc-info__grid._flex .stc-info__item
+{
+	width: calc(50% - 11px);
+	margin-top: 25px;
+}
+
+.stc-info__item
+{
+	border-radius: 4px;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px 25px 24px;
+	position: relative;
+	color: #3A3B55;
+}
+
+.stc-info__img-val
+{
+	position: absolute;
+	top: -44px;
+	/* right: -90px; */
+	font-family: var(--font-family);
+	font-size: 256px;
+	line-height: 1;
+
+	color: #9FBBCA;
+	opacity: .1;
+	pointer-events: none;
+}
+
+.stc-info__val
+{
+	font-family: var(--font-family);
+	font-size: 64px;
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+}
+
+.stc-info__name
+{
+	margin-top: 65px;
+	line-height: normal;
+	position: relative;
+	z-index: 2;
 }
 
 /*------------
