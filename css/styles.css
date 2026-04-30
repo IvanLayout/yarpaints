@@ -5434,12 +5434,61 @@ a.advantages-page__item
 	line-height: 1;
 }
 
-
-
 .development__colr
 {
 	width: calc(55% - 37.5px);
 }
+
+
+/*------------
+    form-recommend
+------------*/
+
+.form-recommend__wrap
+{
+	border-top: 1px solid #E0E9EE;
+	border-bottom: 1px solid #E0E9EE;
+	padding: 40px 0;
+}
+
+.form-recommend__title
+{
+	font-family: var(--font-family);
+    font-size: 48px;
+    line-height: normal;
+    color: #3A3B55;
+    letter-spacing: -0.01em;
+}
+
+.form-recommend__desc
+{
+	margin-top: 19px;
+}
+
+.form-recommend__flex
+{
+	margin-top: 19px;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.form-recommend__field
+{
+	width: 100%;
+	max-width: 612px;
+}
+
+.form-recommend .form .form__input
+{
+	border: 1px solid rgba(58, 59, 85, .2);
+}
+
+.form-recommend__flex .form__submit-btn
+{
+	flex-shrink: 0;
+	margin-left: 15px;
+}
+
 /*------------
     Footer
 ------------*/
