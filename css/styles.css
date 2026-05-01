@@ -3766,6 +3766,12 @@ a.advantages-page__item
 	z-index: 1;
 }
 
+.main-banner__btn
+{
+	text-align: center;
+	margin-top: 32px;
+}
+
 /*------------
     page-nav
 ------------*/
