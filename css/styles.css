@@ -670,8 +670,7 @@ button
 
     color: #FFF;
     font-size: 14px;
-    line-height: 42px;
-	height: 40px;
+    line-height: 40px;
 
     display: inline-block;
 
@@ -1093,7 +1092,7 @@ button
     display: block;
 
     width: 100%;
-    height: 120px;
+    height: 148px;
     padding: 12px;
 
     border: 1px solid rgba(58, 59, 85, .5);
@@ -3399,8 +3398,15 @@ a.advantages-page__item
 
 .paint-suitable__img span
 {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	
 	position: relative;
+	width: 100%;
+	/* aspect-ratio: 1 / .329; */
 	padding-bottom: 20px;
 	transition: padding .2s linear;
 }
@@ -3409,16 +3415,14 @@ a.advantages-page__item
 {
 	position: absolute;
 	content: '';
-	bottom: -25px;
+	bottom: -50px;
 	left: 50%;
 
 	display: block;
 
 	transform: translateX(-50%);
 
-	/* width: 346px; */
 	width: 221.8%;
-	/* height: 82px; */
 	aspect-ratio: 1 / .237;
 	transition: opacity .2s linear;
 
@@ -3436,9 +3440,7 @@ a.advantages-page__item
 
 	transform: translateX(-50%);
 
-	/* width: 198px; */
 	width: 127%;
-	/* height: 65px; */
 	aspect-ratio: 1 / .329;
 	opacity: 0;
 	transition: opacity .2s linear;
@@ -3450,6 +3452,7 @@ a.advantages-page__item
 {
 	display: block;
 	max-width: 100%;
+	max-height: 100%;
 	position: relative;
 	z-index: 1;
 }
@@ -3461,7 +3464,7 @@ a.advantages-page__item
 	display: flex;
 	flex-direction: column;
 
-	padding-top: 174px;
+	padding-top: 34.26px;
 }
 
 .paint-suitable__name
@@ -5996,6 +5999,42 @@ a.advantages-page__item
 	margin-top: 30px;
 }
 
+
+/*------------
+    app-quest
+------------*/
+
+.app-quest__form
+{
+	margin-top: 30px;
+}
+
+.app-quest__form .form__line
+{
+	margin-bottom: 14px;
+}
+
+.app-quest__form.form .form__input
+{
+	border-color: #E0E9EE;
+	padding-left: 20px;
+}
+
+.app-quest__form.form .form__textarea
+{
+	border-color: #E0E9EE;
+	padding: 20px;
+}
+
+.app-quest__form .form__agree
+{
+	margin-top: 24px;
+}
+
+.app-quest__form .form__submit 
+{
+    margin-top: 30px;
+}
 /*------------
     Footer
 ------------*/
