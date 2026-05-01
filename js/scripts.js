@@ -559,6 +559,29 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.teams-leed__slider').length) {
+		new Swiper(".teams-leed__slider", {
+			loop: false,
+			spaceBetween: 24,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			}
+		})
+	}
 });
 
 

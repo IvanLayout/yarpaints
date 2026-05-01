@@ -5174,6 +5174,11 @@ a.advantages-page__item
 	aspect-ratio: 568 / 690;
 }
 
+.teams-leed .employee-item__img
+{
+	aspect-ratio: 568 / 738;
+}
+
 .employee-item__info
 {
 	position: absolute;
@@ -5193,6 +5198,11 @@ a.advantages-page__item
 .stc-info .employee-item__info
 {
 	padding: 31px 30px 41px;
+}
+
+.teams-leed .employee-item__info
+{
+	padding: 30px 30px 25px;;
 }
 
 .employee-item__name
@@ -5593,6 +5603,58 @@ a.advantages-page__item
 .history-main__item:not(:nth-child(-n+2)) .history-main__circle
 {
 	top: 11px;
+}
+
+
+/*------------
+    teams-leed
+------------*/
+
+.teams-leed__cols
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	position: relative;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #E0E9EE;
+}
+
+.teams-leed__img
+{
+	position: absolute;
+	top: 28px;
+	right: 50%;
+	margin-right: 66px;
+
+	display: block;
+	z-index: 1;
+}
+
+.teams-leed__coll
+{
+	width: 32.421%;
+}
+
+.teams-leed__colr
+{
+	width: 67.579%;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	padding: 30px 30px 78px;
+}
+
+.teams-leed__slider
+{
+	max-width: 605px;
+	width: 100%;
+	padding-bottom: 154px;
+	margin-left: 62px;
 }
 
 /*------------
