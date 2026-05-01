@@ -5706,6 +5706,71 @@ a.advantages-page__item
 }
 
 /*------------
+    sales-geography
+------------*/
+
+.sales-geography__desc
+{
+	margin-top: 30px;
+}
+
+.sales-geography__cols 
+{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+	margin-top: 15px;
+}
+
+.sales-geography__coll
+{
+	width: calc(72.21% - 22px);
+}
+
+.sales-geography__img
+{
+	display: block;
+	max-width: 100%;
+}
+
+.sales-geography__colr
+{
+	width: calc(27.79% - 22px);
+	flex-shrink: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.sales-geography__items
+{
+	display: inline-block;
+}
+
+.sales-geography__item + .sales-geography__item
+{
+	margin-top: 42px;
+	padding-top: 42px;
+	border-top: 1px solid #E0E9EE;
+}
+
+.sales-geography__val
+{
+	color: #3A3B55;
+	font-family: var(--font-family);
+	font-size: 72px;
+	line-height: 1.2;
+}
+
+.sales-geography__desc-text
+{
+	margin-top: 5px;
+}
+/*------------
     Footer
 ------------*/
 .footer
