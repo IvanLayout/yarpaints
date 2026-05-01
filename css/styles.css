@@ -1647,7 +1647,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .first-section{
-	background: url(../images/main-bg.png) 50% 0/cover no-repeat;
+	background: url(../images/main-bg.png) 100% 0/cover no-repeat;
 	position: relative;
 	padding: 42px 0 35px;
 }
@@ -2955,11 +2955,16 @@ a.advantages-page__item
 	margin-top: 30px;
 }
 
+.projects__slider .swiper-slide{
+	height: auto;
+}
+
 .projects__box
 {
 	border-radius: 4px;
 	border: 1px solid #E0E9EE;
-	padding: 15px;
+	padding: 14px;
+	min-height: 100%;
 
 	text-decoration: none;
 
@@ -2989,11 +2994,19 @@ a.advantages-page__item
 {
 	width: calc(62% - 20px);
 	margin-left: 20px;
-	padding-top: 24px;
-	padding-bottom: 24px;
 
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.projects__info-box{
+	display: flex;
 	flex-direction: column;
+	min-height: 193px;
+	width: 100%;
 }
 
 .projects__name

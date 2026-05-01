@@ -1,6 +1,25 @@
 @media (max-width: 1199px)
 {
+	.header__city{
+		margin-left: 30px;
+	}
 
+	.header__logo img{
+		width: 140px;
+	}
+
+	.header__contacts{
+		gap: 20px;
+	}
+
+	.header__btns{
+		margin-left: 30px;
+	}
+
+
+	.page-title{
+		font-size: 62px;
+	}
 	/*------------
 		commit
 	------------*/

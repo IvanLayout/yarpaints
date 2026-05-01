@@ -1,5 +1,8 @@
 @media (max-width: 767px)
 {
+	.page-title{
+		font-size: 32px;
+	}
 
 	/*------------
 		commit

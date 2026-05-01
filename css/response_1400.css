@@ -1,6 +1,8 @@
 @media (max-width: 1400px)
 {
-	
+	.header__city{
+		margin-left: 40px;
+	}
     /*------------
 		commit
 	------------*/

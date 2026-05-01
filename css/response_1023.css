@@ -1,5 +1,92 @@
 @media (max-width: 1023px)
 {
+	.header__city{
+		display: none;
+	}
+
+	.header__change{
+		display: none;
+	}
+
+	.header__phone a{
+		font-size: 0;
+		width: 36px;
+		height: 36px;
+		display: block;
+		padding: 0;
+	}
+
+	.header__phone a::before{
+		left: 0;
+		top: 0;
+		margin-top: 0;
+		border: 1px solid #e0e7ee;
+		border-radius: 4px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.header__mail{
+		display: none;
+	}
+
+	.header .btn-red{
+		line-height: 36px;
+		padding: 0 20px;
+		font-size: 12px;
+	}
+
+	.header__btn{
+		width: 36px;
+		height: 36px;
+	}
+
+
+	.header__bot{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		display: none;
+	}
+
+
+	.page-title{
+		font-size: 42px;
+	}
+
+	.sub-title{
+		font-size: 16px;
+	}
+
+
+	.first-section::before{
+		display: none;
+	}
+
+    .main-slider__product.first
+    {
+        left: calc((86.91% + 370px)*-1);
+    }
+
+    .main-slider__product.prev
+    {
+        left: calc((86.91% + 50px)*-1);
+    }
+
+    .main-slider__product.last
+    {
+        left: calc(100% + 370px);
+    }
+
+    .main-slider__product.next
+    {
+        left: calc(100% + 50px);
+    }
+
+	.wheelSlider-container .wheelSlider-arrow{
+		display: none;
+	}
 	/*------------
 		commit
 	------------*/
