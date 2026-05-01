@@ -4879,25 +4879,25 @@ a.advantages-page__item
     files-section
 ------------*/
 
-.files-section__open
+.accord-box__open
 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 
 	cursor: pointer;
 	padding: 30px 0;
 	border-bottom: 1px solid #E0E9EE;
 }
 
-.accordion__item:first-child .files-section__open
+.accord-box__item:first-child .accord-box__open
 {
 	padding-top: 0;
 }
 
-.files-section__title
+.accord-box__title
 {
 	color: #3A3B55;
 	font-size: 26px;
@@ -4905,7 +4905,7 @@ a.advantages-page__item
 	font-family: var(--font-family);
 }
 
-.files-section__btn
+.accord-box__btn
 {
 	width: 40px;
 	height: 40px;
@@ -4918,7 +4918,7 @@ a.advantages-page__item
 	transition: border .2s linear;
 }
 
-.files-section__btn::after
+.accord-box__btn::after
 {
 	position: absolute;
 	content: '';
@@ -4935,7 +4935,7 @@ a.advantages-page__item
 	background: #CD1719;
 }
 
-.files-section__btn::before
+.accord-box__btn::before
 {
 	position: absolute;
 	content: '';
@@ -4952,12 +4952,12 @@ a.advantages-page__item
 	background: #CD1719;
 }
 
-.accordion__item._active .files-section__btn::before
+.accordion__item._active .accord-box__btn::before
 {
 	opacity: 0;
 }
 
-.accordion__item._active .files-section__btn::after
+.accordion__item._active .accord-box__btn::after
 {
 	background: #3A3B55;
 }
@@ -4968,18 +4968,18 @@ a.advantages-page__item
     display: none;
 }
 
-.files-section__items
+.accord-box__items
 {
 	margin-top: 60px;
 }
 
-.files-section__item
+.accord-box__item
 {
 	padding: 30px 0;
 	border-bottom: 1px solid #E0E9EE;
 }
 
-.files-section__link
+.accord-box__link
 {
 	display: inline-block;
 	position: relative;
@@ -4992,7 +4992,7 @@ a.advantages-page__item
 	color: #8D95A1;
 }
 
-.files-section__icon
+.accord-box__icon
 {
 	position: absolute;
 	top: 0;
@@ -5008,14 +5008,14 @@ a.advantages-page__item
 	width: 16px;
 }
 
-.files-section__icon img
+.accord-box__icon img
 {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
 }
 
-.files-section__name
+.accord-box__name
 {
 	display: inline-block;
 	border-bottom: 1px solid #8D95A1;
@@ -5024,7 +5024,7 @@ a.advantages-page__item
 
 @media (any-hover: hover)
 {
-	.files-section__link:hover .files-section__name
+	.accord-box__link:hover .accord-box__name
 	{
 		border-color: transparent;
 	}
@@ -5782,6 +5782,131 @@ a.advantages-page__item
 .sales-geography__desc-text
 {
 	margin-top: 5px;
+}
+
+
+/*------------
+    career-sect
+------------*/
+
+.career-sect__top
+{
+	justify-content: space-between;
+	max-width: 1359px;
+}
+
+.career-sect__top .main-title
+{
+	flex-shrink: 0;
+	margin-right: 30px;
+}
+
+.career-sect__text
+{
+	max-width: 768px;
+}
+
+.career-sect__bg
+{
+	margin-top: 50px;
+}
+
+.career-sect__bg img
+{
+	display: block;
+	aspect-ratio: 1900 / 464;
+	width: 100%;
+	object-fit: cover;
+}
+
+.career-sect__items
+{
+	align-items: stretch;
+	align-content: stretch;
+	margin-left: -4px 0 0 -24px;
+}
+
+.career-sect__item
+{
+	width: calc(100%/3 - 24px);
+	margin: 24px 0 0 24px;
+	border-radius: 4px;
+	background: #fff;
+	padding: 30px 30px 40px;
+}
+
+.career-sect__name
+{
+	color: #3A3B55;
+	font-family: var(--font-family);
+	font-size: 26px;
+	line-height: 1.15;
+}
+
+.career-sect__desc
+{
+	margin-top: 20px;
+}
+
+
+/*------------
+    employ-process
+------------*/
+
+.employ-process__top
+{
+	justify-content: space-between;
+	max-width: 1360px;
+	margin-right: 115px;
+}
+
+.employ-process__top .main-title
+{
+	flex-shrink: 0;
+	margin-right: 30px;
+}
+
+.employ-process__text
+{
+	max-width: 622px;
+}
+
+.employ-process__slider
+{
+	margin-top: 30px;
+}
+
+.employ-process__item
+{
+	border-radius: 4px;
+	padding: 30px;
+	border: 1px solid #E0E9EE;
+	height: auto;
+}
+
+.employ-process__icon
+{
+	height: 54px;
+}
+
+.employ-process__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.employ-process__name
+{
+	margin-top: 18px;
+	color: #3A3B55;
+	font-size: 26px;
+	line-height: normal;
+}
+
+.employ-process__desc
+{
+	margin-top: 18px;
 }
 /*------------
     Footer
