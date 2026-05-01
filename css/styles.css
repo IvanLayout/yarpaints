@@ -3403,10 +3403,10 @@ a.advantages-page__item
 	align-items: flex-end;
 	align-content: flex-end;
 	flex-wrap: wrap;
-	
+
 	position: relative;
 	width: 100%;
-	/* aspect-ratio: 1 / .329; */
+	aspect-ratio: 1 / .329;
 	padding-bottom: 20px;
 	transition: padding .2s linear;
 }
