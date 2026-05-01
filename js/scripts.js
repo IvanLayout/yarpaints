@@ -324,42 +324,6 @@ $(() => {
 		})
 	}
 
-	if ($('.partners__slider').length) {
-		new Swiper(".partners__slider", {
-			spaceBetween: 100,
-			speed: 5000,
-			autoplay: {
-				delay: 0,
-				reverseDirection: false,
-				disableOnInteraction: true,
-			},
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			loop: true,
-			slidesPerView:'auto',
-			allowTouchMove: false,
-			initialSlide: 1,
-			breakpoints: {
-				'320': {
-					speed: 6000,
-				},
-				'480': {
-					speed: 3900,
-				},
-				'768': {
-					speed: 6000,
-				}
-			},
-		});
-	}
-
 	if ($('.history').length) {
 		historyThumbs = new Swiper('.history-thumbs', {
 			spaceBetween: 75,
@@ -590,6 +554,65 @@ $(window).on('load', () => {
 			items: 7,
 		})
 	}
+
+	$('.partners__slider').liMarquee({
+		direction: 'left',
+		// loop: -1,
+		scrolldelay: 0,
+		scrollamount: 100,
+		circular: true,
+		drag: true,
+		scrollamount: 40,
+	})
+
+	// if ($('.partners__slider').length) {
+	// 	new Swiper(".partners__slider", {
+	// 		loop: true,
+	// 		spaceBetween: 30,
+	// 		slidesPerView: 'auto',
+	// 		watchSlidesProgress: true,
+	// 		watchOverflow: true,
+	// 		preloadImages: false,
+	// 		lazy: {
+	// 			loadPrevNext: true,
+	// 			elementClass: 'lazyload',
+	// 			enabled: true,
+	// 			loadedClass: 'loaded',
+	// 			checkInView: true,
+	// 			loadOnTransitionStart: true
+	// 		},
+	// 		speed: 5000,
+	// 		autoplay: {
+	// 			delay: 0,
+	// 			disableOnInteraction: false,
+	// 		},
+	// 		allowTouchMove: false,
+	// 		freeMode: true,
+	// 		loopedSlides: 10,
+	// 		breakpoints: {
+	// 			'320': {
+	// 				spaceBetween: 30,
+	// 			},
+	// 			'480': {
+	// 				spaceBetween: 30,
+	// 			},
+	// 			'768': {
+	// 				spaceBetween: 100,
+	// 			},
+	// 			'1024': {
+	// 				spaceBetween: 100,
+	// 			}
+	// 		},
+	// 		on: {
+	// 			mouseenter: function () {
+	// 				this.autoplay.stop();
+	// 			},
+	// 			mouseleave: function () {
+	// 				this.autoplay.start();
+	// 			},
+	// 		}
+	// 	})
+	// }
 });
 
 

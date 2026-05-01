@@ -3583,17 +3583,15 @@ a.advantages-page__item
 .partners__slider
 {
 	margin-top: 80px;
+	position: relative;
 }
 
-.partners .swiper-wrapper
+.partners__slide
 {
-	-webkit-transition-timing-function:linear!important;
-	transition-timing-function:linear!important; 
-}
-
-.partners .swiper-slide
-{
-	width: auto;
+	max-width: 258px;
+	flex-shrink: 0;
+	position: relative;
+	margin-right: 100px;
 }
 
 .partners__status
@@ -3639,25 +3637,31 @@ a.advantages-page__item
 
     max-width: 100%;
     max-height: 100%;
+	filter: grayscale(100%) 
+          brightness(1) 
+          sepia(0.9)
+          hue-rotate(170deg)
+          saturate(0.8);
+    opacity: .4;
+	transition: filter .2s linear, opacity .2s linear;
+}
 
-    -webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-	
-	transition: filter .2s linear;
+.partners__item ._light
+{
+    opacity: 1;
+	filter: grayscale(100%) 
+          brightness(1) 
+          sepia(0.6)
+          hue-rotate(170deg)
+          saturate(0.2);
 }
 
 @media (any-hover: hover)
 {
     .partners__item:hover img
     {
-        -webkit-filter: grayscale(0%);
-           -moz-filter: grayscale(0%);
-            -ms-filter: grayscale(0%);
-             -o-filter: grayscale(0%);
-                filter: grayscale(0%);
+        filter: none;
+		opacity: 1;
     }
 }
 
