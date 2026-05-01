@@ -3190,6 +3190,29 @@ a.advantages-page__item
 	flex-shrink: 0;
 }
 
+.select-city__item{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    opacity: 0;
+}
+
+.select-city__item._active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    opacity: 1;
+
+    transition: opacity .5s linear, visibility .5s linear;
+}
+
 .select-city__top
 {
 	background: #0D1387;
