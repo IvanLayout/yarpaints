@@ -599,15 +599,17 @@ $(window).on('load', () => {
 		})
 	}
 
-	$('.partners__slider').liMarquee({
-		direction: 'left',
-		// loop: -1,
-		scrolldelay: 0,
-		scrollamount: 100,
-		circular: true,
-		drag: true,
-		scrollamount: 40,
-	})
+	// $('.').liMarquee({
+	// 	direction: 'left',
+	// 	// loop: -1,
+	// 	scrolldelay: 0,
+	// 	scrollamount: 100,
+	// 	circular: true,
+	// 	drag: true,
+	// 	scrollamount: 40,
+	// })
+
+	const marquee = new LiMarquee('.partners__slider', { speed: 60 });
 
 	// if ($('.partners__slider').length) {
 	// 	new Swiper(".partners__slider", {
