@@ -390,6 +390,7 @@ $(() => {
 			loop: false,
 			speed: 500,
 			watchOverflow: true,
+			watchSlidesProgress: true,
 			thumbs: {
 				swiper: historyThumbs
 			},

@@ -3149,18 +3149,45 @@ a.advantages-page__item
 .select-city__block
 {
 	position: relative;
-	height: 835px;
 
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	align-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+}
+
+.map-svg{
+	width: 100%;
+	max-width: 1505px;
+}
+
+.map-svg__path{
+	fill: #bedbec;
+	cursor: pointer;
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover){
+	.map-svg__path:hover{
+		fill: #0d1387;
+	}
+}
+
+.map-svg__path._active{
+	fill: #0d1387;
+}
+
+.map-svg__path._inactive{
+	cursor: default;
+	fill: #E7F1F5;
 }
 
 .select-city__wrap
 {
 	width: 375px;
+	margin-left: -192px;
+	flex-shrink: 0;
 }
 
 .select-city__top
