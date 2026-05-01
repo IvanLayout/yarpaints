@@ -5489,6 +5489,112 @@ a.advantages-page__item
 	margin-left: 15px;
 }
 
+
+/*------------
+    history-main
+------------*/
+
+.history-main__items
+{
+	margin-top: 30px;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+
+	position: relative;
+}
+
+.history-main__items::before
+{
+	position: absolute;
+	content: '';
+	top: 20px;
+	left: 50%;
+
+	display: block;
+
+	width: 1px;
+	height: calc(100% - 40px);
+	margin-left: -0.5px;
+
+	background: #CCDFE9;
+}
+
+.history-main__item
+{
+	width: 50%;
+	position: relative;
+}
+
+.history-main__item:nth-child(odd)
+{
+	padding-right: 70px;
+}
+
+.history-main__item:nth-child(even)
+{
+	padding-left: 70px;
+}
+
+.history-main__item:not(:nth-child(-n+2))
+{
+	/* padding-top: 25px; */
+	margin-top: 60px;
+}
+
+.history-main__img
+{
+	display: block;
+	max-width: 100%;
+
+	border-radius: 4px;
+	margin-top: 90px;
+}
+
+.history-main__year
+{
+	font-family: var(--font-family);
+	color: #3A3B55;
+	font-size: 48px;
+	line-height: 1;
+	letter-spacing: -0.01em;
+}
+
+.history-main__text
+{
+	margin-top: 80px;
+	max-width: 675px;
+}
+
+.history-main__circle
+{
+	position: absolute;
+	top: 10px;
+	right: -15.5px;
+
+	width: 32px;
+	height: 32px;
+
+	border-radius: 50%;
+	background: #CCDFE9;
+}
+
+.history-main__circle._active
+{
+	background: #CD1719;
+}
+
+.history-main__item:nth-child(even) .history-main__circle
+{
+	right: auto;
+	left: -15.5px;
+}
+
+.history-main__item:not(:nth-child(-n+2)) .history-main__circle
+{
+	top: 11px;
+}
+
 /*------------
     Footer
 ------------*/
