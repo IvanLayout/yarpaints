@@ -4734,6 +4734,35 @@ a.advantages-page__item
 	align-self: flex-end;
 }
 
+/*------------
+    vacancies-inner
+------------*/
+
+.vacancies-inner__items
+{
+	margin-top: 30px;
+}
+
+.vacancies-inner__item + .vacancies-inner__item
+{
+	margin-top: 35px;
+	padding-top: 50px;
+}
+
+.vacancies-inner .middle-title
+{
+	margin-bottom: 30px;
+}
+
+.vacancies-inner .accordion__data
+{
+	padding-top: 24px;
+}
+
+.vacancies-inner__btn
+{
+	margin-top: 24px;
+}
 
 /*------------
     achiev-awards
@@ -4862,6 +4891,11 @@ a.advantages-page__item
     files-section
 ------------*/
 
+.accord-box_border
+{
+	border-top: 1px solid #E0E9EE;
+}
+
 .accord-box__open
 {
 	display: flex;
@@ -4951,6 +4985,12 @@ a.advantages-page__item
     display: none;
 }
 
+.accord-box__data 
+{
+	border-bottom: 1px solid #E0E9EE;
+	padding-bottom: 24px;
+}
+
 .accord-box__items
 {
 	margin-top: 60px;
@@ -4960,6 +5000,12 @@ a.advantages-page__item
 {
 	padding: 30px 0;
 	border-bottom: 1px solid #E0E9EE;
+}
+
+.accord-box__item:last-child
+{
+	padding-bottom: 6px;
+	border-bottom: none;
 }
 
 .accord-box__link
