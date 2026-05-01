@@ -4081,8 +4081,22 @@ a.advantages-page__item
 .history__slider
 {
 	margin-top: 40px;
-	max-width: 790px;
-	width: 100%;
+	
+}
+
+.history__slider .slider-button-prev
+{
+	left: auto;
+	top: 100%;
+	right: 44px;
+	margin-top: 94px;
+}
+
+.history__slider .slider-button-next
+{
+	right: 0;
+	top: 100%;
+	margin-top: 94px;
 }
 
 .history__item
@@ -4090,6 +4104,9 @@ a.advantages-page__item
 	justify-content: space-between;
 	align-items: flex-end;
 	align-content: flex-end;
+
+	max-width: 790px;
+	width: 100%;
 }
 
 .history__bg
@@ -4221,24 +4238,6 @@ a.advantages-page__item
 		background: #B71517;
 	}
 }
-
-.history-thumbs .slider-button-prev
-{
-	left: auto;
-	top: auto;
-	right: -56px;
-	margin-top: 0;
-	bottom: 0;
-}
-
-.history-thumbs .slider-button-next
-{
-	right: -99px;
-	top: auto;
-	margin-top: 0;
-	bottom: 0;
-}
-
 
 /*------------
     stc-section

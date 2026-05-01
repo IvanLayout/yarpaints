@@ -368,19 +368,10 @@ $(() => {
 			speed: 500,
 			watchOverflow: true,
 			watchSlidesProgress: true,
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
 			breakpoints: {
 				'768': {
 					spaceBetween: 75,
 					slidesPerView:'auto',
-				}
-			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				}
 			}
 		})
@@ -394,6 +385,15 @@ $(() => {
 			thumbs: {
 				swiper: historyThumbs
 			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
 		})
 	}
 
