@@ -217,38 +217,14 @@ $(() => {
 		e.preventDefault()
 
 		if( !$(this).hasClass('_active') ) {
-			let parent = $(this).closest('.tabs-container')
-			let activeTab = $(this).data('content')
-			let activeTitle = $(this).data('content-title')
-			let level = $(this).data('level')
+			let parent = $(this).closest('.select-city__block')
+			let activeTab = $(this).data('map-item')
 
-			console.log(activeTitle)
-
-			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
-			parent.find('.tab-content.' + level).removeClass('_active')
-
-			if ( parent.hasClass('animated') ) {
-				parent.removeClass('animated')
-
-				setTimeout(function(){
-					if ( !parent.hasClass('animated') ) {
-						parent.addClass('animated')
-					}
-				},50)
-			}
+			parent.find('.map-svg__path').removeClass('_active')
+			parent.find('.select-city__item').removeClass('_active')
 
 			$(this).addClass('_active')
 			$(activeTab).addClass('_active')
-
-			if( $(this).closest('.tabs__item').length ){
-				parent.find('.tabs__item').removeClass('_active')
-				$(this).closest('.tabs__item').addClass('_active')
-			}
-
-			if( activeTitle !== 'undefined' ){
-				parent.find('.tabs__data').removeClass('_active')
-				$(activeTitle).addClass('_active')
-			}
 		}
 	})
 })
