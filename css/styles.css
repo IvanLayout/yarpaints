@@ -4906,11 +4906,10 @@ a.advantages-page__item
     display: none;
 }
 
-.accordion__item._active .accordion__data
+.files-section__items
 {
-    display: block;
+	margin-top: 60px;
 }
-
 
 .files-section__item
 {
