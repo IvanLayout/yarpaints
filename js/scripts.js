@@ -252,10 +252,6 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
