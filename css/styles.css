@@ -2454,6 +2454,7 @@ a.advantages-page__item
 .get-consult__img img
 {
 	display: block;
+	aspect-ratio: 537 / 473;
 	max-width: 100%;
 }
 
@@ -2686,6 +2687,7 @@ a.advantages-page__item
 .write-us__img img
 {
 	display: block;
+	aspect-ratio: 362 / 531;
 	max-width: 100%;
 
 	margin-left: 60px;
@@ -4076,6 +4078,7 @@ a.advantages-page__item
 .download-present__coll img
 {
 	display: block;
+	aspect-ratio: 423 / 408;
 	max-width: 100%;
 }
 
