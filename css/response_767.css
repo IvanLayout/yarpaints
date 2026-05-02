@@ -34,6 +34,94 @@
 		height: 36px;
 	}
 
+
+	.first-section{
+		padding: 80px 0;
+	}
+
+	.main-slider{
+		margin-top: 44px;
+		width: 206px;
+	}
+
+	.main-slider__product-img {
+    	width: calc(100% - 20px);
+		aspect-ratio: 1/1.2;
+	}
+
+	.main-slider__product-thumb{
+		padding-bottom: 44px;
+	}
+
+	.main-slider__product-thumb::before{
+		bottom: -16px;
+	}
+
+	.main-slider__product-thumb::after {
+		left: 51%;
+		bottom: -4px;
+	}
+
+	.main-slider__product.next, .main-slider__product.prev, .main-slider__product.last, .main-slider__product.first, .main-slider__product.last2, .main-slider__product.first2{
+		width: 73%;
+		bottom: 60px;
+	}
+
+	.main-slider__product.first
+    {
+        left: calc((73% + 180px)*-1);
+    }
+
+    .main-slider__product.prev
+    {
+        left: calc((73% + 10px)*-1);
+    }
+
+    .main-slider__product.last
+    {
+        left: calc(100% + 180px);
+    }
+
+    .main-slider__product.next
+    {
+        left: calc(100% + 10px);
+    }
+
+	.main-slider__product.first2{
+    	left: calc((73% + 350px)*-1);
+	}
+
+	.main-slider__product.last2 {
+    	left: calc(100% + 350px);
+	}
+
+	.first-section__more{
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin: 24px 0 0;
+		text-align: center;
+	}
+
+	.first-section__more a{
+		display: inline-block;
+		padding: 0 20px 0 0;
+		width: auto;
+	}
+
+	.first-section__more a::before{
+		bottom: auto;
+		top: 50%;
+		right: 0;
+		left: auto;
+		height: 10px;
+		margin-top: -5px;
+	}
+
+
+	.achievements_marg{
+		margin-top: 0;
+	}
 	/*------------
 		commit
 	------------*/
