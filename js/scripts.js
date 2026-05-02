@@ -282,7 +282,7 @@ $(() => {
 
 	if ($('.main-articles__slider').length) {
 		new Swiper(".main-articles__slider", {
-			loop: true,
+			loop: false,
 			spaceBetween: 24,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
