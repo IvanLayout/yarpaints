@@ -164,6 +164,16 @@ $(() => {
 
 	// commit
 
+	if ($('#datepicker').length) {
+		new AirDatepicker('#datepicker', {
+			container: '#datepicker-here1',
+			autoClose: true,
+			position: 'bottom left',
+			range: true,
+    		multipleDatesSeparator: '-'
+		})
+	}
+
 	if ($('.advantages__wrap').length){
 		advantagesSlider()
 	}
