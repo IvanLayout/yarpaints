@@ -3,6 +3,151 @@
 	.header__city{
 		margin-left: 40px;
 	}
+
+	.achievements__number1 {
+		top: -10px;
+		left: 34px;
+		font-size: 260px;
+	}
+
+	.achievements__number2 {
+		top: -48px;
+		right: -70px;
+		font-size: 300px;
+	}
+
+	.achievements__number3 {
+		top: -52px;
+		right: -40px;
+		font-size: 280px;
+	}
+
+	.achievements__number4 {
+		top: -52px;
+		right: -110px;
+		font-size: 280px;
+	}
+
+
+	.paints-var__item{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.paints-var__name-box {
+        width: 110px;
+    }
+
+	@media (any-hover: hover)
+	{
+		.paints-var__item:hover .paints-var__name
+		{
+			font-size: 18px;
+		}
+	}
+
+
+	.main-title{
+		font-size: 32px;
+	}
+
+	.middle-title{
+		font-size: 26px;
+	}
+
+	.advantages-page__item{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.advantages-page__icon{
+		margin-left: 20px;
+	}
+
+
+	.main-info__item{
+		padding: 20px;
+	}
+
+	.write-us__coll {
+   		width: calc(35% - 15px);
+	}
+
+	.write-us__coll-box{
+		padding-left: 0;
+	}
+
+	.write-us__colr{
+		width: calc(35% - 15px);
+	}
+
+	.write-us__desc br{
+		display: none;
+	}
+
+	.write-us__colc {
+    	width: calc(31% - 15px);
+	}
+
+	.write-us__img img{
+		margin-left: 20px;
+	}
+
+
+	.paint-suitable__item{
+		padding: 20px;
+	}
+
+	.paint-suitable__img-abc{
+		height: 120px;
+	}
+
+	.paint-suitable__info {
+    	width: calc(59% - 20px);
+	}
+
+
+	.select-city__top{
+		padding: 20px;
+	}
+
+	.select-city__info{
+		padding: 20px;
+	}
+
+	.select-city__box{
+		padding: 20px;
+	}
+
+	.select-city__wrap{
+		width: 317px;
+	}
+
+
+	.partners__slide{
+		margin-right: 60px;
+	}
+
+	.partners__status{
+		left: -15%;
+	}
+
+
+	.footer__colr {
+        width: 326px;
+    }
+
+	.footer__coll{
+		width: 230px;
+	}
+
+	.footer__contacts-phone{
+		font-size: 24px;
+	}
+
+	.footer-menu {
+        column-gap: 30px;
+    }
     /*------------
 		commit
 	------------*/
