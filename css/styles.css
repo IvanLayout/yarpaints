@@ -2076,6 +2076,32 @@ input[type=checkbox]:checked + .checkbox__text::after
 	/* min-height: 250px; */
 }
 
+.paints-var.paints-var_inner .paints-var__item
+{
+	padding-left: 1.8%;
+	padding-right: 1.8%;
+}
+
+.paints-var.paints-var_inner .paints-var__img-box
+{
+	aspect-ratio: 1 / 1;
+}
+
+.paints-var.paints-var_inner .paints-var__img-box::before
+{
+	width: 150.82%;
+}
+
+.paints-var.paints-var_inner .paints-var__img-box::after
+{
+	width: 84%;
+}
+
+.paints-var.paints-var_inner .paints-var__name-box
+{
+	width: 275px;
+}
+
 .paints-var__bg-box
 {
 	position: absolute;
@@ -5725,7 +5751,6 @@ a.advantages-page__item
 
 .history-main__item:not(:nth-child(-n+2))
 {
-	/* padding-top: 25px; */
 	margin-top: 60px;
 }
 
@@ -6118,6 +6143,137 @@ a.advantages-page__item
 .app-quest__form .form__submit 
 {
     margin-top: 30px;
+}
+
+/*------------
+    brand-guide
+------------*/
+
+.brand-guide__item
+{
+	height: auto;
+	background: #fff;
+	padding: 20px;
+}
+
+.brand-guide__logo
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	height: 46px;
+	text-decoration: none;
+}
+
+.brand-guide__logo img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.brand-guide__list
+{
+	margin-top: 18px;
+}
+
+.brand-guide__list li
+{
+	list-style: none;
+	padding-left: 14px;
+	position: relative;
+}
+
+.brand-guide__list li:before
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+
+	display: block;
+
+	width: 4px;
+	height: 4px;
+
+	border-radius: 50%;
+	background: #CD1719;
+}
+
+.brand-guide__list li + li
+{
+	margin-top: 5px;
+}
+
+.brand-guide__list li a
+{
+	text-decoration: none;
+	color: #8D95A1;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.brand-guide__list li a:hover
+	{
+		color: #B71517;
+	}
+}
+
+
+.accord__data
+{
+	display: none;
+}
+
+
+.brand-guide__open
+{
+	background: #fff;
+	border: 1px solid #E0E9EE;
+	text-align: center;
+	padding: 15px 15px;
+	color: #3A3B55;
+
+	font-family: var(--font-family);
+	line-height: 1.15;
+
+	cursor: pointer;
+}
+
+.brand-guide__open span
+{
+	position: relative;
+	display: inline-block;
+	padding-right: 23px;
+}
+
+.brand-guide__open span::after
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	right: 0;
+
+	display: block;
+
+	width: 13px;
+	height: 8px;
+
+	background: url(../images/ic_arrow3.svg) 50% no-repeat;
+}
+
+.accord__item._active .brand-guide__open span::after
+{
+	transform: rotate(180deg);
+}
+
+.brand-guide__data
+{
+	padding-top: 20px;
 }
 /*------------
     Footer
