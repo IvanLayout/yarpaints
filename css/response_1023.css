@@ -1,22 +1,40 @@
 @media (max-width: 1023px)
 {
-	.header__city{
+	._lock-menu{
+		overflow: hidden;
+	}
+
+	.header__top{
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.header__top .cont{
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+
+	.header__top .header__city{
 		display: none;
 	}
 
-	.header__change{
+	.header__top .header__change{
 		display: none;
 	}
 
-	.header__phone a{
+	.header__contacts{
+		gap: 10px;
+	}
+
+	.header__top .header__phone a{
 		font-size: 0;
-		width: 36px;
-		height: 36px;
+		width: 40px;
+		height: 40px;
 		display: block;
 		padding: 0;
 	}
 
-	.header__phone a::before{
+	.header__top .header__phone a::before{
 		left: 0;
 		top: 0;
 		margin-top: 0;
@@ -26,28 +44,236 @@
 		height: 100%;
 	}
 
-	.header__mail{
+	.header__top .header__mail{
 		display: none;
 	}
 
 	.header .btn-red{
-		line-height: 36px;
+		line-height: 40px;
 		padding: 0 20px;
 		font-size: 12px;
 	}
 
-	.header__btn{
-		width: 36px;
-		height: 36px;
+	.header__btns{
+		margin-left: 10px;
+		gap: 10px;
 	}
 
+	.header__btn{
+		width: 40px;
+		height: 40px;
+	}
+	
+	.mob-menu-btn{
+		border: 1px solid #e0e7ee;
+		border-radius: 4px;
+		padding: 10px 12px;
+		padding: 0 45px 0 11px;
+		height: 40px;
+		display: block;
+
+		font-size: 12px;
+		line-height: normal;
+		color: #3a3b55;
+		margin-left: 10px;
+		position: relative;
+	}
+
+	.mob-menu-btn__burger{
+		position: absolute;
+		right: 13px;
+		top: 50%;
+		width: 26px;
+		height: 26px;
+		margin-top: -13px;
+		position: absolute;
+		right: 11px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.mob-menu-btn__burger span{
+		display: block;
+		width: 100%;
+		height: 2px;
+		border-radius: 1px;
+		background: #3A3B55;
+	}
+
+	.mob-menu-btn__burger span + span{
+		margin-top: 5px;
+	}
+
+	.mob-menu-btn__burger span:nth-child(2n){
+		width: 18px;
+	}
 
 	.header__bot{
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
 		width: 100%;
+		height: 100%;
+		background: #fff;
+		padding: 72px 0 20px;
+		overflow: hidden;
+		overflow-y: auto;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity .2s linear, visibility .2s linear;
+	}
+
+	.header__bot._show{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.close-menu-btn{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 24px;
+		height: 24px;
+		background: url(../images/ic_close.svg) 50% no-repeat;	
+	}
+
+	.header__bot-top{
+		display: block;
+		padding-bottom: 20px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		z-index: 10;
+	}
+
+	.header__logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.header__menu{
+		display: block;
+		margin-top: 20px;
+	}
+
+	.header__menu-item{
+		margin-top: 20px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.header__menu-item_ind{
 		display: none;
+	}
+
+	.header__menu-item_biz{
+		display: none;
+	}
+	
+	.header__menu-item_biz._show{
+		display: flex;
+	}
+
+	.header__menu-link{
+		line-height: 1.3;
+		font-size: 16px;
+	}
+
+	.header__menu-link_opt{
+		line-height: 40px;
+		padding: 0 20px;
+	}
+
+	.header__bot-contacts{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.header__bot-contacts{
+		margin-top: 40px;
+	}
+
+	.header__city{
+		margin-left: 0;
+
+		line-height: 1.3;
+	}
+
+	.header__city span{
+		border: none;
+	}
+
+	.header__phone{
+		line-height: 1.3;
+	}
+
+	.header__mail{
+		line-height: 1.3;
+		padding-left: 23px;
+		text-align: left;
+		margin-top: 5px;
+	}
+
+	.header__bot .header__change{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		gap: 0;
+		margin-top: 20px;
+	}
+
+	.header__change{
+		border: 1px solid #8D95A1;
+		border-radius: 2px;
+		width: 100%;
+		margin: 0;
+		padding: 2px;
+
+		font-size: 14px;
+		line-height: 38px;
+		color: #3A3B55;
+	}
+
+	.header__change span{
+		display: block;
+		width: calc(50% - 3px/2);
+		border-radius: 2px;
+		color: #fff;
+		background: #CD1719;
+	}
+
+	.header__change span + span{
+		color: #3A3B55;
+		background: transparent;
+	}
+
+	.header__change._active span{
+		color: #3A3B55;
+		background: transparent;
+	}
+
+	.header__change._active span + span{
+		color: #fff;
+		background: #CD1719;
 	}
 
 

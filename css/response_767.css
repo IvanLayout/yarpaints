@@ -4,6 +4,36 @@
 		font-size: 32px;
 	}
 
+	.header__top .cont{
+		justify-content: space-between;
+	}
+
+	.header__top .header__contacts{
+		order: 2;
+		margin-left: 0;
+		width: calc(100% - 120px);
+		margin-top: 20px;
+	}
+
+	.header__top .header__phone a{
+		width: 36px;
+		height: 36px;
+	}
+
+	.header .btn-red{
+		line-height: 36px;
+	}
+
+	.header__btns{
+		order: 2;
+		margin-top: 20px;
+	}
+
+	.header__btn {
+		width: 36px;
+		height: 36px;
+	}
+
 	/*------------
 		commit
 	------------*/

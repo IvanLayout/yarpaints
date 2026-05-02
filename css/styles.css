@@ -565,9 +565,25 @@ button
 	border-radius: 0 4px 2px 2px;
 }
 
+.mob-menu-btn{
+	display: none;
+}
+
 .header__bot{
 	padding: 13px 0;
 	background: rgba(239, 247, 250, 0.45);
+}
+
+.header__bot .header__change{
+	display: none;
+}
+
+.header__bot-top{
+	display: none;
+}
+
+.header__bot-contacts{
+	display: none;
 }
 
 .header__menu{

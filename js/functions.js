@@ -227,6 +227,22 @@ $(() => {
 			$(activeTab).addClass('_active')
 		}
 	})
+
+
+	// Моб. меню
+	$('body').on('click', '.mob-menu-btn', function(e) {
+		e.preventDefault()
+
+		$('.header__bot').addClass('_show')
+		$('body').addClass('_lock-menu')
+	})
+
+	$('body').on('click', '.close-menu-btn', function(e) {
+		e.preventDefault()
+
+		$('.header__bot').removeClass('_show')
+		$('body').removeClass('_lock-menu')
+	})
 })
 
 
