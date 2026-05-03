@@ -20,6 +20,118 @@
 	.page-title{
 		font-size: 62px;
 	}
+
+	.paints-var__item {
+		width: calc(100% / 2 - 24px);
+	}
+
+	.advantages__top{
+		flex-wrap: wrap;
+	}
+
+	.advantages__top .main-title br{
+		display: none;
+	}
+
+	.advantages__top-desc{
+		width: 100%;
+		max-width: none;
+		margin: 20px 0 0;
+	}
+
+
+	.new-partners__bg{
+		min-height: 1px;
+		padding: 60px 20px;
+	}
+
+	.main-info__title{
+		font-size: 20px;
+	}
+
+	.write-us__coll{
+		padding-top: 80px;
+		width: calc(41% - 15px);
+	}
+
+	.write-us__colc {
+		width: calc(25% - 15px);
+	}
+
+	.write-us__img {
+		aspect-ratio: 1 / 1.5;
+	}
+
+	.write-us__colr{
+		padding: 80px 0 120px;
+	}
+
+	.reviews__coll {
+		width: calc(50% - 15px);
+	}
+
+	.reviews__colr {
+		width: calc(50% - 15px);
+	}
+
+	.paint-suitable__grid._flex .paint-suitable__item {
+		width: calc(100% / 2 - 24px);
+	}
+
+
+	.main-form__cols{
+		margin-left: 0;
+	}
+
+	.main-form__title{
+		margin-top: 0;
+	}
+
+	.main-form .form__bot{
+		flex-wrap: wrap;
+	}
+
+	.main-form .form__agree{
+		width: 100%;
+	}
+
+	.main-form .form__submit{
+		margin: 20px 0 0;
+	}
+
+	.main-form__bg{
+		background: #23809E;
+	}
+
+	.main-form__img {
+		object-position: 24% 50%;
+	}
+
+	.main-form__img.loaded{
+		opacity: .5;
+	}
+
+
+	.partners__slide{
+		margin-right: 50px;
+	}
+
+	.partners__status
+	{
+		left: -12%;
+		font-size: 12px;
+		line-height: 24px;
+		padding-left: 14px;
+		padding-right: 14px;
+		margin-bottom: 10px;
+	}
+
+
+	.footer__colr{
+		width: 100%;
+		padding-top: 0;
+		margin-top: 30px;
+	}
 	/*------------
 		commit
 	------------*/
