@@ -55,12 +55,16 @@
 		font-size: 26px;
 	}
 
-	.advantages-page__item{
+	.reviews__title{
+		font-size: 30px;
+	}
+
+	.advantages__item{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 
-	.advantages-page__icon{
+	.advantages__icon{
 		margin-left: 20px;
 	}
 

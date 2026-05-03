@@ -178,6 +178,10 @@ $(() => {
 		advantagesSlider()
 	}
 
+	if ($('.paint-suitable__wrap').length){
+		paintSuitableSlider()
+	}
+
 	if ($('.reviews__slider').length) {
 		new Swiper(".reviews__slider", {
 			loop: true,
@@ -205,7 +209,7 @@ $(() => {
 	if ($('.projects__slider').length) {
 		new Swiper(".projects__slider", {
 			loop: false,
-			spaceBetween: 24,
+			spaceBetween: 10,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -224,14 +228,16 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 15,
-					slidesPerView: 2
+					spaceBetween: 20,
+					slidesPerView: 1
 				},
 				'1024': {
 					spaceBetween: 24,
@@ -293,7 +299,7 @@ $(() => {
 	if ($('.main-articles__slider').length) {
 		new Swiper(".main-articles__slider", {
 			loop: false,
-			spaceBetween: 24,
+			spaceBetween: 10,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -312,13 +318,15 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 20,
 					slidesPerView: 2
 				},
 				'1024': {
@@ -789,20 +797,77 @@ $(window).on('resize', () => {
 	if ($('.advantages__wrap').length){
 		advantagesSlider()
 	}
+
+	if ($('.paint-suitable__wrap').length){
+		paintSuitableSlider()
+	}
 });
 
 
 function advantagesSlider(){
-	if ( $(window).width() < 768 && !$('.advantages__wrap').hasClass('swiper-initialized') ) {
+	if ( $(window).width() < 1024 && !$('.advantages__wrap').hasClass('swiper-initialized') ) {
 		$('.advantages__wrap').addClass('swiper')
 		$('.advantages__grid').addClass('swiper-wrapper').removeClass('_flex')
 		$('.advantages__item').addClass('swiper-slide')
 
-		advantagesSliderImg2 = new Swiper('.advantages__wrap', {
-			loop: true,
+		advantagesSwiperSlider = new Swiper('.advantages__wrap', {
+			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 16,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+				},
+				'480': {
+					spaceBetween: 10,
+				},
+				'768': {
+					spaceBetween: 20,
+				}
+			},
+		})
+	} else if ($(window).width() > 1023 && $('.advantages__wrap').hasClass('swiper-initialized')) {
+		if ($('.advantages__wrap').length === 1 && $('.advantages__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.destroy(true, true)
+		} else if ($('.advantages__wrap').length >= 2 && $('.advantages__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.advantages__wrap').removeClass('swiper')
+		$('.advantages__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.advantages__item').removeClass('swiper-slide')
+	}
+}
+
+
+function paintSuitableSlider(){
+	if ( $(window).width() < 1024 && !$('.paint-suitable__wrap').hasClass('swiper-initialized') ) {
+		$('.paint-suitable__wrap').addClass('swiper')
+		$('.paint-suitable__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.paint-suitable__item').addClass('swiper-slide')
+
+		paintSuitableSwiperSlider = new Swiper('.paint-suitable__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			preloadImages: false,
 			lazy: {
@@ -813,19 +878,37 @@ function advantagesSlider(){
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				}
 			},
 		})
-	} else if ($(window).width() > 767 && $('.advantages__wrap').hasClass('swiper-initialized')) {
-		advantagesSliderImg2.destroy(true, true)
+	} else if ($(window).width() > 1023 && $('.paint-suitable__wrap').hasClass('swiper-initialized')) {
+		if ($('.paint-suitable__wrap').length === 1 && $('.paint-suitable__wrap').hasClass('swiper-initialized')) {
+			paintSuitableSwiperSlider.destroy(true, true)
+		} else if ($('.paint-suitable__wrap').length >= 2 && $('.paint-suitable__wrap').hasClass('swiper-initialized')) {
+			paintSuitableSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
 
-		$('.advantages__wrap').removeClass('swiper')
-		$('.advantages__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('.advantages__item').removeClass('swiper-slide')
+		$('.paint-suitable__wrap').removeClass('swiper')
+		$('.paint-suitable__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.paint-suitable__item').removeClass('swiper-slide')
 	}
 }
+
