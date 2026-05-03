@@ -733,8 +733,7 @@ button
 
     color: #3A3B55;
     font-size: 14px;
-    line-height: 40px;
-	height: 40px;
+    line-height: 38px;
 
     display: inline-block;
 
@@ -6393,7 +6392,302 @@ a.advantages-page__item
 	line-height: 1.42;
 }
 
+/*---------------
+	Tabs
+---------------*/
 
+.tab-content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    opacity: 0;
+}
+
+.tab-content._active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    opacity: 1;
+
+    transition: opacity .5s linear;
+}
+
+/*------------
+    brand-info
+------------*/
+
+.brand-info__cols
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+
+	margin-top: 48px;
+}
+
+.brand-info__coll
+{
+	width: 272px;
+}
+
+.brand-info__tabs-btn
+{
+	color: #3A3B55;
+	font-family: var(--font-family);
+	line-height: 1.15;
+	font-size: 26px;
+	padding: 34px 0;
+	display: block;
+	text-align: left;
+	width: 100%;
+	position: relative;
+	transition: color .2s linear;
+}
+
+.brand-info__tabs-btn span
+{
+	display: inline-block;
+	position: relative;
+	padding-left: 0;
+	transition: padding .2s linear;
+}
+
+.brand-info__tabs-btn span::before
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+
+	display: block;
+
+	width: 14px;
+	height: 16px;
+
+	opacity: 0;
+
+	background: url(../images/ic_arrow_red2.svg) 50% no-repeat;
+
+	transition: opacity .2s linear;
+}
+
+.brand-info__tabs-btn + .brand-info__tabs-btn
+{
+	border-top: 1px solid #E0E9EE;
+}
+
+.brand-info__tabs-btn:first-child
+{
+	padding-top: 0;
+}
+
+.brand-info__tabs-btn:last-child
+{
+	padding-bottom: 0;
+}
+
+.brand-info__tabs-btn._active span
+{
+	padding-left: 29px;
+}
+
+.brand-info__tabs-btn._active span::before
+{
+	opacity: 1;
+}
+
+@media (any-hover: hover)
+{
+	.brand-info__tabs-btn:hover
+	{
+		color: #B71517;
+	}
+}
+
+.brand-info__tabs-btn._active:hover
+{
+	color: #3A3B55;
+}
+
+
+.brand-info__colr
+{
+	width: calc(100% - 296px);
+}
+
+.brand-info__item
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: wrap;
+}
+
+.brand-info__box-img
+{
+	width: calc(39.84% - 12px);
+}
+
+.brand-info__img
+{
+	background: #fff;
+	border-radius: 4px;
+	padding: 14%;
+	aspect-ratio: 1 / .752;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	text-decoration: none;
+}
+
+.brand-info__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.brand-info__box-info
+{
+	width: calc(60.16% - 12px);
+	max-width: 760px;
+	margin-left: 24px;
+}
+
+.brand-info__logo img
+{
+	display: block;
+	max-width: 100%;
+}
+
+.brand-info__desc
+{
+	margin-top: 20px;
+}
+
+.brand-info__icons
+{
+	margin: 10px 0 0 -10px;
+}
+
+.brand-info__icon
+{
+	border-radius: 4px;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 8px;
+
+	margin: 10px 0 0 10px;
+}
+
+.brand-info__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.brand-info__bot
+{
+	margin-top: 18px;
+	padding-top: 25px;
+	max-width: 641px;
+	border-top: 1px solid #E0E9EE;
+
+	justify-content: space-between;
+}
+
+.brand-info__bot-col
+{
+	width: calc(50% - 12px);
+	max-width: 295px;
+}
+
+.brand-info__bot-title
+{
+	color: #3A3B55;
+	font-family: var(--font-family);
+}
+
+.brand-info__bot-item + .brand-info__bot-item
+{
+	margin-top: 25px;
+}
+
+.brand-info__bot-desc
+{
+	margin-top: 10px;
+}
+
+.brand-info__list
+{
+	margin-top: 10px;
+}
+
+.brand-info__list li
+{
+	list-style: none;
+	padding-left: 14px;
+	position: relative;
+}
+
+.brand-info__list li:before
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+
+	display: block;
+
+	width: 4px;
+	height: 4px;
+
+	border-radius: 50%;
+	background: #CD1719;
+}
+
+.brand-info__list li + li
+{
+	margin-top: 5px;
+}
+
+.brand-info__btns
+{
+	margin-left: -20px;
+}
+
+.brand-info__btns a
+{
+	margin: 20px 0 0 20px;
+}
+
+.brand-info__note
+{
+	margin-top: 47px;
+	padding-top: 47px;
+	border-top: 1px solid #E0E9EE;
+}
 
 /*------------
 @media (any-hover: hover)
