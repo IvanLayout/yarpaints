@@ -858,6 +858,10 @@
 	.footer__policy{
 		margin-right: 0;
 	}
+
+	.form__agree a{
+		border-bottom-color: currentColor;
+	}
 	/*------------
 		commit
 	------------*/
