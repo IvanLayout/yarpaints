@@ -2098,6 +2098,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .paints-var.paints-var_inner .paints-var__name-box
 {
 	width: 275px;
+	padding-bottom: 10px;
 }
 
 .paints-var__bg-box
@@ -6295,6 +6296,112 @@ a.advantages-page__item
 {
 	padding-top: 20px;
 }
+
+/*------------
+    products
+------------*/
+
+.products__slider
+{
+	margin-top: 30px;
+}
+
+.products__item
+{
+	border-radius: 6px;
+	background: #fff;
+	padding: 20px;
+
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.products__title
+{
+	padding: 10px 10px 20px;
+	color: #3A3B55;
+	font-family: var(--font-family);
+	font-size: 32px;
+	letter-spacing: -0.01em;
+}
+
+.products__box
+{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #E0E9EE;
+}
+
+.products__thumb 
+{
+    text-decoration: none;
+    aspect-ratio: 1 / .72;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+}
+
+.products__img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.products__type
+{
+	margin-top: 20px;
+	color: #3A3B55;
+	opacity: .5;
+}
+
+.products__name
+{
+	margin-top: 10px;
+
+	font-family: var(--font-family);
+	font-size: 26px;
+	line-height: 1.15;
+
+	flex: 1 0 auto;
+}
+
+.products__name a
+{
+	text-decoration: none;
+	color: #3A3B55;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.products__name a:hover
+	{
+		color: #B71517;
+	}
+}
+
+.products__purpose
+{
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.42;
+}
+
+
+
+/*------------
+@media (any-hover: hover)
+{
+	
+}
+------------*/
+
 /*------------
     Footer
 ------------*/
