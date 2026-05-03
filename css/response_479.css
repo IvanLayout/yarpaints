@@ -1,5 +1,92 @@
 @media (max-width: 479px)
 {
+	.achievements__item {
+		min-height: 200px;
+	}
+
+	.achievements__number1 {
+		top: -6px;
+		left: 15px;
+		font-size: 140px;
+    }
+
+	.achievements__number2 {
+		top: -22px;
+		right: -36px;
+		font-size: 138px;
+	}
+	
+	.achievements__number3 {
+		top: -17px;
+		right: -19px;
+		font-size: 135px;
+	}
+
+	.achievements__number4 {
+		top: -17px;
+		right: -37px;
+		font-size: 135px;
+	}
+
+	.achievements__info-w{
+		min-width: 1px;
+	}
+
+	.achievements__name{
+		font-size: 26px;
+		line-height: 1.2;
+	}
+
+	.achievements__item:first-child .achievements__desc{
+		font-size: 12px;
+	}
+
+	.achievements__desc{
+		font-size: 14px;
+		line-height: 1.3;
+		margin-top: 10px;
+	}
+
+	.achievements__map-img{
+		right: auto;
+		left: 60px;
+		top: -110px;
+	}
+
+	.achievements__desc-size{
+		max-width: 165px;
+	}
+
+
+	.new-partners__desc{
+		max-width: 220px;
+	}
+
+	.main-info__info{
+		margin-top: 20px;
+		line-height: 1.3;
+	}
+
+	.text-block p{
+		margin-bottom: 19px;
+	}
+
+	.main-info__info p + p{
+		margin-top: 19px;
+	}
+
+	.main-info__btn{
+		padding-top: 20px;
+	}
+
+
+	.write-us__desc{
+		line-height: 1.3;
+	}
+
+	.main-form__title{
+		line-height: 1.2;
+	}
 	/*------------
 		commit
 	------------*/

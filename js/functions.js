@@ -212,6 +212,9 @@ $(() => {
 		})
 	})
 
+	// Кастомный select
+	$('.select-wrap select').niceSelect()
+
 	$('body').on('click', '.header__change', function(e) {
 		e.preventDefault();
 
@@ -229,7 +232,9 @@ $(() => {
 	})
 
 	$('body').on('click', '.map-svg__path:not(._inactive)', function(e) {
-		e.preventDefault()
+		// e.preventDefault()
+
+		console.log('asd')
 
 		if( !$(this).hasClass('_active') ) {
 			let parent = $(this).closest('.select-city__block')
@@ -242,7 +247,16 @@ $(() => {
 			$(activeTab).addClass('_active')
 		}
 	})
+	
+	$('.select-city .list_item').click(function(e){
+		let dataVal = $(this).data('value');
 
+		let el = $(this);
+
+		setTimeout(function() {
+			el.closest('.select-city').find('.map-svg__path[data-map-item="#' + dataVal + '"]').trigger('click');
+		}, 0);
+	});
 
 	// Моб. меню
 	$('body').on('click', '.mob-menu-btn', function(e) {

@@ -968,7 +968,7 @@ function paintSuitableSlider(){
 				},
 				'480': {
 					spaceBetween: 10,
-					slidesPerView: 2,
+					slidesPerView: 1,
 				},
 				'768': {
 					spaceBetween: 20,
