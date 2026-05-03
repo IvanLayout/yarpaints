@@ -807,6 +807,11 @@ button
 	line-height: normal;
 }
 
+.breadcrumbs_pad
+{
+	padding: 25px 0;
+}
+
 .breadcrumbs a
 {
     color: #8D95A1;
@@ -951,7 +956,7 @@ button
 
 .text-block a
 {
-    color: #363B3F;
+    color: #8D95A1;
 
     text-decoration: none;
 
@@ -968,7 +973,7 @@ button
     }
 }
 
-.text-block h2 + ul,
+/* .text-block h2 + ul,
 .text-block h3 + ul,
 .text-block h4 + ul,
 .text-block h2 + ol,
@@ -976,7 +981,7 @@ button
 .text-block h4 + ol
 {
 	margin-top: -10px;
-}
+} */
 
 .text-block ul
 {
@@ -999,6 +1004,10 @@ button
     margin-top: -16px;
 }
 
+.text-block ol.text-block__ol-abc
+{
+	list-style-type: lower-alpha;
+}
 
 /*------------------
     Form elements
