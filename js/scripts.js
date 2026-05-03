@@ -728,6 +728,50 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.cats-inner__slider').length) {
+		new Swiper(".cats-inner__slider", {
+			loop: false,
+			spaceBetween: 24,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+				},
+				'480': {
+					spaceBetween: 15,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				'1024': {
+					spaceBetween: 24,
+					slidesPerView: 7
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	}
 });
 
 
