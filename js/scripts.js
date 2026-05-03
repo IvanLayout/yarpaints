@@ -685,6 +685,41 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.banner-slider').length) {
+		new Swiper(".banner-slider", {
+			loop: true,
+			spaceBetween: 24,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+				},
+				'480': {
+					spaceBetween: 15,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				'1024': {
+					spaceBetween: 24,
+					slidesPerView: 3
+				}
+			}
+		})
+	}
 });
 
 
