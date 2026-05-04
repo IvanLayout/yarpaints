@@ -483,6 +483,17 @@
 	}
 
 
+	.our-team__grid {
+		margin-left: -10px;
+		gap: 10px 0;
+	}
+
+	.our-team__grid .our-team__item {
+		width: calc(100% / 2 - 10px);
+		margin-left: 10px;
+	}
+
+
 	.footer__coll{
 		width: 284px;
 		padding-top: 0;

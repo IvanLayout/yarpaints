@@ -239,7 +239,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 1
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 2
 				}
@@ -281,7 +281,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 1
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 1
 				}
@@ -329,7 +329,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -410,7 +410,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -454,7 +454,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -535,7 +535,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				},
@@ -610,7 +610,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -654,7 +654,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 6
 				}
@@ -698,7 +698,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -738,7 +738,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -777,7 +777,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 7
 				}
@@ -969,7 +969,7 @@ function ourTeamSlider(){
 
 		$('.our-team__slider').addClass('swiper')
 		$('.our-team__slider-wrap').addClass('swiper-wrapper').removeClass('wheelSlider-container')
-		$('.our-team__slide').addClass('swiper-slide').removeClass('wheelSlider-item')
+		$('.our-team__item').addClass('swiper-slide').removeClass('wheelSlider-item')
 
 		ourTeamSwiperSlider = new Swiper('.our-team__slider', {
 			loop: false,
@@ -1013,7 +1013,7 @@ function ourTeamSlider(){
 
 		$('.our-team__slider').removeClass('swiper')
 		$('.our-team__slider-wrap').removeClass('swiper-wrapper').addClass('wheelSlider-container')
-		$('.our-team__slide').removeClass('swiper-slide').addClass('wheelSlider-item')
+		$('.our-team__item').removeClass('swiper-slide').addClass('wheelSlider-item')
 
 		if (!$('.our-team__slider-wrap').hasClass('loaded')) {
 			$('.our-team__slider-wrap').wheelSlider({
