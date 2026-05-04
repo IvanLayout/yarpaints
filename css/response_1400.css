@@ -193,4 +193,32 @@
 	{
 		font-size: 32px;
 	}
+
+
+	.stc-info .employee-item__info 
+	{
+		padding: 20px;
+	}
+
+	.employee-item__name
+	{
+		font-size: 28px;
+	}
+
+	.stc-info__val
+	{
+		font-size: 56px;
+	}
+
+
+	.get-consult .stc-services__name
+	{
+		font-size: 24px;
+	}
+
+
+	.form-recommend__title 
+	{
+        font-size: 36px;
+    }
 }

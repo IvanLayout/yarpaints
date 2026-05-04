@@ -18,4 +18,37 @@
 	{
         margin-left: 2%;
     }
+
+
+	.stc-info__img-val
+	{
+		font-size: 220px;
+		top: -32px;
+	}
+
+	.employee-item__name 
+	{
+		font-size: 26px;
+	}
+
+	.employee-item__spec
+	{
+		font-size: 14px;
+	}
+
+	.development__fact-title 
+	{
+        font-size: 26px;
+    }
+
+	.development__fact-val 
+	{
+        font-size: 32px;
+    }
+
+	.development__fact-img 
+	{
+		right: -20px;
+		aspect-ratio: 1 / .9;
+	}
 }

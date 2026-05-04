@@ -181,4 +181,58 @@
 	{
 		padding-left: 50px;
 	}
+
+
+	.stc-info__coll 
+	{
+		width: calc(37% - 12px);
+	}
+
+	.stc-info__colr 
+	{
+		width: calc(63% - 12px);
+	}
+
+	.stc-info__wrap
+	{
+		margin-top: 5px;
+	}
+
+	.stc-info__item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	.stc-info__val 
+	{
+		font-size: 50px;
+	}
+
+	.stc-info__name
+	{
+		margin-top: 40px;
+	}
+
+	.stc-info__img-val 
+	{
+		font-size: 200px;
+		top: -35px;
+	}
+
+	.development__item
+	{
+		width: calc(50% - 5px);
+	}
+
+	.get-consult .stc-services__name 
+	{
+		font-size: 20px;
+	}
+
+	.form-recommend__title 
+	{
+		font-size: 30px;
+	}
 }

@@ -2584,7 +2584,7 @@ a.advantages__item
 	height: 56px;
 
 	flex-shrink: 0;
-	margin-left: 30px;
+	margin-left: 20px;
 
 	display: flex;
 	justify-content: center;
@@ -5872,7 +5872,8 @@ a.advantages__item
 {
 	position: absolute;
 	top: -44px;
-	/* right: -90px; */
+	left: 50%;
+	margin-left: 30px;
 	font-family: var(--font-family);
 	font-size: 256px;
 	line-height: 1;
@@ -5998,11 +5999,15 @@ a.advantages__item
 	right: 25px;
 
 	display: block;
+
+	aspect-ratio: 1 / 1;
 }
 
 .development__fact-img img
 {
 	display: block;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .development__fact-info
@@ -7524,6 +7529,23 @@ a.advantages__item
 	
 }
 
+@media (max-width: 1800px)
+{
+	.advantages__slider .advantages__item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 1580px)
+{
+	.advantages__slider .advantages__name
+	{
+		font-size: 16px;
+	}
+}
+
 @media (max-width: 1499px)
 {
 	.footer-menu {
@@ -7568,5 +7590,40 @@ a.advantages__item
 	.confessions__item._big .confessions__big-year 
 	{
 		font-size: 60px;
+	}
+
+
+	.development__fact
+	{
+		padding: 25px;
+	}
+
+	.development__fact-title
+	{
+		font-size: 30px;
+	}
+
+	.development__fact-val
+	{
+		font-size: 36px;
+	}
+
+
+	.get-consult .stc-services__name
+	{
+		font-size: 28px;
+		padding-left: 30px;
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
+
+	.get-consult .stc-services__name::after
+	{
+		margin-top: 1px;
+	}
+
+	.form-recommend__title
+	{
+		font-size: 40px;
 	}
 }
