@@ -478,6 +478,11 @@
 	}
 
 
+	.tabs._flex{
+		gap: 10px;
+	}
+
+
 	.footer__coll{
 		width: 284px;
 		padding-top: 0;

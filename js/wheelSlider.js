@@ -54,6 +54,25 @@
         * = PRIVATE FUNCTIONS
         * ===================================================================================
         */
+       el.destroy = function() {
+            if (!slider.initialized) return;
+            el.stopAuto();
+
+            $(window).off('resize', resizeWindow);
+            el.off('touchstart touchend mousedown mouseup click');
+            
+            if (slider.controls.next) slider.controls.next.remove();
+            if (slider.controls.prev) slider.controls.prev.remove();
+            if (slider.dots.length) slider.dots.remove();
+
+            $el.removeClass('loaded with_dots').removeAttr('style');
+            slider.children.removeClass('now next prev first last first2 last2').removeAttr('style');
+
+            $el.removeData('wheelSlider');
+
+            slider.initialized = false;
+        };
+
         var init = function() {
             slider.settings = $.extend({}, defaults, options)
             slider.children = $el.find('.' + slider.settings.itemClass)
