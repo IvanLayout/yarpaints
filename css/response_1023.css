@@ -955,6 +955,22 @@
 		width: calc(100% / 3 - 20px);
 		margin-left: 20px;
 	}
+
+	.teams-leed__coll{
+		width: 45%;
+	}
+	
+	.teams-leed__colr{
+		width: 55%;
+	}
+
+	.teams-leed__slider .swiper-slide {
+		min-height: 200px;
+	}
+
+	.teams-leed__img{
+		top: 20px;
+	}
 	/*------------
 		commit
 	------------*/
