@@ -239,7 +239,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 1
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 2
 				}
@@ -281,7 +281,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 1
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 1
 				}
@@ -329,7 +329,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -414,7 +414,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -458,7 +458,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -473,8 +473,9 @@ $(() => {
 
 	if ($('.development__slider').length) {
 		new Swiper(".development__slider", {
-			loop: false,
-			spaceBetween: 24,
+			loop: true,
+			loopAdditionalSlides: 1,
+			spaceBetween: 0,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -487,15 +488,23 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
+			effect: 'creative',
+			creativeEffect: {
+				prev: {
+					translate: ['-39.5%', 0, -500],
+					rotate: [0, 0, 0],
+					// opacity: 0.1,
+				},
+				next: {
+					translate: ['39.5%', 0, -500],
+					rotate: [0, 0, 0],
+					// opacity: 0.1,
+				},
+			},
 			navigation: {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
-			}
 		})
 	}
 
@@ -530,7 +539,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				},
@@ -605,7 +614,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -649,7 +658,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 6
 				}
@@ -693,7 +702,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -733,7 +742,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -772,7 +781,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1024': {
+				'1023': {
 					spaceBetween: 24,
 					slidesPerView: 7
 				}
@@ -964,7 +973,7 @@ function ourTeamSlider(){
 
 		$('.our-team__slider').addClass('swiper')
 		$('.our-team__slider-wrap').addClass('swiper-wrapper').removeClass('wheelSlider-container')
-		$('.our-team__slide').addClass('swiper-slide').removeClass('wheelSlider-item')
+		$('.our-team__item').addClass('swiper-slide').removeClass('wheelSlider-item')
 
 		ourTeamSwiperSlider = new Swiper('.our-team__slider', {
 			loop: false,
@@ -1008,7 +1017,7 @@ function ourTeamSlider(){
 
 		$('.our-team__slider').removeClass('swiper')
 		$('.our-team__slider-wrap').removeClass('swiper-wrapper').addClass('wheelSlider-container')
-		$('.our-team__slide').removeClass('swiper-slide').addClass('wheelSlider-item')
+		$('.our-team__item').removeClass('swiper-slide').addClass('wheelSlider-item')
 
 		if (!$('.our-team__slider-wrap').hasClass('loaded')) {
 			$('.our-team__slider-wrap').wheelSlider({

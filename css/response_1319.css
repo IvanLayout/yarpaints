@@ -1,5 +1,13 @@
 @media (max-width: 1319px)
 {
+	.our-team__grid .our-team__name{
+		font-size: 22px;
+	}
+
+	.our-team__grid .our-team__position{
+		font-size: 14px;
+	}
+	
 	/*------------
 		commit
 	------------*/

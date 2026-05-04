@@ -877,11 +877,14 @@
 		position: static;
 	}
 
+	.our-team__item{
+		border-radius: 4px;
+		background: #fff;
+	}
+
 	.our-team__slider .swiper-slide{
 		width: 280px;
 		height: auto;
-		border-radius: 4px;
-		background: #fff;
 	}
 
 	.our-team__box{
@@ -899,6 +902,14 @@
 		margin-top: 7px;
 	}
 
+	.our-team__grid .our-team__name{
+		font-size: 16px;
+	}
+
+	.our-team__grid .our-team__position{
+		font-size: 12px;
+	}
+
 	.our-team__slider .slider-button-prev,
 	.our-team__slider .slider-button-next{
 		display: flex;
@@ -914,6 +925,35 @@
 
 	.tabs._flex{
 		gap: 20px;
+	}
+
+
+	.development__slider{
+		padding-right: 0;
+	}
+
+	.development__slider .swiper-slide{
+		opacity: 1 !important;
+	}
+
+	.development__slider .swiper-slide-prev,
+	.development__slider .swiper-slide-next{
+		opacity: 1 !important;
+	}
+
+	.development__slider .swiper-slide-active{
+		opacity: 1 !important;
+	}
+
+
+	.our-team__grid {
+		margin-left: -20px;
+		gap: 20px 0;
+	}
+
+	.our-team__grid .our-team__item {
+		width: calc(100% / 3 - 20px);
+		margin-left: 20px;
 	}
 	/*------------
 		commit
