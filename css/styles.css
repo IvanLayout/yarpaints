@@ -4723,13 +4723,14 @@ a.advantages__item
 	z-index: 1;
 
 	justify-content: space-between;
-	align-items: flex-end;
-	align-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .download-present__coll
 {
 	width: 31.34%;
+	align-self: flex-end;
 }
 
 .download-present__coll img
@@ -4743,13 +4744,12 @@ a.advantages__item
 {
 	width: calc(68.66% - 30px);
 	max-width: 818px;
-	padding-top: 124px;
-}
 
-.download-present__box
-{
-	padding-top: 79px;
-	padding-bottom: 79px;
+    padding-top: 11%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .download-present__title

@@ -352,6 +352,10 @@ $(() => {
 			watchSlidesProgress: true,
 			breakpoints: {
 				'768': {
+					spaceBetween: 60,
+					slidesPerView:'auto',
+				},
+				'1200': {
 					spaceBetween: 75,
 					slidesPerView:'auto',
 				}
