@@ -239,7 +239,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 1
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 2
 				}
@@ -281,7 +281,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 1
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 1
 				}
@@ -329,7 +329,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -352,10 +352,6 @@ $(() => {
 			watchSlidesProgress: true,
 			breakpoints: {
 				'768': {
-					spaceBetween: 60,
-					slidesPerView:'auto',
-				},
-				'1200': {
 					spaceBetween: 75,
 					slidesPerView:'auto',
 				}
@@ -414,7 +410,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -458,7 +454,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -539,7 +535,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				},
@@ -614,7 +610,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -658,7 +654,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 6
 				}
@@ -702,7 +698,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}
@@ -742,7 +738,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 3
 				}
@@ -781,7 +777,7 @@ $(() => {
 					spaceBetween: 15,
 					slidesPerView: 2
 				},
-				'1023': {
+				'1024': {
 					spaceBetween: 24,
 					slidesPerView: 7
 				}
