@@ -862,6 +862,10 @@
 	.form__agree a{
 		border-bottom-color: currentColor;
 	}
+
+	.main-form__img.loaded{
+		opacity: 1;
+	}
 	/*------------
 		commit
 	------------*/
