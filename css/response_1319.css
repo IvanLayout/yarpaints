@@ -51,4 +51,85 @@
 		right: -20px;
 		aspect-ratio: 1 / .9;
 	}
+
+
+	.about-info__img 
+	{
+		width: 55%;
+	}
+
+	.about-info__wrap
+	{
+		width: 45%;
+	}
+
+
+	.sales-geography__coll 
+	{
+		width: calc(75% - 22px);
+	}
+
+	.sales-geography__colr
+	{
+		width: calc(25% - 22px);
+	}
+
+
+	.sales-geography__item + .sales-geography__item
+	{
+		margin-top: 32px;
+		padding-top: 30px;
+	}
+
+	.sales-geography__val
+	{
+		font-size: 64px;
+	}
+
+
+	.stc-services_marg 
+	{
+		margin-top: 60px;
+	}
+
+	.stc-services__item
+	{
+		width: calc(50% - 10px);
+	}
+
+	.stc-services__name
+	{
+		padding-right: 40px;
+	}
+	
+	.stc-services__name::after
+	{
+		right: 24px;
+	}
+
+	@media (any-hover: hover)
+	{
+		.stc-services__item:hover .stc-services__name::after
+		{
+			right: 16px;
+		}
+	}
+
+
+	.our-production__item
+	{
+		width: calc(100% / 2 - 15px);
+	}
+
+
+	.info-banner__wrap
+	{
+		min-height: 320px;
+	}
+
+
+	.vacancies__price
+	{
+		font-size: 28px;
+	}
 }

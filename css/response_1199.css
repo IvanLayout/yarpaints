@@ -136,6 +136,10 @@
 		commit
 	------------*/
 
+	.sub-title
+	{
+		font-size: 18px;
+	}
 
 	.page-title
 	{
@@ -235,4 +239,45 @@
 	{
 		font-size: 30px;
 	}
+	
+
+	.about-info__img 
+	{
+		width: 50%;
+	}
+
+	.about-info__wrap 
+	{
+		width: 50%;
+		padding-top: 20px;
+		padding-left: 30px;
+	}
+
+
+	.history__bg
+	{
+		height: 160px;
+		padding: 35px;
+	}
+
+
+	.sales-geography__val 
+	{
+		font-size: 50px;
+	}
+
+
+	.stc-section__item
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+	.employee-item__info
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		width: 78%;
+	}
+	
 }

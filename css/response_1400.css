@@ -221,4 +221,42 @@
 	{
         font-size: 36px;
     }
+
+
+	.download-present__title 
+	{
+        font-size: 32px;
+    }
+
+	.download-present__colr
+	{
+		max-width: 770px;
+	}
+
+
+	.our-production__coll 
+	{
+        width: calc(48% - 12px);
+    }
+
+	.our-production__colr 
+	{
+		width: calc(52% - 28px);
+	}
+	
+
+	.achiev-awards__info-box 
+	{
+        width: 340px;
+    }
+
+	.achiev-awards__slider 
+	{
+        padding-left: 380px;
+    }
+
+	.achiev-awards__name
+	{
+		font-size: 24px;
+	}
 }

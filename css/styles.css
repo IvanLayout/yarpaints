@@ -4493,8 +4493,10 @@ a.advantages__item
 .about-info__slider .slider-pagination
 {
 	justify-content: flex-start;
-	padding-left: 152px;
+	/* padding-left: 152px; */
+	width: calc(79.666% - 30px);
 	margin-top: 42px;
+	margin-left: auto;
 }
 
 .about-info__item
@@ -4551,7 +4553,8 @@ a.advantages__item
 .about-info__files
 {
 	margin-top: 29px;
-	padding-left: 152px;
+	width: calc(79.666% - 30px);
+	margin-left: auto;
 }
 
 .about-info__file + .about-info__file
@@ -4658,6 +4661,8 @@ a.advantages__item
 	z-index: 1;
 
 	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
 }
 
 .download-present__coll
@@ -5112,19 +5117,19 @@ a.advantages__item
 
 .our-production__top
 {
-	margin: -40px 0 0 -42px;
+	margin: -20px 0 0 -42px;
 	align-items: center;
 	align-content: center;
 }
 
 .our-production__top > div
 {
-	margin: 40px 0 0 42px;
+	margin: 20px 0 0 42px;
 }
 
 .our-production__top .main-links
 {
-	margin-top: 46px;
+	margin-top: 26px;
 }
 
 .our-production__cols
@@ -5160,6 +5165,8 @@ a.advantages__item
 .our-production__items
 {
 	margin: 16px 0 0 -24px;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .our-production__item
@@ -5299,6 +5306,14 @@ a.advantages__item
 .vacancies__bot._flex
 {
 	justify-content: space-between;
+	margin-left: -20px;
+	margin-top: 2px;
+}
+
+.vacancies__bot._flex .vacancies__box
+{
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .vacancies__price
@@ -5321,6 +5336,7 @@ a.advantages__item
 {
 	flex-shrink: 0;
 	margin-left: 20px;
+	margin-top: 20px;
 	align-self: flex-end;
 }
 
@@ -5450,7 +5466,8 @@ a.advantages__item
 
 	text-align: center;
 
-	padding: 66px 20px;
+	padding: 20px;
+	aspect-ratio: 1;
 }
 
 .achiev-awards__name
@@ -7621,6 +7638,11 @@ a.advantages__item
 
 @media (max-width: 1800px)
 {
+
+	/*------------
+		commit
+	------------*/
+
 	.advantages__slider .advantages__item
 	{
 		padding-left: 20px;
@@ -7630,9 +7652,30 @@ a.advantages__item
 
 @media (max-width: 1580px)
 {
+
+	/*------------
+		commit
+	------------*/
+
 	.advantages__slider .advantages__name
 	{
 		font-size: 16px;
+	}
+
+	.download-present__title
+	{
+		font-size: 42px;
+	}
+
+	.stc-services__name
+	{
+		font-size: 24px;
+		padding-left: 20px;
+	}
+
+	.stc-services__name::after
+	{
+		margin-top: 1px;
 	}
 }
 
@@ -7715,5 +7758,106 @@ a.advantages__item
 	.form-recommend__title
 	{
 		font-size: 40px;
+	}
+
+
+	.about-info__wrap
+	{
+		padding-top: 30px;
+		padding-left: 40px;
+	}
+
+	.about-info__slider
+	{
+		margin-top: 50px;
+	}
+
+	.about-info__icon 
+	{
+		width: 16%;
+	}
+
+	.about-info__box,
+	.about-info__slider .slider-pagination,
+	.about-info__files
+	{
+		width: calc(84% - 30px);
+	}
+
+
+	.stc-section__w 
+	{
+		width: calc(65.867% - 15px);
+	}
+
+	.stc-section__box 
+	{
+		width: calc(34.133% - 15px);
+	}
+	
+	.stc-section__grid
+	{
+		margin-left: -20px;
+	}
+
+	.stc-section__item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+
+		width: calc(100% / 4 - 20px);
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	.stc-section__note
+	{
+		font-size: 18px;
+	}
+
+	.employee-item__name
+	{
+		font-size: 28px;
+	}
+
+	.stc-services__name
+	{
+		font-size: 20px;
+	}
+
+
+	.our-production__coll 
+	{
+		width: calc(42.12% - 12px);
+	}
+
+	.our-production__items
+	{
+		margin-left: -15px;
+	}
+
+	.our-production__item 
+	{
+		width: calc(100% / 3 - 15px);
+		margin: 15px 0 0 15px;
+		padding: 15px;
+	}
+
+
+	.vacancies__btn
+	{
+		width: 100%;
+	}
+
+
+	.achiev-awards__info-box
+	{
+		width: 430px;
+	}
+
+	.achiev-awards__slider 
+	{
+		padding-left: 480px;
 	}
 }
