@@ -223,6 +223,15 @@
 		aspect-ratio: 1 / .83;
 	}
 
+	.get-consult__abc
+	{
+		top: 104px;
+		right: -75px;
+		margin-right: 0;
+		width: 182px;
+		height: 276px;
+	}
+
 
 	.new-partners__desc{
 		font-size: 14px;
