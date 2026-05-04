@@ -616,4 +616,90 @@
 	{
 		font-size: 20px;
 	}
+
+
+	.history-main__items + .history-main__items
+	{
+		margin-top: 30px;
+	}
+
+	.history-main__wrap::before
+	{
+		left: 10px;
+		margin-left: 0;
+	}
+
+	.history-main__items:nth-child(odd) .history-main__item:last-child
+	{
+		margin-top: 20px;
+	}
+
+	.history-main__items:nth-child(even) .history-main__item:first-child
+	{
+		order: 2;
+		margin-top: 20px;
+	}
+
+	.history-main__items:nth-child(even) .history-main__item:last-child
+	{
+		order: 1;
+	}
+
+	.history-main__circle
+	{
+		top: 0;
+		right: auto;
+		left: 0;
+		width: 20px;
+		height: 20px;
+	}
+
+	.history-main__item:first-child .history-main__circle
+	{
+		left: 0;
+	}
+
+	.history-main__items:not(:nth-child(-n+1)) .history-main__circle
+	{
+		top: 0;
+		left: 0;
+	}
+
+	.history-main__item
+	{
+		width: 100%;
+	}
+
+	.history-main__item:first-child
+	{
+		padding-right: 0;
+		padding-left: 50px;
+	}
+
+	.history-main__item:last-child
+	{
+		padding-left: 50px;
+	}
+
+	.history-main__img
+	{
+		margin-top: 0;
+	}
+
+	.history-main__year
+	{
+		font-size: 36px;
+	}
+
+	.history-main__text
+	{
+		margin-top: 20px;
+	}
+
+
+	.text-block h1, 
+	.text-block .title
+	{
+		font-size: 20px;
+	}
 }

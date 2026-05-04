@@ -6086,17 +6086,13 @@ a.advantages__item
     history-main
 ------------*/
 
-.history-main__items
+.history-main__wrap
 {
 	margin-top: 30px;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-
 	position: relative;
 }
 
-.history-main__items::before
+.history-main__wrap::before
 {
 	position: absolute;
 	content: '';
@@ -6112,25 +6108,32 @@ a.advantages__item
 	background: #CCDFE9;
 }
 
+.history-main__items
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.history-main__items + .history-main__items
+{
+	margin-top: 60px;
+}
+
 .history-main__item
 {
 	width: 50%;
 	position: relative;
 }
 
-.history-main__item:nth-child(odd)
+.history-main__item:first-child
 {
 	padding-right: 70px;
 }
 
-.history-main__item:nth-child(even)
+.history-main__item:last-child
 {
 	padding-left: 70px;
-}
-
-.history-main__item:not(:nth-child(-n+2))
-{
-	margin-top: 60px;
 }
 
 .history-main__img
@@ -6181,7 +6184,7 @@ a.advantages__item
 	left: -15.5px;
 }
 
-.history-main__item:not(:nth-child(-n+2)) .history-main__circle
+.history-main__items:not(:nth-child(-n+1)) .history-main__circle
 {
 	top: 11px;
 }

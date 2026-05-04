@@ -186,4 +186,11 @@
 	{
 		font-size: 18px;
 	}
+
+
+	.text-block h1, 
+	.text-block .title
+	{
+		font-size: 32px;
+	}
 }

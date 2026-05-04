@@ -997,4 +997,56 @@
 		display: block;
 		padding: 0 20px 20px;
 	}
+
+
+	.text-block h1, 
+	.text-block .title 
+	{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+
+	.history-main__item:first-child
+	{
+		padding-right: 30px;
+	}
+
+	.history-main__item:last-child
+	{
+		padding-left: 30px;
+	}
+
+	.history-main__img
+	{
+		margin-top: 60px;
+	}
+
+	.history-main__year
+	{
+		font-size: 38px;
+	}
+
+	.history-main__text
+	{
+		margin-top: 45px;
+	}
+
+	.history-main__circle
+	{
+		top: 6px;
+		right: -13px;
+		width: 26px;
+		height: 26px;
+	}
+
+	.history-main__items:not(:nth-child(-n+1)) .history-main__circle
+	{
+		top: 8px;
+	}
+
+	.history-main__item:nth-child(even) .history-main__circle
+	{
+		left: -13px;
+	}
 }
