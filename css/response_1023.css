@@ -1142,4 +1142,43 @@
 	{
 		left: -13px;
 	}
+
+
+	.about-info__img
+	{
+		width: 100%;
+	}
+
+	.about-info__wrap
+	{
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+	}
+
+
+	.history__slider
+	{
+		margin-top: 30px;
+	}
+
+	.history__slider .slider-button-next,
+	.history__slider .slider-button-prev
+	{
+		top: 0;
+		margin-top: -58px;
+	}
+
+
+	.history__wrap
+	{
+		padding-right: 0;
+		width: calc(100% + 20px);
+		margin-right: -20px;
+	}
+
+	.history-thumbs::before
+	{
+		width: calc(100% - 5px);
+	}
 }

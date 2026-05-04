@@ -456,6 +456,10 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				'1200': {
+					spaceBetween: 24,
 					slidesPerView: 4
 				}
 			},
