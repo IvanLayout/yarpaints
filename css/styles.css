@@ -892,7 +892,7 @@ button
 {
 	font-family: var(--font-family);
     color: #3A3B55;
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 1.15;
 
@@ -908,7 +908,7 @@ button
 {
 	font-family: var(--font-family);
     color: #3A3B55;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 1.15;
 
@@ -916,6 +916,17 @@ button
 }
 
 .text-block h4
+{
+	font-family: var(--font-family);
+    color: #3A3B55;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.text-block h5
 {
 	font-family: var(--font-family);
     color: #3A3B55;
@@ -931,17 +942,6 @@ button
 	font-family: var(--font-family);
     color: #3A3B55;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 1.15;
-
-    margin-bottom: 20px;
-}
-
-.text-block h5
-{
-	font-family: var(--font-family);
-    color: #3A3B55;
-    font-size: 16px;
     font-weight: 400;
     line-height: 1.15;
 
@@ -6352,6 +6352,14 @@ a.advantages__item
 	top: 11px;
 }
 
+.history-main__title
+{
+	margin-bottom: 20px;
+	color: #3A3B55;
+	font-family: var(--font-family);
+	font-size: 40px;
+	line-height: 1.2;
+}
 
 /*------------
     teams-leed

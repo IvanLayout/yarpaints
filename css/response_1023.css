@@ -1108,14 +1108,6 @@
 	}
 
 
-	.text-block h1, 
-	.text-block .title 
-	{
-		font-size: 24px;
-		margin-bottom: 20px;
-	}
-
-
 	.history-main__item:first-child
 	{
 		padding-right: 30px;
@@ -1196,5 +1188,17 @@
 	.history-thumbs::before
 	{
 		width: calc(100% - 5px);
+	}
+
+	.history-main__title 
+	{
+		font-size: 24px;
+	}
+
+
+	.text-block h2
+	{
+		font-size: 26px;
+		line-height: 1.2;
 	}
 }

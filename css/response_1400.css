@@ -204,6 +204,11 @@
 	.text-block h1, 
 	.text-block .title
 	{
+		font-size: 36px;
+	}
+
+	.text-block h2
+	{
 		font-size: 32px;
 	}
 
@@ -256,7 +261,7 @@
 	{
 		width: calc(52% - 28px);
 	}
-	
+
 
 	.achiev-awards__info-box 
 	{
@@ -271,5 +276,11 @@
 	.achiev-awards__name
 	{
 		font-size: 24px;
+	}
+
+
+	.history-main__title
+	{
+		font-size: 30px;
 	}
 }

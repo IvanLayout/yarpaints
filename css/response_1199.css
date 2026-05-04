@@ -180,6 +180,12 @@
 	}
 
 
+
+	.history-main__title
+	{
+		font-size: 28px;
+	}
+
 	.history-main__item:first-child 
 	{
 		padding-right: 50px;
@@ -294,4 +300,7 @@
 	{
 		font-size: 26px;
 	}
+
+
+	
 }
