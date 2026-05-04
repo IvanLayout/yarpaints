@@ -556,7 +556,7 @@
 
 	.main-banner__wrap 
 	{
-		min-height: 1px;
+		min-height: 320px;
 	}
 
 	.page-nav__btn
