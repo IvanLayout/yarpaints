@@ -5,8 +5,8 @@ WW = window.innerWidth || document.clientWidth || document.querySelector('body')
 fakeResize = false
 fakeResize2 = true
 
-if (document.body.clientWidth < 375) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+if (document.body.clientWidth < 390) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
 }
 
 $(() => {
@@ -831,7 +831,7 @@ $(window).on('resize', () => {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 390) document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true

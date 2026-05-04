@@ -137,6 +137,19 @@
 	}
 
 
+	.teams-leed__colr{
+		padding-bottom: 30px;
+	}
+
+	.teams-leed__slider{
+		margin-left: auto;
+	}
+
+	.teams-leed__slider .swiper-slide {
+		min-height: 260px;
+	}
+
+
 	.footer__colr {
         width: 326px;
     }

@@ -494,6 +494,46 @@
 	}
 
 
+	.teams-leed__coll{
+		width: 100%;
+	}
+
+	.teams-leed__coll .employee-item{
+		max-width: 440px;
+	}
+
+	.teams-leed__colr{
+		width: 100%;
+		background: none;
+		padding: 30px 0 0;
+	}
+
+	.teams-leed__slider .swiper-slide {
+		min-height: 1px;
+	}
+
+	.teams-leed .text-block h1,
+	.teams-leed .text-block .title{
+		padding-right: 70px;
+	}
+
+	.teams-leed .text-block h1 br,
+	.teams-leed .text-block .title br{
+		display: none;
+	}
+
+	.teams-leed__img{
+		width: 139px;
+		right: -39px;
+		left: auto;
+		top: 63px;
+	}
+
+	.teams-leed__slider{
+		max-width: none;
+	}
+
+
 	.footer__coll{
 		width: 284px;
 		padding-top: 0;

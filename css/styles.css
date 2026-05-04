@@ -5931,7 +5931,7 @@ a.advantages__item
 	border-radius: 0 4px 0 0;
 	padding: 20px 36px 32px;
 
-	width: 74%;
+	min-width: 74%;
 	max-width: 418px;
 }
 
@@ -6371,8 +6371,8 @@ a.advantages__item
 {
 	position: absolute;
 	top: 28px;
-	right: 50%;
-	margin-right: 66px;
+	left: -6.6%;
+	width: 26.86%;
 
 	display: block;
 	z-index: 1;
@@ -6386,6 +6386,7 @@ a.advantages__item
 .teams-leed__colr
 {
 	width: 67.579%;
+	position: relative;
 
 	display: flex;
 	justify-content: center;
@@ -6394,14 +6395,24 @@ a.advantages__item
 	flex-wrap: wrap;
 
 	padding: 30px 30px 78px;
+	background: url(../images/teams_leed_bg.png) 50%/cover no-repeat;
 }
 
 .teams-leed__slider
 {
 	max-width: 605px;
 	width: 100%;
-	padding-bottom: 154px;
 	margin-left: 62px;
+}
+
+.teams-leed__slider .swiper-slide{
+	min-height: 329px;
+}
+
+.teams-leed__slider .slider-button-prev{
+	position: relative;
+	left: 0;
+	margin-top: 30px;
 }
 
 /*------------
