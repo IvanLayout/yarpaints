@@ -2150,7 +2150,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .development__img{
 	display: block;
 	width: 100%;
-	aspect-ratio: 1/.9;
+	aspect-ratio: 1/.645;
 }
 
 .development__img img{
@@ -2174,6 +2174,26 @@ input[type=checkbox]:checked + .checkbox__text::after
 /*------------
 	commit
 ------------*/
+
+.development__slider .slider-button-prev,
+.development__slider .slider-button-next
+{
+	top: auto;
+	bottom: 30px;
+}
+
+.development__slider .slider-button-prev
+{
+	left: auto;
+	right: 22.6%;
+}
+
+.development__slider .slider-button-next
+{
+	right: 17.8%;
+}
+
+
 .achievements_marg{
 	margin-top: 46px;
 }

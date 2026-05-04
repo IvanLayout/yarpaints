@@ -505,6 +505,11 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
 		})
 	}
 
