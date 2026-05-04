@@ -98,4 +98,21 @@
 	/*------------
 		commit
 	------------*/
+
+	.confessions__item:nth-child(n + 5)
+	{
+		margin-top: 10px;
+	}
+
+	.confessions__small-year
+	{
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.confessions__bot
+	{
+		margin-top: 20px;
+		padding-top: 30px;
+	}
 }

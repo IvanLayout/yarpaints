@@ -5,6 +5,11 @@
 		line-height: 1.2;
 	}
 
+	.page-title span 
+	{
+		font-size: 20px;
+	}
+
 	.header__top .cont{
 		justify-content: space-between;
 	}
@@ -548,4 +553,67 @@
 	/*------------
 		commit
 	------------*/
+
+	.main-banner__wrap 
+	{
+		min-height: 1px;
+	}
+
+	.page-nav__btn
+	{
+		font-size: 14px;
+	}
+
+	.links-nav__item + .links-nav__item 
+	{
+		margin-top: 15px;
+	}
+
+	.confessions__grid
+	{
+		margin-left: 0;
+		justify-content: space-between;
+	}
+
+	.confessions__item 
+	{
+		width: calc(100% / 2 - 5px);
+		margin-left: 0;
+	}
+
+	.confessions__item._big 
+	{
+		width: 100%;
+	}
+
+	.confessions__top
+	{
+		aspect-ratio: 1;
+	}
+
+	.confessions__item._big .confessions__top 
+	{
+		aspect-ratio: 350 / 200;
+		padding: 30px;
+	}
+
+	.confessions__big-year 
+	{
+		font-size: 30px;
+	}
+
+	.confessions__item._big .confessions__big-year
+	{
+		font-size: 48px;
+	}
+
+	.confessions__desc
+	{
+		font-size: 14px;
+	}
+
+	.confessions__item._big .confessions__desc
+	{
+		font-size: 20px;
+	}
 }

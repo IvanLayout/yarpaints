@@ -155,5 +155,35 @@
     /*------------
 		commit
 	------------*/
+
+	.page-title
+	{
+		font-size: 66px;
+	}
 	
+	.page-title span 
+	{
+		font-size: 42px;
+	}
+
+
+	.confessions__item
+	{
+		margin-top: 30px;
+	}
+
+	.confessions__item._big .confessions__big-year 
+	{
+		font-size: 50px;
+	}
+
+	.confessions__desc
+	{
+		font-size: 16px;
+	}
+
+	.confessions__item._big .confessions__desc
+	{
+		font-size: 18px;
+	}
 }

@@ -3,4 +3,19 @@
 	/*------------
 		commit
 	------------*/
+
+	.page-title
+	{
+		font-size: 62px;
+	}
+	
+	.page-title span 
+	{
+		font-size: 38px;
+	}
+
+	.links-nav__item + .links-nav__item 
+	{
+        margin-left: 2%;
+    }
 }

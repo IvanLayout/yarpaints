@@ -865,4 +865,136 @@
 	/*------------
 		commit
 	------------*/
+
+	.page-title span 
+	{
+		font-size: 28px;
+	}
+
+	.main-banner
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.main-banner .breadcrumbs 
+	{
+		position: relative;
+		bottom: 0;
+
+		order: 1;
+		padding: 25px 0 30px;
+	}
+
+	.main-banner__wrap
+	{
+		order: 2;
+		width: 100%;
+
+		min-height: 350px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+
+	.links-nav
+	{
+		padding: 0;
+	}
+
+	.page-nav
+	{
+		margin-top: -30px;
+	}
+
+	.page-nav__btn
+	{
+		display: block;
+	}
+
+	.links-nav__items.mini-modal__modal
+	{
+		position: absolute;
+		top: 0;
+		top: calc(100% + 5px);
+	
+		visibility: hidden;
+	
+		pointer-events: none;
+	
+		opacity: 0;
+	}
+
+	.links-nav__items.mini-modal__modal._active
+	{
+		visibility: visible;
+
+		pointer-events: auto;
+
+		opacity: 1;
+	}
+
+	.links-nav__items
+	{
+		display: block;
+		background: #fff;
+		padding: 20px;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	.links-nav__item
+	{
+		font-size: 14px;
+	}
+
+	.links-nav__item a
+	{
+		justify-content: flex-start;
+		text-align: left;
+		height: auto;
+		padding-bottom: 10px;
+	}
+
+	.links-nav__item + .links-nav__item
+	{
+		margin-left: 0;
+		margin-top: 25px;
+	}
+
+
+
+	.confessions__item
+	{
+		width: calc(100% / 2 - 25px);
+	}
+
+	.confessions__item._hover-item::before
+	{
+		opacity: 1;
+		pointer-events: all;
+		height: 100%;
+	}
+
+	.confessions__item._big .confessions__top 
+	{
+		aspect-ratio: 864 / 470;
+	}
+
+	.confessions__item._big .confessions__info
+	{
+		padding: 20px 20px 0;
+	}
+
+	.confessions__btn
+	{
+		position: relative;
+		top: 0;
+
+		display: block;
+		padding: 0 20px 20px;
+	}
 }

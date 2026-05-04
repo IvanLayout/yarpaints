@@ -800,6 +800,16 @@ button
 /*------------
     breadcrumbs
 ------------*/
+
+.main-banner .breadcrumbs
+{
+	position: absolute;
+	bottom: 66px;
+	left: 0;
+
+	width: 100%;
+}
+
 .breadcrumbs
 {
     font-size: 12px;
@@ -1839,6 +1849,40 @@ input[type=checkbox]:checked + .checkbox__text::after
 .swiper .swiper-scrollbar-drag
 {
     background: #E5E5E5;
+}
+
+
+/*------------
+    mini-modal
+------------*/
+.mini-modal
+{
+    position: relative;
+}
+
+.mini-modal__modal
+{
+    position: absolute;
+    z-index: 80;
+    top: calc(100% + 10px);
+    left: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition: opacity .2s linear, visibility .2s linear;
+}
+
+.mini-modal__modal._active
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -4172,7 +4216,50 @@ a.advantages__item
 
 .page-nav
 {
-	margin-top: -82px;
+	margin-top: -68px;
+}
+
+.page-nav__btn
+{
+	display: none;
+
+	background: #fff;
+	border-radius: 4px;
+	padding: 19px 20px;
+	color: #3A3B55;
+	font-size: 16px;
+
+	width: 100%;
+}
+
+.page-nav__btn span
+{
+	position: relative;
+	padding-right: 20px;
+}
+
+.page-nav__btn span::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 11px;
+	height: 7px;
+
+	transform: translateY(-50%);
+	margin-top: 1px;
+
+	background: url(../images/ic_arrow4.svg) 50% no-repeat;
+}
+
+.page-nav__btn._active span::after
+{
+	transform: rotate(180deg);
+	margin-top: -3px;
 }
 
 .links-nav
@@ -4180,8 +4267,8 @@ a.advantages__item
 	margin-top: 30px;
 	background: #fff;
 	border-radius: 4px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .links-nav__items
@@ -4192,6 +4279,18 @@ a.advantages__item
 	flex-wrap: nowrap;
 }
 
+.links-nav__items.mini-modal__modal
+{
+    position: relative;
+    top: 0;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
 .links-nav__item
 {
 	line-height: normal;
@@ -4200,7 +4299,9 @@ a.advantages__item
 
 .links-nav__item + .links-nav__item
 {
-	margin-left: 70px;
+	/* margin-left: 70px; */
+
+	margin-left: 4.15%;
 }
 
 .links-nav__item a
@@ -4216,6 +4317,8 @@ a.advantages__item
 	text-decoration: none;
 	position: relative;
 	transition: color .2s linear;
+	
+	text-align: center;
 }
 
 .links-nav__item a.active::after
@@ -5548,6 +5651,7 @@ a.advantages__item
 	font-weight: 500;
 	position: relative;
 	z-index: 1;
+	color: #9FBBCA;
 }
 
 .confessions__item._big .confessions__big-year
@@ -7428,5 +7532,31 @@ a.advantages__item
 		{
 			font-size: 22px;
 		}
+	}
+
+	/*------------
+		commit
+	------------*/
+
+	.main-banner__wrap 
+	{
+		min-height: 600px;
+		padding-top: 150px;
+		padding-bottom: 210px;
+	}
+
+	.links-nav__item + .links-nav__item
+	{
+		margin-left: 3%;
+	}
+
+	.confessions__top
+	{
+		padding: 20px;
+	}
+
+	.confessions__item._big .confessions__big-year 
+	{
+		font-size: 60px;
 	}
 }
