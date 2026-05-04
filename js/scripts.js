@@ -469,8 +469,9 @@ $(() => {
 
 	if ($('.development__slider').length) {
 		new Swiper(".development__slider", {
-			loop: false,
-			spaceBetween: 24,
+			loop: true,
+			loopAdditionalSlides: 1,
+			spaceBetween: 0,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -483,15 +484,23 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
+			effect: 'creative',
+			creativeEffect: {
+				prev: {
+					translate: ['-39.5%', 0, -500],
+					rotate: [0, 0, 0],
+					// opacity: 0.1,
+				},
+				next: {
+					translate: ['39.5%', 0, -500],
+					rotate: [0, 0, 0],
+					// opacity: 0.1,
+				},
+			},
 			navigation: {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
-			}
 		})
 	}
 

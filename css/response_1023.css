@@ -915,6 +915,24 @@
 	.tabs._flex{
 		gap: 20px;
 	}
+
+
+	.development__slider{
+		padding-right: 0;
+	}
+
+	.development__slider .swiper-slide{
+		opacity: 1 !important;
+	}
+
+	.development__slider .swiper-slide-prev,
+	.development__slider .swiper-slide-next{
+		opacity: 1 !important;
+	}
+
+	.development__slider .swiper-slide-active{
+		opacity: 1 !important;
+	}
 	/*------------
 		commit
 	------------*/
