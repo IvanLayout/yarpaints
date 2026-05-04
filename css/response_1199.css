@@ -284,4 +284,14 @@
 		width: 78%;
 	}
 	
+
+	.vacancies__name
+	{
+		font-size: 22px;
+	}
+
+	.vacancies__price
+	{
+		font-size: 26px;
+	}
 }
