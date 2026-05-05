@@ -301,4 +301,10 @@
 	{
 		font-size: 20px;
 	}
+
+
+	.main-banner__bg
+	{
+		object-position: 100%;
+	}
 }
