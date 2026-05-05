@@ -412,6 +412,21 @@
 	{
 		font-size: 12px;
 	}
+
+	.file-selection__path{
+		height: 36px;
+		line-height: 34px;
+		padding-left: 15px;
+		padding-right: 46px;
+		font-size: 12px;
+	}
+
+	.file-selection__path svg{
+		right: 15px;
+		width: 16px;
+		height: 16px;
+		margin-top: -8px;
+	}
 }
 
 

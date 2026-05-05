@@ -1096,7 +1096,7 @@
 
 	.form__flex .form__line 
 	{
-		width: calc(100% / 1 - 7px);
+		width: 100%;
 	}
 
 	.app-quest__form .form__line

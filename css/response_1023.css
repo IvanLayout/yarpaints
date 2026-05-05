@@ -1164,6 +1164,10 @@
 		commit
 	------------*/
 
+	.success-stories-slider .swiper-overflow{
+		overflow: visible;
+	}
+
 	.page-title span 
 	{
 		font-size: 28px;
