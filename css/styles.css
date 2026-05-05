@@ -2121,6 +2121,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: -149px;
 }
 
+.our-team__btn
+{
+	margin-top: 23px;
+}
+
 .tabs._flex{
 	gap: 24px;
 }
@@ -8160,6 +8165,24 @@ a.advantages__item
 		border-color: transparent;
 	}
 }
+
+
+/*------------
+    success-stories-slider
+------------*/
+
+.success-stories-slider
+{
+	margin-top: 30px;
+}
+
+.success-stories-slider .our-team__box
+{
+	padding: 16px 20px 20px;
+	background: #fff;
+}
+
+
 /*------------
 @media (any-hover: hover)
 {

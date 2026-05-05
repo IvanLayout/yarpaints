@@ -22,6 +22,17 @@
 		commit
 	------------*/
 
+	.success-stories-slider .our-team__name
+	{
+		font-size: 22px;
+	}
+
+	.success-stories-slider .our-team__position
+	{
+		font-size: 14px;
+	}
+
+
 	.page-title
 	{
 		font-size: 62px;

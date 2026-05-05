@@ -355,4 +355,10 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+
+
+	.success-stories-slider .our-team__name
+	{
+		font-size: 18px;
+	}
 }
