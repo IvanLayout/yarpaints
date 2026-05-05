@@ -307,4 +307,78 @@
 	{
 		object-position: 100%;
 	}
+
+
+	.development__fact
+	{
+		padding: 20px;
+	}
+
+	.development__fact-title
+	{
+		font-size: 20px;
+	}
+
+	.development__fact-val
+	{
+		margin-top: 24px;
+	}
+
+	.development__fact-img 
+	{
+		top: 14px;
+		right: -65px;
+		aspect-ratio: 1 / 0.73;
+
+		min-width: 70px;
+	}
+
+	.development__img 
+	{
+		aspect-ratio: 1 / .749;
+	}
+
+
+	.advantages__slider .advantages__name
+	{
+		padding-bottom: 10px;
+	}
+
+
+	.get-consult .stc-services__item 
+	{
+		aspect-ratio: 550 / 315;
+	}
+
+	.stc-services__img
+	{
+		object-position: 86%;
+	}
+
+
+	.form-recommend__flex
+	{
+		flex-wrap: wrap;
+	}
+
+	.form-recommend .form .form__input
+	{
+		width: 100%;
+		height: 44px;
+	}
+
+	.form-recommend__flex .form__submit-btn
+	{
+		margin-left: 0;
+		margin-top: 15px;
+	}
+}
+
+
+@media (max-width: 389px)
+{
+	.development__fact-val 
+	{
+		font-size: 32px;
+	}
 }

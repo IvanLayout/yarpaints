@@ -2155,7 +2155,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 
 .development__slider{
-	padding-right: 13.4%;
+	/* padding-right: 13.4%; */
+	padding-right: 124px;
 }
 
 .development__slider .swiper-slide{
@@ -2882,12 +2883,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 .development__slider .slider-button-prev
 {
 	left: auto;
-	right: 22.6%;
+	/* right: 22.6%; */
+	right: 207px;
 }
 
 .development__slider .slider-button-next
 {
-	right: 17.8%;
+	/* right: 17.8%; */
+	right: 164px;
 }
 
 
@@ -6863,7 +6866,7 @@ a.advantages__item
 	height: 43px;
 
 	background: url(../images/development_square.svg) 50% no-repeat;
-	z-index: 1;
+	z-index: 2;
 }
 
 .development__bg
@@ -6890,6 +6893,8 @@ a.advantages__item
 	display: block;
 
 	aspect-ratio: 1 / 1;
+
+	pointer-events: none;
 }
 
 .development__fact-img img

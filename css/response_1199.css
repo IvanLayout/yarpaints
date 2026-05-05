@@ -262,6 +262,16 @@
 		top: -35px;
 	}
 
+	.development__coll 
+	{
+		width: calc(45% - 20px);
+	}
+
+	.development__colr
+	{
+		width: calc(55% - 20px);
+	}
+
 	.development__item
 	{
 		width: calc(50% - 5px);

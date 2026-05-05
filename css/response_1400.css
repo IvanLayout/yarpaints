@@ -295,4 +295,22 @@
 	{
 		font-size: 30px;
 	}
+
+
+	.development__slider
+	{
+		padding-right: 85px;
+	}
+
+	.development__slider .slider-button-next
+	{
+		right: 110px;
+		bottom: 20px;
+	}
+
+	.development__slider .slider-button-prev
+	{
+		right: 155px;
+		bottom: 20px;
+	}
 }

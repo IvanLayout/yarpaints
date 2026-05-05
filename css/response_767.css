@@ -1000,4 +1000,54 @@
 	{
 		width: 280px;
 	}
+
+
+	.stc-info__coll
+	{
+		width: 100%;
+	}
+
+	.stc-info__colr
+	{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.stc-info__val 
+	{
+		font-size: 36px;
+	}
+
+	.stc-info__img-val 
+	{
+		font-size: 195px;
+		top: -39px;
+		margin-left: -30px;
+	}
+	
+	.stc-info__name br
+	{
+		display: none;
+	}
+
+	
+	.development__fact-val
+	{
+		font-size: 36px;
+	}
+
+	.advantages__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.advantages__slider .advantages__item
+	{
+		width: 280px;
+	}
+
+	.form-recommend__flex .form__submit-btn
+	{
+		line-height: 40px;
+	}
 }

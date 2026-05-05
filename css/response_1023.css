@@ -537,6 +537,11 @@
 		line-height: 1.3;
 	}
 
+	.get-consult__wrap-marg
+	{
+		margin-top: 20px;
+	}
+
 
 	.main-info__grid {
 		margin: -20px 0 0 -20px;
@@ -1624,5 +1629,114 @@
 	.vacancies__mob-btn
 	{
 		display: block;
+	}
+
+
+	.stc-info__coll 
+	{
+		width: calc(46% - 12px);
+	}
+
+	.stc-info__colr 
+	{
+		width: calc(54% - 12px);
+	}
+
+	.stc-info__wrap
+	{
+		margin-top: 30px;
+		padding-bottom: 54px;
+		width: calc(100% + 20px);
+		margin-right: -20px;
+	}
+
+	.stc-info__item
+	{
+		width: 280px;
+		height: auto;
+	}
+
+	.stc-info__wrap .slider-button-next
+	{
+		display: flex;
+
+		right: auto;
+		left: 34px;
+		top: auto;
+		margin-top: 0;
+		bottom: 0;
+	}
+
+	.stc-info__wrap .slider-button-prev
+	{
+		display: flex;
+		left: 0;
+		top: auto;
+		margin-top: 0;
+		bottom: 0;
+	}
+
+
+	.development__coll
+	{
+		width: 100%;
+	}
+
+	.development__items
+	{
+		margin-top: 0;
+	}
+
+	.development__item
+	{
+		margin-top: 20px;
+	}
+
+	.development__fact
+	{
+		margin-top: 20px;
+	}
+
+	.development__colr
+	{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.development__fact-img
+	{
+		top: 2px;
+		right: -42px;
+        aspect-ratio: 1 / 0.8;
+	}
+
+
+	.development__slider
+	{
+		padding-right: 0;
+		padding-bottom: 54px;
+	}
+
+	.development__slider .slider-button-next
+	{
+		right: 0;
+		bottom: 0;
+	}
+
+	.development__slider .slider-button-prev
+	{
+		right: 34px;
+		bottom: 0;
+	}
+
+
+	.get-consult .stc-services__item 
+	{
+		aspect-ratio: 550 / 240;
+	}
+
+	.form-recommend__title
+	{
+		font-size: 36px;
 	}
 }
