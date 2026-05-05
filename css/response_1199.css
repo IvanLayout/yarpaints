@@ -361,4 +361,30 @@
 	{
 		font-size: 18px;
 	}
+
+
+	.brand-info__coll 
+	{
+		width: 240px;
+	}
+
+	.brand-info__tabs-btn
+	{
+		font-size: 20px;
+	}
+
+	.brand-info__colr 
+	{
+		width: calc(100% - 260px);
+	}
+
+	.brand-info__bot-col
+	{
+		width: 100%;
+	}
+
+	.brand-info__bot-col + .brand-info__bot-col
+	{
+		margin-top: 25px;
+	}
 }

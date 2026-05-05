@@ -7466,6 +7466,11 @@ a.advantages__item
     brand-guide
 ------------*/
 
+.brand-guide_marg
+{
+	margin-top: 90px;
+}
+
 .brand-guide__item
 {
 	height: auto;
@@ -7554,6 +7559,7 @@ a.advantages__item
 	text-align: center;
 	padding: 15px 15px;
 	color: #3A3B55;
+	font-size: 26px;
 
 	font-family: var(--font-family);
 	line-height: 1.15;
@@ -7572,7 +7578,7 @@ a.advantages__item
 {
 	position: absolute;
 	content: '';
-	top: 7px;
+	top: 14px;
 	right: 0;
 
 	display: block;
@@ -8519,6 +8525,28 @@ a.advantages__item
 	{
 		margin-top: 1px;
 	}
+
+
+	.paints-var.paints-var_inner .paints-var__name-box
+	{
+		width: 255px;
+	}
+
+	.paints-var.paints-var_inner .paints-var__img-box::before
+	{
+		bottom: -3%;
+	}
+
+
+	.products__title
+	{
+		font-size: 28px;
+	}
+
+	.brand-guide_marg
+	{
+		margin-top: 45px;
+	}
 }
 
 @media (max-width: 1499px)
@@ -8710,6 +8738,35 @@ a.advantages__item
 	}
 
 	.employ-process__name
+	{
+		font-size: 24px;
+	}
+
+
+	.brand-guide__open
+	{
+		font-size: 22px;
+	}
+
+	.brand-guide__open span::after
+	{
+		top: 12px;
+	}
+
+
+	.products__title 
+	{
+        font-size: 24px;
+    }
+
+
+	.products__name
+	{
+		font-size: 22px;
+	}
+
+
+	.brand-info__tabs-btn
 	{
 		font-size: 24px;
 	}

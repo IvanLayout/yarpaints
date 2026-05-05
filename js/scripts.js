@@ -669,6 +669,10 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 24,
+					slidesPerView: 5
+				},
+				'1200': {
+					spaceBetween: 24,
 					slidesPerView: 6
 				}
 			},
@@ -713,10 +717,26 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				'1200': {
+					spaceBetween: 24,
 					slidesPerView: 4
 				}
 			},
 			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.products__title').height('auto')
+
+					setHeight( $(swiper.el).find('.products__title') )
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.products__title').height('auto')
+
+					// setTimeout(function(){
+						setHeight( $(swiper.el).find('.products__title') )
+					// }, 200)
+				},
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				}

@@ -313,4 +313,21 @@
 		right: 155px;
 		bottom: 20px;
 	}
+
+
+	.paints-var.paints-var_inner .paints-var__name-box 
+	{
+        width: 220px;
+    }
+
+	.paints-var.paints-var_inner .paints-var__img-box::before 
+	{
+        bottom: -1%;
+    }
+
+	.products__title
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

@@ -184,4 +184,26 @@
 	{
         font-size: 20px;
     }
+
+
+	.brand-guide_marg
+	{
+		margin-top: 20px;
+	}
+
+
+	.paints-var.paints-var_inner .paints-var__name-box 
+	{
+		width: 200px;
+	}
+
+	.paints-var.paints-var_inner .paints-var__name
+	{
+		font-size: 16px;
+	}
+
+	.paints-var.paints-var_inner .paints-var__img-box::before
+	{
+
+	}
 }
