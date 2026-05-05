@@ -355,7 +355,7 @@
 		object-position: 86%;
 	}
 
-	
+
 	.stc-info__coll
 	{
 		width: 100%;
@@ -377,6 +377,40 @@
 	{
 		margin-left: 0;
 		margin-top: 15px;
+	}
+
+
+	.accord-box__title
+	{
+		font-size: 16px;
+	}
+
+	.accord-box__open 
+	{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.vacancies-inner__btn
+	{
+		margin-top: 10px;
+	}
+
+
+	.form .form__input
+	{
+		height: 36px;
+		font-size: 12px;
+	}
+
+	.form .form__textarea
+	{
+		font-size: 12px;
+	}
+
+	.form__agree .checkbox__text
+	{
+		font-size: 12px;
 	}
 }
 

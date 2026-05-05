@@ -1579,8 +1579,8 @@
 
 	.accord-box__open
 	{
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 
 	.accord-box__btn
@@ -1739,5 +1739,108 @@
 	.form-recommend__title
 	{
 		font-size: 36px;
+	}
+
+
+	.career-sect__top
+	{
+		flex-wrap: wrap;
+	}
+
+	.career-sect__text
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-top: 20px;
+	}
+
+	.career-sect__bg
+	{
+		margin-top: 30px;
+	}
+
+
+	.career-sect__items
+	{
+		margin-left: -20px;
+	}
+
+	.career-sect__item
+	{
+		width: calc(100% / 2 - 20px);
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+
+	.info-banner__bg
+	{
+		object-position: 86%;
+	}
+
+	.career-banner__wrap
+	{
+		min-height: 1px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.career-banner__text
+	{
+		margin-top: 20px;
+	}
+
+
+	.employ-process__top
+	{
+		flex-wrap: wrap;
+		margin-right: 0;
+	}
+
+	.employ-process__text
+	{
+		margin-top: 20px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.employ-process__slider
+	{
+		margin-top: 30px;
+		padding-top: 54px;
+	}
+
+	.employ-process__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.employ-process__slider .slider-button-prev._top,
+	.employ-process__slider .slider-button-next._top
+	{
+		top: 0;
+	}
+
+	.employ-process__item
+	{
+		width: 280px;
+	}
+	
+
+	.vacancies-inner .middle-title
+	{
+		font-size: 24px;
+	}
+
+	.vacancies-inner__item + .vacancies-inner__item
+	{
+		padding-top: 0;
+		margin-top: 30px;
+	}
+
+
+	.form__flex .form__line 
+	{
+		width: calc(100% / 2 - 7px);
 	}
 }

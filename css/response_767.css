@@ -1051,4 +1051,85 @@
 	{
 		line-height: 40px;
 	}
+
+
+	.career-sect__bg img
+	{
+		aspect-ratio: 1 / .54;
+	}
+
+	.career-sect__items
+	{
+		margin-top: 10px;
+	}
+
+	.career-sect__item
+	{
+		width: calc(100% / 1 - 20px);
+		margin-top: 20px;
+		background: none;
+		padding: 0;
+	}
+
+	.career-sect__name
+	{
+		font-size: 20px;
+	}
+
+	.career-sect__desc
+	{
+		margin-top: 10px;
+	}
+
+
+	.vacancies-inner .middle-title 
+	{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.accord-box__title 
+	{
+		font-size: 18px;
+	}
+
+
+	.form__flex .form__line 
+	{
+		width: calc(100% / 1 - 7px);
+	}
+
+	.app-quest__form .form__line
+	{
+		margin-bottom: 10px;
+	}
+
+	.app-quest__form.form .form__input
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.app-quest__form.form .form__textarea
+	{
+		padding: 15px;
+	}
+
+	.app-quest__form .form__agree
+	{
+		margin-top: 30px;
+	}
+
+
+	.career-banner .main-title
+	{
+		font-size: 36px;
+	}
+
+	.career-banner__wrap
+	{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
 }

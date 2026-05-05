@@ -156,4 +156,21 @@
 	{
 		font-size: 300px;
 	}
+
+
+	.career-sect__item
+	{
+		padding: 20px 20px 30px;
+	}
+
+	.career-sect__name
+	{
+		font-size: 22px;
+	}
+
+	
+	.employ-process__name 
+	{
+        font-size: 20px;
+    }
 }

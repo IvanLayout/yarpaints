@@ -6283,7 +6283,7 @@ a.advantages__item
     files-section
 ------------*/
 
-.accord-box_border
+.accordion__item:first-child .accord-box__open
 {
 	border-top: 1px solid #E0E9EE;
 }
@@ -7242,6 +7242,7 @@ a.advantages__item
 .career-sect__top
 {
 	justify-content: space-between;
+	flex-wrap: nowrap;
 	max-width: 1359px;
 }
 
@@ -7264,7 +7265,7 @@ a.advantages__item
 .career-sect__bg img
 {
 	display: block;
-	aspect-ratio: 1900 / 464;
+	aspect-ratio: 1 / .243;
 	width: 100%;
 	object-fit: cover;
 }
@@ -7306,6 +7307,7 @@ a.advantages__item
 .employ-process__top
 {
 	justify-content: space-between;
+	flex-wrap: nowrap;
 	max-width: 1360px;
 	margin-right: 115px;
 }
@@ -7436,6 +7438,7 @@ a.advantages__item
 {
 	border-color: #E0E9EE;
 	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .app-quest__form.form .form__textarea
@@ -8675,5 +8678,16 @@ a.advantages__item
 	.achiev-awards__slider 
 	{
 		padding-left: 480px;
+	}
+
+
+	.employ-process__item
+	{
+		padding: 20px;
+	}
+
+	.employ-process__name
+	{
+		font-size: 24px;
 	}
 }

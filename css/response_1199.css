@@ -343,4 +343,16 @@
 	{
 		height: calc(100% - 85px);
 	}
+
+
+	.accord-box__title
+	{
+		font-size: 22px;
+	}
+
+	.accord-box__open
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
