@@ -18,6 +18,10 @@
 		width: calc(100% / 3 - 20px);
 	}
 	
+
+	.info-section__info{
+		font-size: 20px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -58,6 +62,7 @@
 	.employee-item__name 
 	{
 		font-size: 26px;
+		line-height: 1.2;
 	}
 
 	.employee-item__spec

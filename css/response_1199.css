@@ -158,6 +158,14 @@
 	.article-product__title span{
 		font-size: 26px;
 	}
+
+	.info-section .employee-item__info{
+		min-height: 1px;
+	}
+
+	.info-section__box{
+		min-height: 1px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -325,6 +333,10 @@
 		padding-right: 20px;
 		padding-bottom: 20px;
 		width: 78%;
+	}
+
+	.teams-leed .employee-item__info{
+		padding: 20px;
 	}
 	
 

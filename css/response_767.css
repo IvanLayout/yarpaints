@@ -533,6 +533,31 @@
 		max-width: none;
 	}
 
+	.info-section__coll{
+		width: 100%;
+	}
+
+	.info-section__coll .employee-item{
+		max-width: 440px;
+	}
+
+	.info-section__colr{
+		width: 100%;
+		background: none;
+		padding: 30px 0 0;
+	}
+
+	.info-section .main-title{
+		padding-right: 70px;
+	}
+
+	.info-section__img{
+		width: 139px;
+		right: -39px;
+		left: auto;
+		top: 63px;
+	}
+
 
 	.contacts__item {
 		width: calc(100% - 20px);

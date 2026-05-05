@@ -978,6 +978,26 @@
 		top: 20px;
 	}
 
+	.info-section__coll{
+		width: 45%;
+	}
+	
+	.info-section__colr{
+		width: 55%;
+	}
+
+	.info-section__wrap{
+		max-width: none;
+	}
+
+	.info-section__box{
+		max-width: none;
+	}
+
+	.info-section__img{
+		top: 20px;
+	}
+
 
 	.contacts__sector{
 		padding: 20px;

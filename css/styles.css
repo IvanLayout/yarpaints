@@ -2921,6 +2921,100 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #0D1387;
 	color: #fff;
 }
+
+
+.info-section__cols{
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.info-section__coll{
+    width: 32.421%;
+}
+
+.info-section .employee-item__info{
+	min-height: 180px;
+}
+
+.info-section__colr{
+	padding: 56px;
+	width: 67.579%;
+	position: relative;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	background: url(../images/teams_leed_bg.png) 50%/cover no-repeat;
+}
+
+.info-section__img
+{
+	position: absolute;
+	top: 28px;
+	left: -6.6%;
+	width: 26.86%;
+
+	display: block;
+	z-index: 1;
+}
+
+.info-section__wrap{
+	position: relative;
+	z-index: 2;
+	max-width: 821px;
+	margin-left: auto;
+	width: 100%;
+}
+
+.info-section__box{
+	max-width: 731px;
+	min-height: 329px;
+}
+
+.info-section__box_small{
+	max-width: 642px;
+}
+
+.info-section__desc{
+	margin-top: 20px;
+}
+
+.info-section__info{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #CD1719;
+	border-bottom: 1px solid #CD1719;
+
+	font-size: 26px;
+	line-height: 1.15;
+	color: #3a3b55;
+}
+
+.advantages__flex{
+	margin: 30px 0 0 -20px;
+	gap: 20px 0;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.advantages__flex .advantages__item{
+	margin-left: 20px;
+	padding: 30px 30px 40px 40px;
+	width: calc(100%/3 - 20px);
+}
+
+.advantages__flex .advantages__icon{
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+	width: 54px;
+	height: 54px;
+}
 /*------------
 	commit
 ------------*/
@@ -8549,6 +8643,10 @@ a.advantages__item
 
 	.article-product__title span{
 		font-size: 32px;
+	}
+
+	.info-section__box{
+		margin-left: auto;
 	}
 	/*------------
 		commit

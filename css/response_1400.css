@@ -177,6 +177,14 @@
 		background: linear-gradient(180deg, rgba(58, 59, 85, 0.7) 0%, rgba(58, 59, 85, 0.7) 100%);
 		z-index: 1;
 	}
+
+	.info-section__colr{
+		padding: 30px;
+	}
+
+	.info-section__box{
+		max-width: 80%;
+	}
     /*------------
 		commit
 	------------*/
