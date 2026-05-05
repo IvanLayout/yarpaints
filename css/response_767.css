@@ -1004,7 +1004,8 @@
 
 	.stc-info__coll
 	{
-		width: 400px;
+		width: 100%;
+		max-width: 440px;
 	}
 
 	.stc-info__colr

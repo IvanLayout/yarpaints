@@ -1478,7 +1478,8 @@
 
 	.stc-section__box
 	{
-		width: 400px;
+		width: 100%;
+		max-width: 440px;
 		padding-top: 0;
 		margin-right: auto;
 		float: none;
