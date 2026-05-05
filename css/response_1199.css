@@ -183,6 +183,11 @@
         min-height: 520px;
     }
 
+	.main-banner__big-text 
+	{
+		font-size: 260px;
+	}
+
 
 
 	.links-nav__item
@@ -324,5 +329,8 @@
 	}
 
 
-	
+	.download-present__bg-wrap
+	{
+		height: calc(100% - 85px);
+	}
 }

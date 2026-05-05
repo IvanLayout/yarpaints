@@ -140,12 +140,6 @@
 	}
 
 
-	.info-banner__wrap
-	{
-		min-height: 320px;
-	}
-
-
 	.vacancies__price
 	{
 		font-size: 28px;
@@ -155,5 +149,11 @@
 	.download-present__colr
 	{
 		padding-top: 13%;
+	}
+
+
+	.main-banner__big-text
+	{
+		font-size: 300px;
 	}
 }

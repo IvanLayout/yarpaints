@@ -836,4 +836,168 @@
 	{
 		margin-top: 20px;
 	}
+
+	
+	.history__bg
+	{
+		width: 100%;
+		padding-top: 38px;
+		padding-bottom: 32px;
+	}
+
+	.history__info
+	{
+		width: 100%;
+		margin-top: 24px;
+	}
+
+
+	.history-thumbs
+	{
+		margin-top: 30px;
+	}
+
+
+	.sales-geography__desc
+	{
+		margin-top: 10px;
+	}
+
+	.sales-geography__cols
+	{
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+
+	.sales-geography__coll
+	{
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	.sales-geography__colr
+	{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.sales-geography__items
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+
+		margin: -20px 0 0 -20px;
+		width: calc(100% + 20px);
+	}
+
+	.sales-geography__item + .sales-geography__item
+	{
+		padding-top: 0;
+		border-top: none;
+		margin-top: 20px;
+	}
+
+	.sales-geography__item
+	{
+		width: calc(100%/3 - 20px);
+		margin: 20px 0 0 20px;
+	}
+
+	.sales-geography__val
+	{
+		font-size: 36px;
+	}
+
+	.sales-geography__desc-text
+	{
+		font-size: 12px;
+	}
+	
+
+	.download-present__colr
+	{
+		width: 100%;
+	}
+
+	.download-present__coll
+	{
+		width: 100%;
+		order: 2;
+
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		align-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.download-present__box
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+
+	.stc-services__items-marg
+	{
+		margin-top: 14px;
+	}
+
+	.stc-services__item
+	{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+
+	.our-production__cols
+	{
+		margin-top: 20px;
+	}
+
+	.our-production__title
+	{
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+
+
+	.vacancies__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.vacancies__slider .slider-button-next
+	{
+		right: 0;
+	}
+
+	.vacancies__slider .slider-button-prev
+	{
+		right: 34px;
+	}
+	
+	.vacancies__item
+	{
+		width: 280px;
+	}
+
+	.vacancies__name 
+	{
+		font-size: 20px;
+	}
+
+
+	.achiev-awards__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.achiev-awards__item
+	{
+		width: 280px;
+	}
 }

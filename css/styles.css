@@ -5445,12 +5445,16 @@ a.advantages__item
 	max-width: 100%;
 }
 
+.download-present__coll img.loaded{
+	height: auto;
+}
+
 .download-present__colr
 {
 	width: calc(68.66% - 30px);
 	max-width: 818px;
 
-    padding-top: 11%;
+    padding-top: 11.4%;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -5924,9 +5928,13 @@ a.advantages__item
 	object-fit: cover;
 }
 
-.our-production .text-block h2
+.our-production__title
 {
 	margin-bottom: 30px;
+	font-family: var(--font-family);
+	color: #3A3B55;
+	font-size: 26px;
+	line-height: 1.15;
 }
 
 .our-production__items
@@ -6135,6 +6143,13 @@ a.advantages__item
 .vacancies-inner__btn
 {
 	margin-top: 24px;
+}
+
+
+.vacancies__mob-btn
+{
+	display: none;
+	margin-top: 30px;
 }
 
 /*------------

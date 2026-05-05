@@ -145,4 +145,160 @@
 	{
 		font-size: 20px;
 	}
+
+
+	.about-info__img img
+	{
+		aspect-ratio: 350 / 262;
+	}
+
+	.about-info__icon
+	{
+		width: 60px;
+	}
+
+	.about-info__icon-img
+	{
+		padding: 16px;
+	}
+
+	.about-info__box, 
+	.about-info__slider .slider-pagination, 
+	.about-info__files 
+	{
+        width: calc(100% - 80px);
+    }
+
+	.about-info__title
+	{
+		font-size: 20px;
+	}
+
+	.about-info__file
+	{
+		font-size: 16px;
+	}
+
+
+	.history-thumbs .swiper-slide-thumb-active .history-thumbs__year
+	{
+		font-size: 20px;
+	}
+
+
+	.download-present__coll img
+	{
+		aspect-ratio: 290 / 271;
+	}
+
+	
+	.stc-section__grid
+	{
+		margin-left: -10px;
+		margin-top: 10px;
+	}
+
+	.stc-section__item 
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.stc-section__desc
+	{
+		margin-top: 20px;
+	}
+
+	.stc-section__note
+	{
+		line-height: 1.3;
+	}
+
+	.stc-section__box
+	{
+		width: 100%;
+	}
+	
+	.employee-item__info
+	{
+		width: 80%;
+	}
+
+	.employee-item__spec
+	{
+		margin-top: 10px;
+	}
+
+	.stc-services__item
+	{
+		aspect-ratio: 350 / 200;
+	}
+
+	.stc-services__name
+	{
+		font-size: 20px;
+	}
+
+
+	.our-production__item 
+	{
+		width: calc(100% / 1 - 15px);
+		margin-top: 10px;
+		padding: 20px;
+	}
+
+	.our-production__name
+	{
+		margin-top: 20px;
+	}
+
+	.our-production__img
+	{
+		aspect-ratio: 350 / 262;
+	}
+
+
+	.info-banner__bg
+	{
+		object-position: 76%;
+	}
+
+
+	.achiev-awards__item
+	{
+		aspect-ratio: 1 / .893;
+	}
+
+	.achiev-awards__name
+	{
+		font-size: 26px;
+	}
+
+	.achiev-awards__abc 
+	{
+		top: -51px;
+		left: 50%;
+		right: auto;
+		margin-left: -85px;
+		margin-right: 0;
+	}
+
+	.achiev-awards__abc img 
+	{
+		width: 653px;
+		height: 611px;
+	}
+
+	.achiev-awards__year 
+	{
+		margin-top: 25px;
+		font-size: 16px;
+	}
+
+
+	.accord-box__title
+	{
+		font-size: 20px;
+	}
 }

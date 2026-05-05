@@ -289,6 +289,7 @@
 	.sub-title{
 		font-size: 16px;
 		line-height: 1.3;
+		margin-top: 10px;
 	}
 
 
@@ -1191,6 +1192,11 @@
 		padding-bottom: 45px;
 	}
 
+	.main-banner__big-text 
+	{
+		display: none;
+	}
+
 
 	.links-nav.mini-modal
 	{
@@ -1413,9 +1419,14 @@
 	}
 
 
+	.download-present
+	{
+		margin-top: 60px;
+	}
+
 	.download-present__coll 
 	{
-		width: calc(50% - 10px);
+		width: calc(40% - 15px);
 	}
 
 	.download-present__wrap
@@ -1431,7 +1442,7 @@
 	.download-present__colr
 	{
 		padding-top: 0;
-		width: calc(50% - 10px);
+		width: calc(60% - 15px);
 
 		display: flex;
 		flex-direction: column;
@@ -1441,5 +1452,177 @@
 	.download-present__box
 	{
 		padding: 20px 0;
+	}
+
+	.download-present__title 
+	{
+		font-size: 26px;
+	}
+
+	.download-present__btn
+	{
+		margin-top: 20px;
+	}
+
+
+	.stc-section__w
+	{
+		width: 100%;
+		float: none;
+	}
+
+	.stc-section__box
+	{
+		width: 400px;
+		padding-top: 0;
+		margin-right: auto;
+		float: none;
+		margin-top: 30px;
+	}
+
+	.stc-section__note
+	{
+		font-size: 16px;
+		padding-left: 70px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.stc-section__note::before
+	{
+		width: 40px;
+		height: 40px;
+
+		margin-top: -20px;
+	}
+
+	.stc-services_marg
+	{
+		margin-top: 30px;
+	}
+
+	.stc-services__items-marg
+	{
+		margin-top: 0;
+	}
+
+	.stc-services__name 
+	{
+        font-size: 18px;
+    }
+
+
+	.our-production__coll
+	{
+		width: 100%;
+	}
+
+	.our-production__colr
+	{
+		width: 100%;
+		margin-top: 57px;
+	}
+
+
+	.info-banner__wrap
+	{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.achiev-awards__wrap
+	{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.achiev-awards__info-box
+	{
+		position: relative;
+	}
+
+	.achiev-awards__slider
+	{
+		padding-left: 0;
+		margin-top: 30px;
+		padding-bottom: 64px;
+	}
+
+	.achiev-awards__slider .slider-button-prev
+	{
+		width: 34px;
+		height: 34px;
+	}
+
+	.achiev-awards__slider .slider-button-next
+	{
+		width: 34px;
+		height: 34px;
+	}
+
+	.achiev-awards__slider .slider-button-prev svg, 
+	.achiev-awards__slider .slider-button-next svg 
+	{
+		width: 9px;
+		height: 11px;
+	}
+
+
+	.accord-box__open
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.accord-box__btn
+	{
+		width: 36px;
+		height: 36px;
+	}
+
+	.accord-box__btn::after
+	{
+		width: 11px;
+	}
+
+	.accord-box__btn::before
+	{
+		height: 11px;
+	}
+
+	.accord-box__item
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+
+	.section-top__btn
+	{
+		display: none;
+	}
+
+
+	.vacancies__slider .slider-button-next
+	{
+		top: 0;
+        margin-top: -58px;
+		right: 0;
+	}
+
+	.vacancies__slider .slider-button-prev 
+	{
+		left: auto;
+		right: 34px;
+		top: 0;
+        margin-top: -58px;
+	}
+
+	.vacancies__mob-btn
+	{
+		display: block;
 	}
 }

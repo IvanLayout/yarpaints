@@ -385,7 +385,7 @@ $(() => {
 
 	if ($('.vacancies__slider').length) {
 		new Swiper(".vacancies__slider", {
-			loop: true,
+			loop: false,
 			spaceBetween: 24,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
@@ -404,11 +404,13 @@ $(() => {
 				prevEl: '.slider-button-prev'
 			},
 			breakpoints: {
-				'320': {
-					spaceBetween: 15,
+				'375': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
@@ -449,14 +451,16 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
-					slidesPerView: 2
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 24,
