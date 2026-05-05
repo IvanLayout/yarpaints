@@ -105,7 +105,20 @@
 	}
 
 
+	.page-article__img{
+		min-height: 197px;
+		object-fit: cover;
+		object-position: 40% 50%;
+	}
 
+	.page-article__img{
+		margin-top: 30px;
+	}
+
+
+	.articles__top .select-wrap{
+		flex-grow: 1;
+	}
 	/*------------
 		commit
 	------------*/

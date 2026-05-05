@@ -7,6 +7,16 @@
 	.our-team__grid .our-team__position{
 		font-size: 14px;
 	}
+
+
+	.contacts__items{
+		width: 800px;
+	}
+
+	.contacts__item{
+		margin-left: 20px;
+		width: calc(100% / 3 - 20px);
+	}
 	
 	/*------------
 		commit

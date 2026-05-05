@@ -971,6 +971,189 @@
 	.teams-leed__img{
 		top: 20px;
 	}
+
+
+	.contacts__sector{
+		padding: 20px;
+	}
+
+	.contacts__items{
+		margin-top: 20px;
+	}
+
+	.contacts__label{
+		font-size: 12px;
+		line-height: 1.3;
+		margin-bottom: 5px;
+	}
+
+	.contacts__line + .contacts__line{
+		margin-top: 20px;
+	}
+
+	.contacts__info{
+		font-size: 10px;
+		line-height: 2;
+		margin-top: 5px;
+	}
+
+	.contacts__title br{
+		display: none;
+	}
+
+	.map{
+		min-height: 1px;
+		padding: 0;
+	}
+
+	.map__wrap{
+		position: relative;
+		width: 100%;
+	}
+
+	.map__item{
+		position: relative;
+		height: 270px;
+		margin-top: 20px;
+	}
+
+	.map__title{
+		line-height: 1.2;
+	}
+
+	.map__subtitle{
+		font-size: 10px;
+		line-height: 1.3;
+	}
+
+	.inner-title{
+		font-size: 36px;
+	}
+
+	.page-article__text-block * + h3{
+		margin-top: 30px;
+	}
+
+
+	.tg-banner__wrap{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.tg-banner__title{
+		font-size: 26px;
+		max-width: 360px;
+	}
+
+	.tg-banner__btn{
+		margin-top: 30px;
+	}
+
+
+	.main-article{
+		margin-top: 60px;
+	}
+
+	.main-article__cat{
+		padding: 0 19px;
+		line-height: 36px;
+	}
+
+	.main-article__col {
+    	width: 70%;
+	}
+
+	.main-article__top {
+    	gap: 18px 20px;
+	}
+
+
+	.articles__grid{
+		margin-left: -20px;
+	}
+
+	.articles__grid .article {
+		width: calc(100% / 3 - 20px);
+		margin-left: 20px;
+	}
+
+	.articles__grid .article-product {
+		width: calc(100% / 3 - 20px);
+		margin-left: 20px;
+	}
+
+	.article-product{
+		padding: 0;
+		background: none;
+	}
+
+	.article__items{
+		width: 100%;
+	}
+
+	.article__item_nomob{
+		display: none;
+	}
+
+	.article__name{
+		font-size: 16px;
+		line-height: 1.3;
+	}
+
+	.article__desc{
+		display: none;
+	}
+
+	.article__cats{
+		display: none;
+	}
+
+	.articles__top .select-wrap .nice-select .current{
+		font-size: 14px;
+		line-height: 36px;
+		height: 38px;
+	}
+
+	.articles__top .select-wrap .nice-select .list .list_item{
+		font-size: 14px;
+	}
+
+	.wrap-btn{
+		margin-top: 30px;
+	}
+
+	.article-product__top{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.article-product__title{
+		font-size: 30px;
+		width: 100%;
+		order: 2;
+	}
+
+	.article-product__title span{
+		font-size: 20px;
+	}
+
+	.article-product__img{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.article-product__desc{
+		margin-top: 20px;
+		font-size: 16px;
+		line-height: 1.3;
+	}
+
+	.article-product__btn{
+		margin-top: 20px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -1009,7 +1192,7 @@
 	}
 
 
-	.links-nav
+	.links-nav.mini-modal
 	{
 		padding: 0;
 	}
@@ -1035,6 +1218,11 @@
 		pointer-events: none;
 	
 		opacity: 0;
+		display: block;
+		background: #fff;
+		padding: 20px;
+		width: 100%;
+		border-radius: 4px;
 	}
 
 	.links-nav__items.mini-modal__modal._active
@@ -1046,21 +1234,16 @@
 		opacity: 1;
 	}
 
-	.links-nav__items
-	{
-		display: block;
-		background: #fff;
-		padding: 20px;
-		width: 100%;
-		border-radius: 4px;
-	}
-
 	.links-nav__item
 	{
 		font-size: 14px;
 	}
 
-	.links-nav__item a
+	.links-nav__item a {
+		height: 56px;
+	}
+
+	.links-nav__items.mini-modal__modal .links-nav__item a
 	{
 		justify-content: flex-start;
 		text-align: left;
@@ -1068,13 +1251,15 @@
 		padding-bottom: 10px;
 	}
 
-	.links-nav__item + .links-nav__item
+	.links-nav__item + .links-nav__item{
+		margin-left: 20px;
+	}
+
+	.links-nav__items.mini-modal__modal .links-nav__item + .links-nav__item
 	{
 		margin-left: 0;
 		margin-top: 25px;
 	}
-
-
 
 	.confessions__item
 	{
