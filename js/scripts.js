@@ -847,7 +847,7 @@ $(() => {
 	if ($('.banner-slider').length) {
 		new Swiper(".banner-slider", {
 			loop: true,
-			spaceBetween: 24,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -862,16 +862,22 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 20,
+					slidesPerView: 1
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 20,
 					slidesPerView: 2
 				},
 				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				},
+				'1200': {
 					spaceBetween: 30,
 					slidesPerView: 3
 				}

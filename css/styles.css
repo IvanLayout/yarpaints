@@ -3062,6 +3062,48 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	width: 54px;
 	height: 54px;
 }
+
+
+.faq_accordion{
+	margin-top: 30px;
+}
+
+.faq .accordion__item{
+	border-top: 1px solid #E0E9EE;
+	border-bottom: 1px solid #E0E9EE;
+	padding: 4px 0;
+}
+
+.faq .accordion__item + .accordion__item{
+	margin-top: -1px;
+}
+
+.faq .accordion__open{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+
+	font-size: 26px;
+	line-height: 1.15;
+	color: #3a3b55;
+	cursor: pointer;
+	padding: 16px 0;
+}
+
+.faq .accordion__data{
+	padding-bottom: 16px;
+}
+
+.faq__manager{
+	margin-bottom: 10px;
+	color: #3a3b55;
+}
+
+.faq .text-block{
+	max-width: 770px;
+}
 /*------------
 	commit
 ------------*/
@@ -4083,6 +4125,10 @@ a.advantages__item
 	margin-left: 60px;
 }
 
+.write-us__img_2 img{
+	margin-left: 0;
+}
+
 .write-us__img img.loaded{
 	height: auto;
 }
@@ -4128,7 +4174,12 @@ a.advantages__item
 	justify-content: flex-end;
 }
 
-.write-us__colr .write-us__btn{
+.write-us__colr_center{
+	justify-content: center;
+	padding-top: 9.5%;
+}
+
+.write-us__btn_mob{
 	display: none;
 }
 
@@ -6526,6 +6577,12 @@ a.advantages__item
 	margin-left: 30px;
 	position: relative;
 	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.accordion__open:hover .accord-box__btn{
+		border-color: #3A3B55;
+	}
 }
 
 .accord-box__btn::after

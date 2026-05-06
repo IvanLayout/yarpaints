@@ -728,6 +728,18 @@
 	.articles__grid .article-product:last-child{
 		order: 1;
 	}
+
+
+	.banner-slider{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
+	
+	.banner-slider__product-thumb{
+		max-width: 281px;
+		width: 58.6%;
+	}
 	/*------------
 		commit
 	------------*/
