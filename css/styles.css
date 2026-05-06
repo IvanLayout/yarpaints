@@ -4257,6 +4257,13 @@ a.advantages__item
 	margin-top: 8px;
 }
 
+.main-form__desc
+{
+	margin-top: 24px;
+	color: #fff;
+	opacity: .8;
+}
+
 .main-form .form__line
 {
 	margin-bottom: 14px;
