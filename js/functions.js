@@ -78,6 +78,22 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
+
+	// Показать все
+	$('body').on('click', '.catalog-filter__more-btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.catalog-filter__box').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.catalog-filter__box').find('._hide').addClass('_show')
+		}
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash
