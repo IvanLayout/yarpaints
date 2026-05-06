@@ -173,12 +173,19 @@
 		padding-bottom: 20px;
 	}
 
-	.paints-var__img-box::before {
+	.paints-var.paints-var_inner .paints-var__img-box
+	{
+		aspect-ratio: auto;
+	}
+
+	.paints-var__img-box::before,
+	.paints-var.paints-var_inner .paints-var__img-box::before {
 		bottom: -4px;
 		width: 200px;
 	}
 
-	.paints-var__img-box::after {
+	.paints-var__img-box::after,
+	.paints-var.paints-var_inner .paints-var__img-box::after {
 		bottom: -9px;
 		width: 130px;
 	}
@@ -187,6 +194,11 @@
 		width: 100%;
 		order: 2;
 		padding: 0;
+	}
+
+	.paints-var.paints-var_inner .paints-var__name-box
+	{
+		width: 100%;
 	}
 
 	.paints-var__btn-mob{
@@ -1156,5 +1168,31 @@
 		width: calc(100% + 40px);
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+
+
+	.brand-guide__data
+	{
+		padding-top: 10px;
+	}
+
+	
+	.brand-info__box-img
+	{
+		width: 100%;
+	}
+
+	.brand-info__box-info
+	{
+		margin-top: 30px;
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.brand-info__note
+	{
+		margin-top: 30px;
+		padding-top: 30px;
 	}
 }

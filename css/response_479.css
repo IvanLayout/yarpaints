@@ -397,9 +397,13 @@
 	}
 
 
-	.form .form__input
+	.form.app-quest__form .form__input
 	{
 		height: 36px;
+	}
+
+	.form .form__input
+	{
 		font-size: 12px;
 	}
 
@@ -426,6 +430,128 @@
 		width: 16px;
 		height: 16px;
 		margin-top: -8px;
+	}
+
+
+	.brand-guide__open
+	{
+		font-size: 14px;
+	}
+
+	.brand-guide__open span::after
+	{
+		top: 6px;
+		width: 10px;
+		height: 6px;
+	}
+
+	.brand-guide__item
+	{
+		padding-top: 40px;
+	}
+
+	.brand-guide__logo
+	{
+		height: 38px;
+	}
+
+	.brand-guide__list
+	{
+		font-size: 16px;
+	}
+
+
+	.paints-var.paints-var_inner .paints-var__item
+	{
+		width: calc(100% / 1 - 10px);
+		padding: 10px;
+		align-items: center;
+		align-content: center;
+	}
+
+	.paints-var.paints-var_inner .paints-var__img-box
+	{
+		width: 70px;
+		height: 70px;
+		flex-shrink: 0;
+		padding-bottom: 0;
+		padding: 5px;
+	}
+
+	.paints-var.paints-var_inner .paints-var__img-box::before
+	{
+		display: none;
+	}
+
+	.paints-var.paints-var_inner .paints-var__name-box
+	{
+		width: calc(100% - 90px);
+		margin-left: 20px;
+		padding-bottom: 0;
+	}
+
+	.paints-var.paints-var_inner .paints-var__name
+	{
+		text-align: left;
+	}
+	
+
+	.brand-info__open-tabs
+	{
+		font-size: 14px;
+	}
+
+	.brand-info__open-tabs span::after
+	{
+		top: 7px;
+		width: 11px;
+		height: 6px;
+	}
+
+
+	.brand-info__img
+	{
+		padding: 12%;
+	}
+
+	.brand-info__bot
+	{
+		padding-top: 18px;
+	}
+
+	.brand-info__list li + li
+	{
+		margin-top: 7px;
+	}
+
+	.brand-info__bot-col + .brand-info__bot-col,
+	.brand-info__bot-item + .brand-info__bot-item
+	{
+		margin-top: 18px;
+	}
+
+	.brand-info__bot-desc 
+	{
+		margin-top: 7px;
+	}
+
+	.brand-info__btns
+	{
+		margin-left: 0;
+		margin-top: 8px;
+	}
+
+	.brand-info__btns a
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.brand-info__note
+	{
+		font-size: 12px;
+		line-height: 1.3;
 	}
 }
 

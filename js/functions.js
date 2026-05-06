@@ -68,6 +68,16 @@ $(() => {
 		}
 	})
 
+	// Закрываем всплывашку при клике на кнопку таба
+	$('.brand-info__tabs-btn').click(function (e) {
+		e.preventDefault()
+
+		$('.mini-modal__btn').removeClass('_active')
+		$('.mini-modal__modal').removeClass('_active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash
@@ -108,6 +118,10 @@ $(() => {
 				parent.find('.tabs__data').removeClass('_active')
 				$(activeTitle).addClass('_active')
 			}
+
+			let textEl = $(this).text()
+
+			$(this).closest('.brand-info__tabs-box').find('.brand-info__open-tabs span').text(textEl)
 		}
 	})
 
@@ -121,6 +135,10 @@ $(() => {
 
 		activeTab.addClass('_active')
 		$(locationHash).addClass('_active')
+
+		let textEl = $(locationHash).text()
+
+		$(locationHash).closest('.brand-info__tabs-box').find('.brand-info__open-tabs span').text(textEl)
 
 		$('html, body').stop().animate({
 			scrollTop: $(locationHash).offset().top - 120

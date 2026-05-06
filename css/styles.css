@@ -1605,6 +1605,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-align: center;
 }
 
+
+.main-title_padr
+{
+	padding-right: 90px;
+}
+
 /*--------------
     Fancybox
 --------------*/
@@ -7703,6 +7709,13 @@ a.advantages__item
 	padding: 15px 15px;
 	color: #3A3B55;
 	font-size: 26px;
+	height: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
 
 	font-family: var(--font-family);
 	line-height: 1.15;
@@ -7729,7 +7742,7 @@ a.advantages__item
 	width: 13px;
 	height: 8px;
 
-	background: url(../images/ic_arrow3.svg) 50% no-repeat;
+	background: url(../images/ic_arrow3.svg) 50%/contain no-repeat;
 }
 
 .accord__item._active .brand-guide__open span::after
@@ -8133,6 +8146,71 @@ a.advantages__item
 	margin-top: 47px;
 	padding-top: 47px;
 	border-top: 1px solid #E0E9EE;
+}
+
+
+
+.brand-info__open-tabs
+{
+	background: #fff;
+	border: 1px solid #E0E9EE;
+	text-align: center;
+	padding: 15px 15px;
+	color: #3A3B55;
+	font-size: 18px;
+	height: 58px;
+	width: 100%;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	font-family: var(--font-family);
+	line-height: 1.15;
+
+	cursor: pointer;
+}
+
+.brand-info__open-tabs span
+{
+	position: relative;
+	display: inline-block;
+	padding-right: 23px;
+}
+
+.brand-info__open-tabs span::after
+{
+	position: absolute;
+	content: '';
+	top: 9px;
+	right: 0;
+
+	display: block;
+
+	width: 13px;
+	height: 8px;
+
+	background: url(../images/ic_arrow3.svg) 50% no-repeat;
+}
+
+.brand-info__open-tabs._active span::after
+{
+	transform: rotate(180deg);
+	top: 7px;
+}
+
+
+.brand-info__wrap.mini-modal__modal
+{
+	position: relative;
+	top: 0;
+	visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 /*------------

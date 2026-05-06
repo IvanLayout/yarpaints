@@ -25,6 +25,12 @@
 		width: calc(100% / 2 - 24px);
 	}
 
+	.paints-var.paints-var_inner .paints-var__img-box::before 
+	{
+        bottom: -7%;
+        width: 136%;
+    }
+
 	.advantages__top{
 		flex-wrap: wrap;
 	}
