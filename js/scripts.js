@@ -872,7 +872,7 @@ $(() => {
 					slidesPerView: 2
 				},
 				'1024': {
-					spaceBetween: 24,
+					spaceBetween: 30,
 					slidesPerView: 3
 				}
 			}

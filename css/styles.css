@@ -5238,6 +5238,7 @@ a.advantages__item
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	width: 100%;
 }
 
 .main-banner__btn
@@ -8267,21 +8268,37 @@ a.advantages__item
 
 .banner-slider
 {
-	margin-top: 28px;
+	margin-top: 45px;
+	margin-left: auto;
+	max-width: 1662px;
+}
+
+.banner-slider__product-link{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	text-decoration: none;
+}
+
+.banner-slider__product-thumb{
+	width: 58%;
+	display: block;
+	flex-shrink: 0;
 }
 
 .banner-slider__product-img
 {
-	width: calc(100% - 40px);
-    text-decoration: none;
-    aspect-ratio: 1 / .588;
+    aspect-ratio: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+	margin-left: auto;
     position: relative;
+	max-width: 281px;
 }
 
 .banner-slider__product-img img 
@@ -8291,31 +8308,15 @@ a.advantages__item
     max-height: 100%;
 }
 
-.banner-slider__img-wrap
+.banner-slider__product-info
 {
 	position: relative;
-	padding-right: 21.41%;
-}
-
-.banner-slider__img-box
-{
-	position: relative;
-}
-
-.banner-slider__info
-{
-	position: absolute;
-	top: 50%;
-	left: 100%;
-
-	transform: translateY(-50%);
-	z-index: 1;
-	text-align: left;
+	margin-left: -58px;
+	display: block;
 	padding-left: 25px;
-	margin-left: -60px;
 }
 
-.banner-slider__info::before
+.banner-slider__product-info::before
 {
 	position: absolute;
 	content: '';
@@ -8333,7 +8334,7 @@ a.advantages__item
 	border-radius: 50%;
 }
 
-.banner-slider__adv
+.banner-slider__product-name
 {
 	font-family: var(--font-family);
 	color: #3A3B55;
@@ -8341,16 +8342,16 @@ a.advantages__item
 	line-height: normal;
 	font-weight: 500;
 	display: block;
-	white-space: nowrap;
+	text-align: left;
 	text-transform: uppercase;
 	position: relative;
 }
 
-.banner-slider__type
+.banner-slider__product-type
 {
 	margin-top: 4px;
 	display: block;
-	white-space: nowrap;
+	text-align: left;
 	color: #8D95A1;
 	position: relative;
 }
