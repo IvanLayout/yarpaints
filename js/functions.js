@@ -94,6 +94,21 @@ $(() => {
 		}
 	})
 
+	// Моб. фильтр
+	$('body').on('click', '.filter-open', function(e) {
+		e.preventDefault()
+
+		$('.catalog-filter__wrap').addClass('_show')
+		$('body').addClass('_lock-menu')
+	})
+
+	$('body').on('click', '.catalog-filter__close', function(e) {
+		e.preventDefault()
+
+		$('.catalog-filter__wrap').removeClass('_show')
+		$('body').removeClass('_lock-menu')
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash

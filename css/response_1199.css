@@ -424,4 +424,29 @@
 	{
 		margin-top: 25px;
 	}
+
+
+	.catalog-filter__item 
+	{
+		width: calc(100% / 4 - 24px);
+	}
+
+
+	.products-found__img-box 
+	{
+		width: 30%;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+
+	.products-found__info 
+	{
+		width: calc(70% - 20px);
+	}
+
+	.products-found__name,
+	.products-found__price
+	{
+		font-size: 22px;
+	}
 }

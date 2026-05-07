@@ -206,4 +206,47 @@
 	{
 		font-size: 16px;
 	}
+
+
+	.paints-sect__item
+	{
+		width: 250px;
+		padding: 15px;
+		font-size: 16px;
+	}
+
+	.paints-sect__img
+	{
+		height: 60px;
+		max-width: 60px;
+	}
+
+
+	.catalog-filter__item 
+	{
+		width: calc(100% / 5 - 24px);
+	}
+
+	.products-found__box
+	{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+
+	.cats-inner__item 
+	{
+        padding-left: 15px;
+    }
+
+
+	.products__title
+	{
+		font-size: 22px;
+	}
+
+	.products__name
+	{
+		font-size: 20px;
+	}
 }

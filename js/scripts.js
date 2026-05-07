@@ -93,10 +93,6 @@ $(() => {
 
 		let parent = $(this).closest('.amount')
 
-		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
-			parent = $('.product-global-added')
-		}
-
 		let input = parent.find('input')
 		let inputVal = parseFloat(input.val())
 		let minimum = parseFloat(input.data('minimum'))
@@ -107,34 +103,12 @@ $(() => {
 
 			parent.find('.amount__btn_plus').prop("disabled", false)
 		}
-
-		if (inputVal-1 == minimum) {
-			if ( !parent.hasClass('product__amount') && !parent.closest('.product-global-added').hasClass('product-global-added') ){
-				$(this).prop("disabled", true)
-			}
-		}
-
-		if (inputVal == minimum) {
-			if ( parent.hasClass('product__amount') ){
-				$(this).closest('.product').find('.product__added').removeClass('_show')
-				$(this).closest('.product').find('.product__bot').removeClass('_hide')
-			}
-
-			if ( parent.closest('.product-global-added').hasClass('product-global-added') ){
-				$('.product-global-added').removeClass('_show')
-				$('.product-global-btns').removeClass('_hide')
-			}
-		}
 	})
 	
 	$('body').on('click', '.amount__btn_plus', function (e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.amount')
-
-		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
-			parent = $('.product-global-added')
-		}
 
 		let input = parent.find('input')
 		let inputVal = parseFloat(input.val())
@@ -771,28 +745,23 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 10,
-					slidesPerView: 2
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 10,
-					slidesPerView: 2
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 20,
-					slidesPerView: 3
+					slidesPerView: 'auto',
 				},
 				'1024': {
 					spaceBetween: 24,
-					slidesPerView: 5
+					slidesPerView: 'auto',
 				},
 				'1200': {
 					spaceBetween: 24,
-					slidesPerView: 6
-				}
-			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+					slidesPerView: 'auto',
 				}
 			}
 		})
@@ -907,16 +876,26 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
+					spaceBetween: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
+					spaceBetween: 1,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 15,
-					slidesPerView: 2
+					spaceBetween: 1,
+					slidesPerView: 'auto',
 				},
 				'1024': {
+					spaceBetween: 24,
+					slidesPerView: 5
+				},
+				'1200': {
+					spaceBetween: 24,
+					slidesPerView: 6
+				},
+				'1401': {
 					spaceBetween: 24,
 					slidesPerView: 7
 				}

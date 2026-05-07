@@ -338,4 +338,25 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+
+	.products-found__item
+	{
+		padding: 25px;
+	}
+
+	.products-found__name 
+	{
+        font-size: 24px;
+    }
+
+	.products-found__desc
+	{
+		margin-top: 10px;
+	}
+
+	.products-found__btn .btn-red
+	{
+		min-width: 1px;
+	}
 }
