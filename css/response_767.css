@@ -740,6 +740,19 @@
 		max-width: 281px;
 		width: 58.6%;
 	}
+
+
+	.marketing-kit__flex{
+		gap: 10px 0;
+	}
+
+	.marketing-kit__item{
+		width: 100%;
+	}
+
+	.marketing-kit__img {
+		width: 32.3%;
+	}
 	/*------------
 		commit
 	------------*/

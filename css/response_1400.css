@@ -185,6 +185,10 @@
 	.info-section__box{
 		max-width: 80%;
 	}
+
+	.marketing-kit__bot{
+		flex-wrap: wrap;
+	}
     /*------------
 		commit
 	------------*/

@@ -2332,6 +2332,10 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	margin: 30px 0 32px;
 }
 
+.tabs_mb{
+	margin-bottom: 39px;
+}
+
 .tabs-text{
 	font-weight: 400;
 	font-size: 16px;
@@ -3207,6 +3211,111 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 
 .faq .text-block{
 	max-width: 770px;
+}
+
+
+.tabs-container_marg{
+	margin-top: 30px;
+}
+
+.tabs_bord{
+	border-bottom: 1px solid #e0e9ee;
+}
+
+.tabs__border{
+	gap: 50px;
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: nowrap;
+}
+
+.tabs-link{
+	font-size: 16px;
+	line-height: 1.25;
+	color: #3a3b55;
+	padding-bottom: 9px;
+	text-align: left;
+	position: relative;
+	display: block;
+}
+
+.tabs-link:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 2px;
+	background-color: #3a3b55;
+	border-radius: 2px;
+	opacity: 0;
+	transition: opacity .2s linear, background .2s linear;
+}
+
+@media (any-hover: hover){
+	.tabs-link:hover:before{
+		opacity: 1;
+	}
+}
+
+.tabs-link._active:before{
+	opacity: 1;
+	background-color: #cd1719;
+}
+
+.marketing-kit__flex{
+	gap: 24px 0;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.marketing-kit__item{
+	flex-wrap: nowrap;
+	padding: 25px 24px;
+	background: #fff;
+	width: calc(50% - 12px);
+}
+
+.marketing-kit__img{
+	width: 234px;
+	aspect-ratio: 1/.641;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin-right: 41px;
+	flex-shrink: 0;
+}
+
+.marketing-kit__img img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.marketing-kit__name{
+	font-size: 26px;
+	line-height: 1.15;
+	color: #3A3B55;
+}
+
+.marketing-kit__bot{
+	margin-top: 20px;
+	flex-wrap: nowrap;
+	gap: 16px;
+}
+
+.marketing-kit__btn{
+	flex-shrink: 0;
+}
+
+.marketing-kit__info{
+	font-size: 12px;
+	line-height: 1.5;
+	color: #8f8f8f;
+	max-width: 292px;
 }
 /*------------
 	commit
@@ -9578,6 +9687,10 @@ a.advantages__item
 
 	.info-section__box{
 		margin-left: auto;
+	}
+
+	.marketing-kit__img{
+		margin-right: 30px;
 	}
 	/*------------
 		commit

@@ -22,6 +22,14 @@
 	.info-section__info{
 		font-size: 20px;
 	}
+
+	.marketing-kit__img{
+		margin-right: 20px;
+	}
+
+	.marketing-kit__name{
+		font-size: 20px;
+	}
 	/*------------
 		commit
 	------------*/
