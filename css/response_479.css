@@ -593,6 +593,11 @@
 		margin-top: 90px;
 	}
 
+	.often-bought__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
 	.often-bought__img-box
 	{
 		width: 57.05%;

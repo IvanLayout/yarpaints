@@ -9200,6 +9200,8 @@ a.advantages__item
 .often-bought__slider
 {
 	margin-top: 30px;
+	position: relative;
+	z-index: 3;
 }
 
 .often-bought__item
