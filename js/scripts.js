@@ -767,6 +767,51 @@ $(() => {
 		})
 	}
 
+	if ($('.often-bought__slider').length) {
+		new Swiper(".often-bought__slider", {
+			loop: false,
+			spaceBetween: 24,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 'auto',
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				},
+				'1024': {
+					spaceBetween: 24,
+					slidesPerView: 3,
+				},
+				'1200': {
+					spaceBetween: 24,
+					slidesPerView: 3,
+				}
+			}
+		})
+	}
+
 	if ($('.success-stories-slider').length) {
 		new Swiper(".success-stories-slider", {
 			loop: false,

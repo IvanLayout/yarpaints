@@ -1311,4 +1311,28 @@
 		width: calc(100% / 1 - 20px);
 		margin-top: 10px;
 	}
+
+
+	.often-bought__text-bg
+	{
+		font-size: 120px;
+	}
+
+	.often-bought__slider 
+	{
+		margin-top: 110px;
+	}
+
+	.often-bought__item
+	{
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-left: 30px;
+		width: 440px;
+	}
+
+	.often-bought__name
+	{
+		font-size: 20px;
+	}
 }

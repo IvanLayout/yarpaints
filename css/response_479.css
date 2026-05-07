@@ -581,6 +581,28 @@
 	{
 		font-size: 12px;
 	}
+
+
+	.often-bought__text-bg 
+	{
+		font-size: 95px;
+	}
+
+	.often-bought__slider 
+	{
+		margin-top: 90px;
+	}
+
+	.often-bought__img-box
+	{
+		width: 57.05%;
+		margin-top: -43px;
+	}
+
+	.often-bought__name-box
+	{
+		width: calc(42.95% - 10px);
+	}
 }
 
 

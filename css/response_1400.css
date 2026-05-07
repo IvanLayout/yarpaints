@@ -359,4 +359,12 @@
 	{
 		min-width: 1px;
 	}
+
+
+	.often-bought__item
+	{
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+		padding-bottom: 1.8%;
+	}
 }

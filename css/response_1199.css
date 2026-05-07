@@ -449,4 +449,11 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.often-bought__text-bg 
+	{
+		font-size: 210px;
+		margin-left: -255px;
+	}
 }

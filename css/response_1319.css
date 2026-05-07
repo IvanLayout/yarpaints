@@ -249,4 +249,16 @@
 	{
 		font-size: 20px;
 	}
+
+
+	.often-bought__name
+	{
+		font-size: 18px;
+	}
+
+	.often-bought__text-bg 
+	{
+        font-size: 260px;
+        margin-left: -340px;
+    }
 }
