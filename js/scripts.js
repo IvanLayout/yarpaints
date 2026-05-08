@@ -10,83 +10,6 @@ if (document.body.clientWidth < 390) {
 }
 
 $(() => {
-	
-
-	// if ($('.main-slider').length) {
-	// 	new Swiper(".main-slider", {
-	// 		loop: true,
-	// 		spaceBetween: 10,
-	// 		slidesPerView: 1,
-	// 		speed: 800,
-	// 		watchSlidesProgress: true,
-	// 		watchOverflow: true,
-	// 		preloadImages: false,
-	// 		lazy: {
-	// 			loadPrevNext: true,
-	// 			elementClass: 'lazyload',
-	// 			enabled: true,
-	// 			loadedClass: 'loaded',
-	// 			checkInView: true,
-	// 			loadOnTransitionStart: true
-	// 		},
-	// 		navigation: {
-	// 			nextEl: '.slider-button-next',
-	// 			prevEl: '.slider-button-prev'
-	// 		},
-	// 		pagination: {
-	// 			bulletActiveClass: 'slider-dot_active',
-	// 			bulletClass: 'slider-dot',
-	// 			clickableClass: 'slider-pagination-clickable',
-	// 			el: '.slider-pagination',
-	// 			clickable: true
-	// 		},
-	// 		on: {
-	// 			init: function (swiper) {
-	// 				$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-	// 			}
-	// 		}
-	// 	})
-	// }
-
-	if ($('.product-info').length) {
-		galleryThumbs = new Swiper('.product-thumbs', {
-			spaceBetween: 9,
-			slidesPerView: 8,
-			direction: 'vertical',
-			loop: false,
-			speed: 500,
-			watchOverflow: true,
-			watchSlidesProgress: true,
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			breakpoints: {
-				'768': {
-					spaceBetween: 10,
-					slidesPerView: 5
-				}
-			}
-		})
-
-		new Swiper('.product-images__slider', {
-			spaceBetween: 10,
-			loop: false,
-			speed: 500,
-			watchOverflow: true,
-			thumbs: {
-				swiper: galleryThumbs
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true,
-			}
-		})
-	}
-
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
 		e.preventDefault()
@@ -901,6 +824,33 @@ $(() => {
 					slidesPerView: 3
 				}
 			}
+		})
+	}
+
+	if ($('.product-images__slider').length) {
+		new Swiper(".product-images__slider", {
+			loop: false,
+			spaceBetween: 24,
+			slidesPerView: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
 		})
 	}
 
