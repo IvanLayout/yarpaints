@@ -9526,6 +9526,74 @@ a.advantages__item
 	border-top: 1px solid #E0E9EE;
 }
 
+
+.product-info__btns 
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+    flex-wrap: nowrap;
+}
+
+.product-info__btn 
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E0E7EE;
+    border-radius: 4px;
+}
+
+.product-info__btn + .product-info__btn 
+{
+	margin-left: 10px;
+}
+
+.product-info__btn svg 
+{
+    display: block;
+    stroke: #3A3B55;
+	transition: stroke .2s linear;
+}
+
+.product-info__btn.product-compare svg 
+{
+	display: block;
+    width: 16px;
+    height: 20px;
+}
+
+.product-info__btn.product-favorite svg 
+{
+	display: block;
+    width: 24px;
+    height: 24px;
+	fill: transparent;
+}
+
+@media (any-hover: hover)
+{
+	.product-info__btn:hover svg
+	{
+		stroke: #B71517;
+	}
+}
+
+.product-info__btn._active svg
+{
+	stroke: #B71517;
+}
+
+.product-info__btn.product-favorite._active svg
+{
+	fill: #B71517;
+}
+
 /*------------
 @media (any-hover: hover)
 {

@@ -61,6 +61,30 @@ $(() => {
 
 	// commit
 
+
+	// favorite
+	$('body').on('click', '.product-favorite', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
+
+	// compare
+	$('body').on('click', '.product-compare', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
 	if ($('#datepicker').length) {
 		new AirDatepicker('#datepicker', {
 			container: '#datepicker-here1',
