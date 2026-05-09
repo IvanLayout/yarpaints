@@ -63,17 +63,10 @@
 		aspect-ratio: 1 / .9;
 	}
 
-	/* .expert-knowledge__coll {
-		width: calc(28% - 15px);
+	.slider-item__name{
+		font-size: 16px;
+		line-height: 1.3;
 	}
-
-	.expert-knowledge__colc {
-    	width: 44%;
-	}
-
-	.expert-knowledge__colr{
-		width: calc(28% - 15px);
-	} */
 	/*------------
 		commit
 	------------*/
