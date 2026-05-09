@@ -334,16 +334,241 @@
 												<img data-src="images/tmp/color10.jpg" src="images/img_plug.png" alt="" class="lazyload">
 											</a>
 										</div>
-									</div>
-									<div class="product-info__box">
-										
+
+										<div class="product-info__another-color _flex">
+											<div class="product-info__another-title">Нужен другой цвет</div>
+
+											<div class="checkbox-another">
+												<label class="checkbox-another__label">
+													<input type="checkbox" name="">
+			
+													<span class="checkbox-another__text">
+														<span>Нет</span>
+
+														<span>Да</span>
+													</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
 
-								<div class="product-info__item"></div>
+								<div class="product-info__item">
+									<div class="product-info__box-title">Количество</div>
 
-								<div class="product-info__item"></div>
+									<div class="product-info__val-flex _flex">
+										<div class="product-info__val-box _flex">
+											<div class="amount products-info__amount">
+												<div class="amount__val _flex">
+													<button type="button" class="amount__btn amount__btn_minus"></button>
+
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+													<button type="button" class="amount__btn amount__btn_plus"></button>
+												</div>
+											</div>
+
+											<div class="mini-modal tooltip">
+												<span class="tooltip__icon">
+													<svg>
+														<use xlink:href="images/sprite.svg#tooltip"></use>
+													</svg>
+												</span>
+
+												<button type="button" class="mini-modal__btn tooltip__icon">
+													<svg>
+														<use xlink:href="images/sprite.svg#tooltip"></use>
+													</svg>
+												</button>
+		
+												<div class="mini-modal__modal tooltip__wrap">
+													<button type="button" data-mini-close class="mini-modal__close">
+														<svg>
+															<use xlink:href="images/sprite.svg#close"></use>
+														</svg>
+													</button>
+		
+													<div class="tooltip__info">
+														<div class="tooltip__title">Чем больше заказ, <br>тем больше скидка:</div>
+
+														<div class="tooltip__text">
+															<p>5% — при заказе через сайт</p>
+															<p>7% — при заказе от 30 000 ₽</p>
+															<p>9% — при заказе от 80 000 ₽</p>
+															<p>12% — при заказе от 150 000 ₽</p>
+															<p>15% — при заказе от 250 000 ₽</p>
+															<p>При заказе от 300 000 ₽, цена предоставляется по запросу. Скидка распространяется только на продукцию. На доставку скидка не распространяется.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="product-info__val-box">
+											<button type="button" data-content="#modal-more" class="btn-border modal-btn">
+												<span>
+													Рассчитать необходимое количество
+		
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-info__item">
+									<div class="product-info__box-title">Оптовая цена</div>
+
+									<div class="product-info__price-flex _flex">
+										<div class="product-info__price-box">
+											<div class="product-info__price">2 900 ₽</div>
+
+											<div class="product-info__price-desc">2 900 ₽/кг</div>
+										</div>
+
+										<div class="mini-modal tooltip">
+											<span class="tooltip__icon">
+												<svg>
+													<use xlink:href="images/sprite.svg#tooltip"></use>
+												</svg>
+											</span>
+
+											<button type="button" class="mini-modal__btn tooltip__icon">
+												<svg>
+													<use xlink:href="images/sprite.svg#tooltip"></use>
+												</svg>
+											</button>
+	
+											<div class="mini-modal__modal tooltip__wrap">
+												<button type="button" data-mini-close class="mini-modal__close">
+													<svg>
+														<use xlink:href="images/sprite.svg#close"></use>
+													</svg>
+												</button>
+	
+												<div class="tooltip__info">
+													<div class="tooltip__title">Чем больше заказ, <br>тем больше скидка:</div>
+
+													<div class="tooltip__text">
+														<p>5% — при заказе через сайт</p>
+														<p>7% — при заказе от 30 000 ₽</p>
+														<p>9% — при заказе от 80 000 ₽</p>
+														<p>12% — при заказе от 150 000 ₽</p>
+														<p>15% — при заказе от 250 000 ₽</p>
+														<p>При заказе от 300 000 ₽, цена предоставляется по запросу. Скидка распространяется только на продукцию. На доставку скидка не распространяется.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-info__buy-cart">
+										<a href="/" class="btn-red">
+											<span>Добавить в корзину</span>
+										</a>
+									</div>
+
+									<div class="product-info__work-ex">Работаем только с юр. лицами и ИП</div>
+								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="product-about _marg">
+					<div class="cont">
+						<div class="tabs-container">
+							<div class="tabs product-about__tabs _flex">
+								<button type="button" data-content="#tab1" data-level="level1" class="tabs__btn product-about__btn tabs__button_js">Описание</button>
+								<button type="button" data-content="#tab2" data-level="level1" class="tabs__btn product-about__btn tabs__button_js _active">Характеристики</button>
+								<button type="button" data-content="#tab3" data-level="level1" class="tabs__btn product-about__btn tabs__button_js">Применение</button>
+								<button type="button" data-content="#tab4" data-level="level1" class="tabs__btn product-about__btn tabs__button_js">Вопросы</button>
+								<button type="button" data-content="#tab5" data-level="level1" class="tabs__btn product-about__btn tabs__button_js">Документы</button>
+							</div>
+
+							<div class="tab-content level1" id="tab1">1</div>
+
+							<div class="tab-content level1 _active" id="tab2">
+								<div class="product-about__title">Характеристики</div>
+
+								<div class="product-about__cols _flex">
+									<div class="product-about__coll">
+										<div class="features">
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Степень блеска</span>
+												</div>
+												<div class="features__feature-val">Матовый</div>
+											</div>
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Основание</span>
+												</div>
+												<div class="features__feature-val">Дерево</div>
+											</div>
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Цвет</span>
+												</div>
+												<div class="features__feature-val">Прозрачный</div>
+											</div>
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Степень блеска</span>
+												</div>
+												<div class="features__feature-val">Матовый</div>
+											</div>
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Основание</span>
+												</div>
+												<div class="features__feature-val">Дерево</div>
+											</div>
+											<div class="features__feature _flex">
+												<div class="features__feature-name">
+													<span class="features__feature-span">Цвет</span>
+												</div>
+												<div class="features__feature-val">Прозрачный</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-about__colr">
+										<div class="product-about__items _flex">
+											<div class="product-about__item">
+												<div class="product-about__icon">
+													<img data-src="images/ic_product_about1.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</div>
+
+												<div class="product-about__desc">Экспресс сушка 1 час</div>
+											</div>
+											<div class="product-about__item">
+												<div class="product-about__icon">
+													<img data-src="images/ic_product_about2.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</div>
+
+												<div class="product-about__desc">Стойкий к царапинам и сколам</div>
+											</div>
+											<div class="product-about__item">
+												<div class="product-about__icon">
+													<img data-src="images/ic_product_about3.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</div>
+
+												<div class="product-about__desc">Матовый</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-content level1" id="tab3">3</div>
+
+							<div class="tab-content level1" id="tab4">4</div>
+
+							<div class="tab-content level1" id="tab5">5</div>
 						</div>
 					</div>
 				</section>
