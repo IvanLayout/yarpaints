@@ -119,6 +119,11 @@
 	.articles__top .select-wrap{
 		flex-grow: 1;
 	}
+
+	.expert-knowledge__img {
+		aspect-ratio: 1 / .9;
+		height: auto;
+	}
 	/*------------
 		commit
 	------------*/

@@ -196,6 +196,42 @@
 	.marketing-kit__img{
 		width: 40%;
 	}
+
+
+	.expert-knowledge__wrap{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.expert-knowledge__bg-wrap{
+		height: 100%;
+	}
+
+	.expert-knowledge__coll{
+		padding-top: 0;
+		width: calc(27% - 15px);
+	}
+
+	.expert-knowledge__coll-box{
+		padding-top: 30px;
+	}
+
+	.expert-knowledge__colr{
+		padding-top: 0;
+		width: calc(33% - 15px);
+	}
+
+	.expert-knowledge__colr-box{
+		padding-top: 30px;
+	}
+
+	.expert-knowledge__colc {
+		width: 40%;
+	}
+
+	.expert-knowledge__abc{
+		left: 18%;
+	}
 	/*------------
 		commit
 	------------*/

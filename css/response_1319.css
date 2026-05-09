@@ -30,6 +30,50 @@
 	.marketing-kit__name{
 		font-size: 20px;
 	}
+
+	.advantages__flex .advantages__item{
+		padding: 20px;
+		min-height: 140px;
+	}
+
+	.advantages__flex .advantages__icon{
+		margin-left: 10px;
+	}
+
+	.advantages__flex .advantages__name{
+		font-size: 16px;
+		line-height: 1.3;
+	}
+
+
+
+	.expert-knowledge__bg-wrap {
+		height: calc(100% - 40px);
+	}
+
+	.expert-knowledge__coll{
+		padding-top: 40px;
+	}
+
+	.expert-knowledge__colr{
+		padding-top: 40px;
+	}
+
+	.expert-knowledge__img {
+		aspect-ratio: 1 / .9;
+	}
+
+	/* .expert-knowledge__coll {
+		width: calc(28% - 15px);
+	}
+
+	.expert-knowledge__colc {
+    	width: 44%;
+	}
+
+	.expert-knowledge__colr{
+		width: calc(28% - 15px);
+	} */
 	/*------------
 		commit
 	------------*/

@@ -753,6 +753,40 @@
 	.marketing-kit__img {
 		width: 32.3%;
 	}
+
+	.advantages__flex{
+		gap: 10px 0;
+	}
+
+	.advantages__flex .advantages__item {
+		width: calc(100% - 20px);
+	}
+
+
+	.expert-knowledge__colr{
+		width: 100%;
+	}
+
+	.expert-knowledge__colc{
+		width: 100%;
+		order: 2;
+	}
+
+	.expert-knowledge__abc{
+		right: -64px;
+		left: auto;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: 8px;
+		width: 180px;
+	}
+
+	.expert-knowledge__img{
+		justify-content: center;
+
+		aspect-ratio: auto;
+		height: 342px;
+	}
 	/*------------
 		commit
 	------------*/

@@ -189,6 +189,32 @@
 	.marketing-kit__bot{
 		flex-wrap: wrap;
 	}
+
+
+	.advantages__flex .advantages__item{
+		padding-left: 30px;
+	}
+
+
+	.expert-knowledge__coll {
+		width: calc(31% - 15px);
+	}
+
+	.expert-knowledge__coll-box{
+		padding-top: 17%;
+	}
+
+	.expert-knowledge__colc {
+    	width: 38%;
+	}
+
+	.expert-knowledge__colr{
+		width: calc(31% - 15px);
+	}
+
+	.expert-knowledge__colr-box{
+		padding-top: 17%;
+	}
     /*------------
 		commit
 	------------*/
