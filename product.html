@@ -796,12 +796,6 @@
 									</div>
 
 									<div class="main-articles__desc">Одним их значимых событий этой осени стало участие представителей нашей Компании в XXI международной конференции „Рынки лакокрасочных материалов и сырья</div>
-
-									<div class="main-articles__arrow">
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow"></use>
-										</svg>
-									</div>
 								</div>
 								<div class="main-articles__item swiper-slide">
 									<a href="/" class="main-articles__img">
@@ -813,12 +807,6 @@
 									</div>
 
 									<div class="main-articles__desc">Одним их значимых событий этой осени стало участие представителей нашей Компании в XXI международной конференции „Рынки лакокрасочных материалов и сырья</div>
-
-									<div class="main-articles__arrow">
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow"></use>
-										</svg>
-									</div>
 								</div>
 								<div class="main-articles__item swiper-slide">
 									<a href="/" class="main-articles__img">
@@ -841,8 +829,6 @@
 									</div>
 
 									<div class="main-articles__desc">Одним их значимых событий этой осени стало участие представителей нашей Компании в XXI международной конференции „Рынки лакокрасочных материалов и сырья</div>
-
-									<div class="main-articles__arrow"></div>
 								</div>
 							</div>
 
@@ -856,6 +842,70 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="map-section _marg">
+					<div class="cont">
+						<div class="tabs-container">
+							<div class="map-section__top _flex">
+								<div class="main-title">Розничные магазины</div>
+	
+								<div class="tabs tabs_btns _flex">
+									<button type="button" data-content="#tab6" data-level="level1" class="tabs-btn tabs__button_js _active">
+										<span>В магазине</span>
+									</button>
+									<button type="button" data-content="#tab7" data-level="level1" class="tabs-btn tabs__button_js">
+										<span>Онлайн</span>
+									</button>
+								</div>
+
+								<div class="select-wrap">
+									<select>
+										<option value="1">Хабаровск</option>
+										<option value="2">Санкт-Петербург</option>
+										<option value="3">Владивосток</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="tab-content level1 _active" id="tab6">
+								<div class="map">
+									<div class="map__wrap">
+										<div class="map__wrap-item">
+											<div class="map__title">«Универсам №3»</div>
+		
+											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+										</div>
+										<div class="map__wrap-item">
+											<div class="map__title">«Универсам №3»</div>
+		
+											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+										</div>
+									</div>
+									<div class="map__item" id="map"></div>
+								</div>
+							</div>
+
+							<div class="tab-content level1" id="tab7">
+								<div class="map">
+									<div class="map__wrap">
+										<div class="map__wrap-item">
+											<div class="map__title">«Универсам №3»</div>
+		
+											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+										</div>
+										<div class="map__wrap-item">
+											<div class="map__title">«Универсам №3»</div>
+		
+											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+										</div>
+									</div>
+									<div class="map__item" id="map2"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -1025,5 +1075,31 @@
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+		<script>
+			//карта
+			ymaps.ready(init);
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [57.657548, 39.778991],
+					zoom: 5
+				}),
+				myPlacemark = new ymaps.Placemark([57.657548, 39.778991],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				}),
+				myPlacemark2 = new ymaps.Placemark([57.607846, 50.847209],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				})
+
+				myMap.geoObjects.add(myPlacemark).add(myPlacemark2)
+			}
+		</script>
 	</body>
 </html>

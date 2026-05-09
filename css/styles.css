@@ -10664,6 +10664,62 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	justify-content: flex-start;
 }
 
+
+/*------------
+    map-section
+------------*/
+
+.map-section__top
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.tabs.tabs_btns._flex
+{
+	gap: 11px;
+}
+
+.tabs_btns
+{
+	align-items: stretch;
+	align-content: stretch;
+
+	flex-shrink: 0;
+}
+
+.map-section__top .tabs_btns
+{
+	margin-left: 54px;
+}
+
+.tabs-btn
+{
+	color: #3A3B55;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #0D1387;
+	padding: 10px 35px;
+	background: transparent;
+	transition: background .2s linear, color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.tabs-btn:hover
+	{
+		color: #fff;
+		background: #0D1387;
+	}
+}
+
+.tabs-btn._active
+{
+	color: #fff;
+	background: #0D1387;
+}
+
 /*------------
 @media (any-hover: hover)
 {
