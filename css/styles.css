@@ -3169,12 +3169,26 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	width: calc(100%/3 - 20px);
 }
 
+.advantages__flex .advantages__item_four{
+	padding-right: 40px;
+	padding-bottom: 18px;
+	width: calc(100%/4 - 20px);
+	flex-wrap: wrap;
+}
+
 .advantages__flex .advantages__icon{
 	justify-content: flex-end;
 	align-items: flex-start;
 	align-content: flex-start;
 	width: 54px;
 	height: 54px;
+}
+
+.advantages__item_four .advantages__icon{
+	width: 38px;
+	height: 38px;
+	margin: 0 0 8px auto;
+	order: -1;
 }
 
 
@@ -3457,7 +3471,8 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 }
 
 
-.stages-work__slider{
+.stages-work__slider,
+.stages-work__slider2{
 	margin-top: 30px;
 }
 
@@ -3469,6 +3484,16 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	border-radius: 4px;
 	background: #fff;
 	padding: 25px 40px 25px 25px;
+}
+
+.stages-work__item_small{
+	padding: 10px 40px 20px 20px;
+}
+
+.stages-work__item_small .stages-work__box{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 .stages-work__item-bg{
@@ -3508,6 +3533,19 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 .stages-work__desc{
 	margin-top: 17px;
 	max-width: 334px;
+}
+
+.stages-work__num{
+	font-size: 40px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #3a3b55;
+	flex-grow: 1;
+}
+
+.stages-work__info{
+	margin-top: 20px;
+	min-height: 40px;
 }
 
 
@@ -3657,6 +3695,54 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	color: #3a3b55;
 	text-align: center;
 	border-radius: 4px;
+}
+
+
+.info-items___flex{
+	justify-content: space-between;
+}
+
+.info-items___flex + .info-items___flex{
+	margin-top: 60px;
+}
+
+.info-items___flex:nth-child(2){
+	flex-direction: row-reverse;
+}
+
+.info-items__col{
+	width: calc(50% - 12px);
+}
+
+.info-items__img{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1/.4364;
+	object-fit: cover;
+	object-position: 50% 0;
+	border-radius: 4px;
+	min-height: 262px;
+}
+
+.info-items__col_text{
+	align-self: center;
+}
+
+.info-items__box{
+	max-width: 703px;
+	margin: 0 auto;
+}
+
+.info-items___flex:nth-child(2) .info-items__box{
+	margin-left: 0;
+}
+
+.info-items__text-block{
+	margin-top: 30px;
+}
+
+.info-items__main-title{
+	line-height: 1.2;
 }
 /*------------
 	commit
@@ -10989,6 +11075,10 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	.stages-work__item
 	{
 		padding: 20px;
+	}
+
+	.stages-work__item_small{
+		padding-top: 10px;
 	}
 	/*------------
 		commit

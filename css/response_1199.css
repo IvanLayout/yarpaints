@@ -258,6 +258,15 @@
 	.slider-item__desc br{
 		display: none;
 	}
+
+
+	.info-items___flex + .info-items___flex{
+		margin-top: 40px;
+	}
+
+	.info-items__text-block{
+		margin-top: 20px;
+	}
 	/*------------
 		commit
 	------------*/

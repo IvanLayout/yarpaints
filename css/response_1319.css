@@ -40,6 +40,10 @@
 		margin-left: 10px;
 	}
 
+	.advantages__item_four .advantages__icon{
+		margin-left: auto;
+	}
+
 	.advantages__flex .advantages__name{
 		font-size: 16px;
 		line-height: 1.3;
