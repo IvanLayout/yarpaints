@@ -327,6 +327,10 @@
 		object-position: 19% 50%;
 	}
 
+	.main-form__img2 {
+		object-position: 5% 50%;
+	}
+
 	.main-form .form__line{
 		margin-bottom: 10px;
 	}
@@ -786,6 +790,16 @@
 
 		aspect-ratio: auto;
 		height: 342px;
+	}
+
+
+	.information__col{
+		width: 100%;
+	}
+
+	.information__col_text{
+		margin-top: 30px;
+		order: 2;
 	}
 	/*------------
 		commit
