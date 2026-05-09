@@ -9422,6 +9422,11 @@ a.advantages__item
 	}
 }
 
+.products-found__slider
+{
+	margin-top: 30px;
+}
+
 .products-found__grid
 {
 	justify-content: space-between;
@@ -9436,14 +9441,17 @@ a.advantages__item
 	background: #fff;
 	padding: 40px;
 
-	width: calc(100%/2 - 12px);
-	margin-top: 24px;
-
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
 	flex-wrap: wrap;
+}
+
+.products-found__grid .products-found__item
+{
+	width: calc(100%/2 - 12px);
+	margin-top: 24px;
 }
 
 .products-found__img-box
@@ -9566,6 +9574,16 @@ a.advantages__item
 {
 	margin-top: 18px;
 	text-align: center;
+}
+
+.products-found__big-price
+{
+	font-family: var(--font-family);
+	font-size: 32px;
+	letter-spacing: -0.01em;
+	color: #000;
+
+	margin-top: 44px;
 }
 
 /*------------

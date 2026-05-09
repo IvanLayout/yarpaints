@@ -1325,7 +1325,7 @@
 	}
 
 
-	.products-found__item
+	.products-found__grid .products-found__item
 	{
 		width: calc(100% / 2 - 5px);
 		margin-top: 10px;
