@@ -9652,6 +9652,11 @@ a.advantages__item
 	padding: 20px 0;
 }
 
+.product-info__item:last-child
+{
+	padding-bottom: 0;
+}
+
 .product-info__item + .product-info__item
 {
 	border-top: 1px solid #E0E9EE;
@@ -9775,7 +9780,8 @@ a.advantages__item
 
 .product-info__colrs
 {
-    margin-left: -10px;
+    margin-left: -15px;
+	margin-top: -5px;
 }
 
 .product-info__color 
@@ -9784,7 +9790,7 @@ a.advantages__item
     overflow: hidden;
     width: 50px;
 	height: 50px;
-    margin: 10px 0 0 10px;
+    margin: 15px 0 0 15px;
     border-radius: 50%;
 }
 
@@ -10081,6 +10087,12 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	margin-top: 20px;
 }
 
+.product-info__buy-cart .btn-red
+{
+	padding-left: 43px;
+	padding-right: 43px;
+}
+
 .product-info__work-ex
 {
 	margin-top: 10px;
@@ -10093,38 +10105,10 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
     product-about
 ------------*/
 
-.product-about__tabs
+.product-about__data
 {
-	border-bottom: 1px solid #E0E9EE;
-	margin-bottom: 20px;
+	padding-top: 20px;
 }
-
-.product-about__btn
-{
-	color: #3A3B55;
-	padding-bottom: 10px;
-	border-bottom: 1px solid transparent;
-	transition: color .2s linear, border .2s linear;
-}
-
-.product-about__btn + .product-about__btn
-{
-	margin-left: 50px;
-}
-
-.product-about__btn._active
-{
-	border-color: #CD1719;
-}
-
-@media (any-hover: hover)
-{
-	.product-about__btn:hover
-	{
-		color: #B71517;
-	}
-}
-
 
 .product-about__title
 {
@@ -10138,10 +10122,6 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 }
 
 
-.features
-{
-    max-width: 636px;
-}
 
 .features__feature
 {
@@ -10163,7 +10143,7 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
     flex-shrink: 0;
 
-    width: 380px;
+    width: 62%;
     margin-right: 5px;
     padding-right: 20px;
 }
@@ -10187,11 +10167,12 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
     padding-right: 5px;
 
-    background: #FFF;
+    background: #F9FCFF;
 }
 
 .features__feature-val
 {
+	width: 38%;
     color: #3A3B55;
 
     align-self: flex-end;
