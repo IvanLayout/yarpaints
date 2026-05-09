@@ -3558,6 +3558,10 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	justify-content: space-between;
 }
 
+.information__flex._reverse{
+	flex-direction: row-reverse;
+}
+
 .information__col{
 	width: calc(50% - 12px);
 }
@@ -3566,14 +3570,26 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	max-width: 758px;
 }
 
+.information__flex._reverse .information__box{
+	max-width: 788px;
+}
+
 .information__main-title{
 	max-width: 730px;
 	line-height: 1.2;
 }
 
+.information__flex._reverse .information__main-title{
+	max-width: none;
+}
+
 .information__desc{
 	margin-top: 30px;
 	max-width: 653px;
+}
+
+.information__flex._reverse .information__desc{
+	max-width: 710px;
 }
 
 .information__info{
@@ -3600,6 +3616,47 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 
 .information__img_big{
 	aspect-ratio: 1/.639;
+}
+
+
+.tintimg__grid{
+	margin-top: 30px;
+	justify-content: space-between;
+	gap: 24px 0;
+}
+
+.tintimg__item{
+	width: calc(50% - 12px);
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.tintimg__img{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1/.5371;
+	object-position: 59% 50%;
+	min-height: 200px;
+	object-fit: cover;
+}
+
+.tintimg__name{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	min-width: 160px;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+
+	font-family: var(--font-family);
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	text-decoration: line-through;
+	color: #3a3b55;
+	text-align: center;
+	border-radius: 4px;
 }
 /*------------
 	commit

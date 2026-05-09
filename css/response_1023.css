@@ -1340,9 +1340,19 @@
 		padding-right: 76px;
 	}
 
+	
 
 	.information__col {
 		width: calc(50% - 10px);
+	}
+
+
+	.tintimg__grid{
+		gap: 20px 0;
+	}
+
+	.tintimg__item {
+   		width: calc(50% - 10px);
 	}
 	/*------------
 		commit
