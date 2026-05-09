@@ -851,6 +851,33 @@ $(() => {
 		})
 	}
 
+	if ($('.product-used__slider').length) {
+		new Swiper(".product-used__slider", {
+			loop: false,
+			spaceBetween: 24,
+			slidesPerView: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+		})
+	}
+
 	if ($('.product-images__slider').length) {
 		new Swiper(".product-images__slider", {
 			loop: false,
