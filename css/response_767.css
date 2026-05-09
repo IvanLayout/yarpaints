@@ -825,6 +825,24 @@
 	.tintimg__item {
    		width: calc(50% - 5px);
 	}
+
+
+	.info-items__col{
+		width: 100%;
+	}
+
+	.info-items__col_text{
+		margin-top: 20px;
+		order: 2;
+	}
+
+	.info-items__box{
+		max-width: none;
+	}
+
+	.info-items__main-title br{
+		display: none;
+	}
 	/*------------
 		commit
 	------------*/

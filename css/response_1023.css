@@ -1261,6 +1261,15 @@
 		width: calc(100% / 2 - 20px);
 	}
 
+	.advantages__flex .advantages__item_four{
+		flex-wrap: nowrap;
+	}
+
+	.advantages__item_four .advantages__icon{
+		order: 0;
+		margin-left: 10px;
+	}
+
 
 	.expert-knowledge__wrap{
 		padding: 60px 30px 0;
@@ -1307,7 +1316,8 @@
 	}
 
 
-	.stages-work__slider .swiper-overflow{
+	.stages-work__slider .swiper-overflow,
+	.stages-work__slider2 .swiper-overflow{
 		overflow: visible;
 	}
 
@@ -1353,6 +1363,19 @@
 
 	.tintimg__item {
    		width: calc(50% - 10px);
+	}
+
+
+	.stages-work__item_small{
+		padding-top: 20px;
+	}
+
+	.stages-work__num{
+		font-size: 36px;
+	}
+
+	.info-items__col {
+		width: calc(50% - 10px);
 	}
 	/*------------
 		commit
