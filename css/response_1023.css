@@ -1452,6 +1452,82 @@
 	.map-contacts__point ul{
 		margin-left: 22px;
 	}
+
+
+	.become-leader__border{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.become-leader__desc{
+		margin-top: 10px;
+	}
+
+	.become-leader__btn{
+		margin-top: 30px;
+	}
+
+
+	.requirements__flex{
+		flex-wrap: wrap;
+	}
+
+	.requirements__colr{
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.requirements__img{
+		margin-top: 20px;
+	}
+
+	.requirements__subtitle{
+		font-size: 16px;
+		line-height: 1.3;
+	}
+
+	.services-inner__wrap{
+		padding: 60px 30px;
+	}
+
+	.services-inner__bg{
+		width: 100%;
+	}
+
+	.services-inner__wrap::after{
+		display: none;
+	}
+
+	.services-inner__flex{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.services-inner__coll{
+		padding: 0;
+		width: 100%;
+	}
+
+	.services-inner__colc{
+		width: calc(50% - 10px);
+		max-width: none;
+	}
+
+	.services-inner__colr{
+		padding: 0;
+		width: calc(50% - 10px);
+		max-width: none;
+		margin: 0;
+	}
+
+	.services-inner__btn{
+		margin-top: 20px;
+	}
+
+	.services-inner .middle-title{
+		font-size: 20px;
+	}
 	/*------------
 		commit
 	------------*/

@@ -916,6 +916,22 @@
 	.map-contacts__wrap{
 		min-width: 706px;
 	}
+
+	.requirements__item{
+		margin-top: 10px;
+	}
+
+	.services-inner__colc{
+		width: 100%;
+	}
+
+	.services-inner__img{
+		margin: 0 auto;
+	}
+
+	.services-inner__colr{
+		width: 100%;
+	}
 	/*------------
 		commit
 	------------*/
@@ -1121,8 +1137,11 @@
 	.sales-geography__item + .sales-geography__item
 	{
 		padding-top: 0;
-		border-top: none;
 		margin-top: 20px;
+	}
+
+	.sales-geography__item + .sales-geography__item::before{
+		display: none;
 	}
 
 	.sales-geography__item
@@ -1139,6 +1158,7 @@
 	.sales-geography__desc-text
 	{
 		font-size: 12px;
+		max-width: none;
 	}
 	
 

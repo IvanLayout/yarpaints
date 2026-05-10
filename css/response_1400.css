@@ -243,6 +243,26 @@
 		margin-top: -3px;
 		font-size: 20px;
 	}
+
+	.requirements__subtitle{
+		font-size: 20px;
+	}
+
+
+	.services-inner__wrap{
+		padding-top: 10px;
+	}
+
+	.services-inner__coll{
+		width: 26%;
+		padding-top: 20px;
+	}
+
+	.services-inner__colr{
+		margin-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
     /*------------
 		commit
 	------------*/
