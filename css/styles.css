@@ -3191,6 +3191,10 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	order: -1;
 }
 
+.advantages__item_four .advantages__name{
+	width: 100%;
+}
+
 
 .faq_accordion{
 	margin-top: 30px;
