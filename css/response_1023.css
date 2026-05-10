@@ -816,9 +816,13 @@
 		margin: 30px 0 0;
 	}
 
+	.projects__slider{
+		position: static;
+	}
+
 	.projects__slider .slider-button-prev,
 	.projects__slider .slider-button-next{
-		top: -57px;
+		top: 4px;
 		margin: 0;
 	}
 
