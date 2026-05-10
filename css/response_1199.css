@@ -267,6 +267,30 @@
 	.info-items__text-block{
 		margin-top: 20px;
 	}
+
+
+	.services__coll{
+		width: 28%;
+	}
+
+	.services__colc{
+		min-width: 1px;
+		width: calc(35% - 40px);
+	}
+
+	.services__img{
+		width: 100%;
+		max-width: 400px;
+		margin-top: -60px;
+	}
+
+	.services__colr{
+		width: 37%;
+	}
+
+	.services__btn{
+		margin-top: 30px;
+	}
 	/*------------
 		commit
 	------------*/

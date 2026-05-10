@@ -1381,6 +1381,68 @@
 	.info-items__col {
 		width: calc(50% - 10px);
 	}
+
+	.filter-items{
+		gap: 10px;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		overflow-x: auto;
+		padding: 0 20px;
+	}
+
+	.filter-items::-webkit-scrollbar{
+		display: none;
+	}
+
+	.filter-items__item{
+		font-size: 12px;
+		line-height: 36px;
+		padding: 0 15px;
+		border-radius: 4px;
+		min-width: 51px;
+		flex-shrink: 0;
+	}
+
+
+	.services__item{
+		padding: 40px 30px 0;
+	}
+
+	.services__cols{
+		flex-wrap: wrap;
+	}
+
+	.services__abc{
+		top: 10px;
+	}
+
+	.services__coll{
+		width: 100%;
+	}
+
+	.services__coll-box{
+		padding: 0;
+	}
+
+	.services__colc{
+		width: calc(50% - 10px);
+	}
+
+	.services__img{
+		margin-top: 0;
+	}
+
+	.services__colr{
+		width: calc(50% - 10px);
+	}
+
+	.eservices__colr-box{
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
 	/*------------
 		commit
 	------------*/

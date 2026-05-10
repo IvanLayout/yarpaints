@@ -847,6 +847,37 @@
 	.info-items__main-title br{
 		display: none;
 	}
+
+
+	.services__item{
+		overflow: hidden;
+	}
+
+	.services__colc{
+		width: 100%;
+	}
+
+	.services__img{
+		max-width: 300px;
+		width: 75.52%;
+		margin: 0 auto;
+	}
+
+	.services__colr{
+		width: 100%;
+	}
+
+	.eservices__colr-box{
+		padding-bottom: 40px;
+		max-width: none;
+	}
+
+	.services__abc{
+		width: 172px;
+		left: auto;
+		right: -59px;
+		top: 133px;
+	}
 	/*------------
 		commit
 	------------*/
