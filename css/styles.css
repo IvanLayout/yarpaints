@@ -3181,6 +3181,13 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	flex-wrap: wrap;
 }
 
+.advantages__flex .advantages__item_five{
+	padding-right: 5px;
+	padding-bottom: 18px;
+	width: calc(100%/5 - 20px);
+	flex-wrap: wrap;
+}
+
 .advantages__flex .advantages__icon{
 	justify-content: flex-end;
 	align-items: flex-start;
@@ -3196,11 +3203,22 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	order: -1;
 }
 
+.advantages__item_five .advantages__icon{
+	width: 42px;
+	height: 42px;
+	margin: 0 35px 5px auto;
+	order: -1;
+}
+
 .advantages__item_four .advantages__icon_marg{
 	margin-bottom: 16px;
 }
 
 .advantages__item_four .advantages__name{
+	width: 100%;
+}
+
+.advantages__item_five .advantages__name{
 	width: 100%;
 }
 
@@ -8815,6 +8833,9 @@ a.advantages__item
 /*------------
     sales-geography
 ------------*/
+.sales-geography__subtitle{
+	margin-top: 17px;
+}
 
 .sales-geography__desc
 {

@@ -1269,9 +1269,22 @@
 		flex-wrap: nowrap;
 	}
 
+	.advantages__flex .advantages__item_five{
+		flex-wrap: nowrap;
+	}
+
 	.advantages__item_four .advantages__icon{
 		order: 0;
 		margin-left: 10px;
+	}
+
+	.advantages__item_five .advantages__icon{
+		order: 0;
+		margin-left: 10px;
+	}
+
+	.advantages__item_five .advantages__name br{
+		display: none;
 	}
 
 
@@ -1527,6 +1540,14 @@
 
 	.services-inner .middle-title{
 		font-size: 20px;
+	}
+
+	.sales-geography__cols_marg{
+		margin-top: 30px;
+	}
+
+	.sales-geography__subtitle{
+		margin-top: 10px;
 	}
 	/*------------
 		commit

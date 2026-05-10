@@ -1110,6 +1110,10 @@
 		margin-top: 0;
 	}
 
+	.sales-geography__cols_marg{
+		margin-top: 30px;
+	}
+
 	.sales-geography__coll
 	{
 		width: 100%;
