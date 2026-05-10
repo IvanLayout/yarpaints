@@ -11492,17 +11492,21 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
     display: none;
     visibility: visible !important;
 
-    width: 572px;
+    width: 900px;
     max-width: 100%;
-    padding: 50px;
+    padding: 20px 30px 25px;
 
-    border-radius: 8px;
+    border-radius: 4px;
     background: #FFF;
 }
 
 .modal__title
 {
-	
+	color: #3A3B55;
+	font-family: var(--font-family);
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
 }
 
 @media (max-width: 1800px)

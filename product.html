@@ -405,7 +405,7 @@
 										</div>
 
 										<div class="product-info__val-box">
-											<button type="button" data-content="#modal-more" class="btn-border modal-btn">
+											<button type="button" data-content="#modal-calc" class="btn-border modal-btn">
 												<span>
 													Рассчитать необходимое количество
 		
@@ -1130,8 +1130,49 @@
 				</div>
 			</footer>
 		</div>
+		
+		<div id="modal-calc" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Расчет необходимого количества</div>
 
+				<div class="checkout-delivery">
+					<div id="checkout-delivery" class="checkout-modal">
+						<div class="radio-deliverys _flex">
+							<div class="radio-delivery">
+								<label data-delivery="#delivery-item1" data-delivery-btn="#delivery-btn1" class="radio-delivery__label radio-delivery__label_js">
+									<input type="radio" name="radio_delivery">
 
+									<span class="radio-delivery__wrap">
+										<span class="radio-delivery__box">
+											
+										</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-delivery">
+								<label data-delivery="#delivery-item2" data-delivery-btn="#delivery-btn2" class="radio-delivery__label radio-delivery__label_js">
+									<input type="radio" name="radio_delivery">
+
+									<span class="radio-delivery__wrap">
+										<span class="radio-delivery__box">
+											
+										</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div id="checkout-delivery-info" class="checkout-modal">
+						<div class="checkout-modal__items">
+							<div id="delivery-item1" class="checkout-modal__item"></div>
+
+							<div id="delivery-item2" class="checkout-modal__item"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
