@@ -927,25 +927,21 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 1,
+					spaceBetween: 10,
 					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 1,
+					spaceBetween: 10,
 					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 1,
-					slidesPerView: 'auto',
+					spaceBetween: 20,
+					slidesPerView: 2,
 				},
 				'1024': {
 					spaceBetween: 24,
-					slidesPerView: 5
-				},
-				'1200': {
-					spaceBetween: 24,
 					slidesPerView: 2
-				},
+				}
 			},
 			on: {
 				init: function (swiper) {

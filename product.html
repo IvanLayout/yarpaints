@@ -294,7 +294,7 @@
 									<div class="product-info__box">
 										<div class="product-info__box-title">База под колеровку</div>
 
-										<div class="product-info__links _flex">
+										<div class="product-info__links mob-size _flex">
 											<a href="/" class="product-info__link">А (белая, светлые тона)</a>
 											<a class="product-info__link active">С (насыщенные тона)</a>
 										</div>
@@ -520,37 +520,49 @@
 													<div class="features__feature-name">
 														<span class="features__feature-span">Степень блеска</span>
 													</div>
-													<div class="features__feature-val">Матовый</div>
+													<div class="features__feature-val">
+														<span>Матовый</span>
+													</div>
 												</div>
 												<div class="features__feature _flex">
 													<div class="features__feature-name">
 														<span class="features__feature-span">Основание</span>
 													</div>
-													<div class="features__feature-val">Дерево</div>
+													<div class="features__feature-val">
+														<span>Дерево</span>
+													</div>
 												</div>
 												<div class="features__feature _flex">
 													<div class="features__feature-name">
 														<span class="features__feature-span">Цвет</span>
 													</div>
-													<div class="features__feature-val">Прозрачный</div>
+													<div class="features__feature-val">
+														<span>Прозрачный</span>
+													</div>
 												</div>
 												<div class="features__feature _flex">
 													<div class="features__feature-name">
 														<span class="features__feature-span">Степень блеска</span>
 													</div>
-													<div class="features__feature-val">Матовый</div>
+													<div class="features__feature-val">
+														<span>Матовый</span>
+													</div>
 												</div>
 												<div class="features__feature _flex">
 													<div class="features__feature-name">
 														<span class="features__feature-span">Основание</span>
 													</div>
-													<div class="features__feature-val">Дерево</div>
+													<div class="features__feature-val">
+														<span>Дерево</span>
+													</div>
 												</div>
 												<div class="features__feature _flex">
 													<div class="features__feature-name">
 														<span class="features__feature-span">Цвет</span>
 													</div>
-													<div class="features__feature-val">Прозрачный</div>
+													<div class="features__feature-val">
+														<span>Прозрачный</span>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -658,6 +670,43 @@
 									<div class="slider-pagination"></div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="map-section _marg">
+					<div class="cont">
+						<div class="map-section__wrap-flex _flex">
+							<div class="main-title">Доставка партии за 5-6 дней</div>
+
+							<div class="map-section__wrap-box">
+								<div class="map-section__items _flex">
+									<div class="map-section__item">
+										<div class="select-marker">
+											<select>
+												<option value="1" data-content="<span>Хабаровск</span>"></option>
+												<option value="2" data-content="<span>Санкт-Петербург</span>"></option>
+												<option value="3" data-content="<span>Владивосток</span>"></option>
+											</select>
+										</div>
+									</div>
+	
+									<div class="map-section__item">
+										<div class="map-section__desc">Москва 5 дней</div>
+									</div>
+	
+									<div class="map-section__item">
+										<div class="map-section__desc">Санкт-Петербург 11 дней</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="map map-delivery">
+							<div class="map__wrap">
+								Мы отгружаем готовую продукцию сразу <br>после оплаты, и отправляем проверенными транспортными компаниями до вашего склада.
+							</div>
+							<div class="map__item" id="map3"></div>
 						</div>
 					</div>
 				</section>
@@ -862,27 +911,41 @@
 									</button>
 								</div>
 
-								<div class="select-wrap">
-									<select>
-										<option value="1">Хабаровск</option>
-										<option value="2">Санкт-Петербург</option>
-										<option value="3">Владивосток</option>
-									</select>
+								<div class="map-section__select">
+									<div class="select-marker">
+										<select>
+											<option value="1" data-content="<span>Хабаровск</span>"></option>
+											<option value="2" data-content="<span>Санкт-Петербург</span>"></option>
+											<option value="3" data-content="<span>Владивосток</span>"></option>
+										</select>
+									</div>
 								</div>
 							</div>
 
 							<div class="tab-content level1 _active" id="tab6">
-								<div class="map">
+								<div class="map map-mob-info">
 									<div class="map__wrap">
 										<div class="map__wrap-item">
 											<div class="map__title">«Универсам №3»</div>
 		
 											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+
+											<div class="map__link">
+												<a href="/">
+													<span>Проложить маршрут</span>
+												</a>
+											</div>
 										</div>
 										<div class="map__wrap-item">
 											<div class="map__title">«Универсам №3»</div>
 		
 											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+
+											<div class="map__link">
+												<a href="/">
+													<span>Проложить маршрут</span>
+												</a>
+											</div>
 										</div>
 									</div>
 									<div class="map__item" id="map"></div>
@@ -890,17 +953,29 @@
 							</div>
 
 							<div class="tab-content level1" id="tab7">
-								<div class="map">
+								<div class="map map-mob-info">
 									<div class="map__wrap">
 										<div class="map__wrap-item">
 											<div class="map__title">«Универсам №3»</div>
 		
 											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+
+											<div class="map__link">
+												<a href="/">
+													<span>Проложить маршрут</span>
+												</a>
+											</div>
 										</div>
 										<div class="map__wrap-item">
 											<div class="map__title">«Универсам №3»</div>
 		
 											<div class="map__adres">Кинешма, ул. 50 лет ВЛКСМ, д.39</div>
+
+											<div class="map__link">
+												<a href="/">
+													<span>Проложить маршрут</span>
+												</a>
+											</div>
 										</div>
 									</div>
 									<div class="map__item" id="map2"></div>
@@ -1099,6 +1174,46 @@
 				})
 
 				myMap.geoObjects.add(myPlacemark).add(myPlacemark2)
+
+
+				var myMap2 = new ymaps.Map("map2", {
+					center: [57.657548, 39.778991],
+					zoom: 5
+				}),
+				myPlacemark = new ymaps.Placemark([57.657548, 39.778991],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				}),
+				myPlacemark2 = new ymaps.Placemark([57.607846, 50.847209],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				})
+
+				myMap2.geoObjects.add(myPlacemark).add(myPlacemark2)
+
+
+				var myMap3 = new ymaps.Map("map3", {
+					center: [57.657548, 39.778991],
+					zoom: 5
+				}),
+				myPlacemark = new ymaps.Placemark([57.657548, 39.778991],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				}),
+				myPlacemark2 = new ymaps.Placemark([57.607846, 50.847209],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				})
+
+				myMap3.geoObjects.add(myPlacemark).add(myPlacemark2)
 			}
 		</script>
 	</body>

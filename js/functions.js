@@ -78,6 +78,14 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
+	$('body').on('click', '[data-mini-close]', function(e) {
+		e.preventDefault()
+
+		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
 
 	// Показать все
 	$('body').on('click', '.catalog-filter__more-btn', function (e) {
@@ -281,6 +289,8 @@ $(() => {
 		}
 	})
 
+	// Кастомный select
+	$('.select-marker select').niceSelect()
 
 	// commit
 

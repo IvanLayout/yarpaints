@@ -2456,4 +2456,194 @@
 	{
 		margin-top: 120px;
 	}
+
+
+	.product-images
+	{
+		width: 100%;
+	}
+
+	.product-info__info
+	{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.product-info__item
+	{
+		max-width: 100%;
+	}
+
+
+	.product-about__coll
+	{
+		width: 100%;
+	}
+
+	.product-about__colr
+	{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.product-about__items
+	{
+		justify-content: center;
+	}
+
+	.product-about__desc
+	{
+		text-align: center;
+	}
+
+	.product-used__coll
+	{
+		width: 100%;
+	}
+
+	.features__feature
+	{
+		justify-content: space-between;
+		align-items: flex-end;
+		align-content: flex-end;
+		position: relative;
+
+		font-size: 16px;
+	}
+
+	.features__feature::before 
+	{
+		content: "";
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px dashed rgba(141, 149, 161, .5);
+	}
+
+	.features__feature-name
+	{
+		width: 50%;
+	}
+
+	.features__feature-name::before
+	{
+		display: none;
+	}
+	
+	.features__feature-val
+	{
+		width: 50%;
+		text-align: right;
+	}
+
+	.features__feature-val span
+	{
+		position: relative;
+		padding-left: 5px;
+		background: #F9FCFF;
+	}
+
+
+	.product-used__colr
+	{
+		margin-top: 10px;
+		width: 100%;
+	}
+
+
+	.map.map-delivery
+	{
+		min-height: 422px;
+		padding: 20px;
+	}
+
+	.map-delivery .map__wrap
+	{
+		position: relative;
+		width: 100%;
+	}
+
+	.map-delivery .map__item
+	{
+		position: absolute;
+		height: 100%;
+		margin-top: 0;
+	}
+
+	.map-section__wrap-flex
+	{
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.map-section__wrap-flex > div
+	{
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.map-section__wrap-box
+	{
+		width: 100%;
+	}
+
+	.map-section__top
+	{
+		margin-left: 0;
+		margin-top: 0;
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+
+	.map-section__top > div
+	{
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.map-section__top .main-title
+	{
+		width: 55%;
+		margin-right: 15px;
+	}
+
+	.map-section__top .tabs_btns
+	{
+		width: 100%;
+		order: 3;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.map-section__items
+	{
+		margin-left: -15px;
+		margin-top: 5px;
+	}
+
+	.map-section__item
+	{
+		margin-left: 15px;
+	}
+
+	.map-mob-info
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.map-mob-info .map__wrap
+	{
+		order: 2;
+		margin-top: 10px;
+	}
+
+	.map-mob-info .map__item
+	{
+		margin-top: 0;
+	}
 }
