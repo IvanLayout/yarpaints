@@ -1443,6 +1443,15 @@
 		padding-top: 0;
 		padding-bottom: 30px;
 	}
+
+
+	.map-contacts__point{
+		padding: 10px;
+	}
+
+	.map-contacts__point ul{
+		margin-left: 22px;
+	}
 	/*------------
 		commit
 	------------*/

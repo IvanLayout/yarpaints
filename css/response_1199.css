@@ -291,6 +291,23 @@
 	.services__btn{
 		margin-top: 30px;
 	}
+
+	.contacts-specialists__flex{
+		flex-wrap: wrap;
+		gap: 0;
+		width: 100%;
+	}
+
+	.contacts-specialists__coll{
+		width: 606px;
+		max-width: 100%;
+	}
+
+	.contacts-specialists__colr{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
 	/*------------
 		commit
 	------------*/

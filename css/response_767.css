@@ -878,6 +878,44 @@
 		right: -59px;
 		top: 133px;
 	}
+
+	.region-specialists__info{
+		gap: 10px;
+	}
+
+	.specialists__position{
+		margin-top: 10px;
+	}
+
+	.specialists__desc{
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.specialists__btn{
+		margin-top: 10px;
+	}
+
+	.specialists__photo{
+		min-width: 100px;
+	}
+	
+	.region-specialists__link{
+		line-height: 1.3;
+	}
+
+	.map-contacts{
+		overflow: hidden;
+		overflow-x: auto;
+	}
+
+	.map-contacts::-webkit-scrollbar{
+		display: none;
+	}
+
+	.map-contacts__wrap{
+		min-width: 706px;
+	}
 	/*------------
 		commit
 	------------*/

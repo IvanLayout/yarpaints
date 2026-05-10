@@ -237,6 +237,12 @@
 		font-size: 20px;
 		min-width: 1px;
 	}
+
+
+	.specialists__name{
+		margin-top: -3px;
+		font-size: 20px;
+	}
     /*------------
 		commit
 	------------*/

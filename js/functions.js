@@ -380,6 +380,76 @@ $(() => {
 		parent.find('.file-selection__path').removeClass('_active')
 		}
 	})
+
+
+	$('body').on('click', '.map-contacts__path:not(._inactive)', function(e) {
+		if( !$(this).hasClass('_active') ) {
+			const parent = $(this).closest('.contacts-specialists');
+			const activeTab = $(this).data('map-item');
+			
+			const $map = parent.find('.map-contacts__wrap');
+			const mapEl = $map.get(0); 
+
+			// 1. Отримуємо позицію карти відносно ВІКНА (viewport)
+			const rect = mapEl.getBoundingClientRect();
+
+			// 2. Реальна повна ширина карти (твої 706px)
+			const fullW = mapEl.scrollWidth;
+			const fullH = mapEl.scrollHeight;
+
+			// 3. Рахуємо клік відносно видимого краю карти + додаємо скрол батька
+			// Але простіше: клік мінус початок карти на екрані
+			const relX = e.clientX - rect.left;
+			const relY = e.clientY - rect.top;
+
+			// 4. ПЕРЕРАХУНОК У ВІДСОТКИ ВІД ПОВНОГО РОЗМІРУ (706px)
+			// Ми знаємо, де клікнули у видимому вікні (relX)
+			// Нам треба знати, який це відсоток від ПОВНОЇ ширини
+			const percentX = (relX / rect.width) * 100;
+			const percentY = (relY / rect.height) * 100;
+
+			// Очищення
+			parent.find('.map-contacts__path').removeClass('_active');
+			parent.find('.map-contacts__point').removeClass('_show _right _bot').css({
+				left: 0,
+				top: 0
+			})
+			parent.find('.contacts-specialists__box').removeClass('_active');
+
+			const $point = parent.find(`.map-contacts__point[data-id="${activeTab}"]`);
+
+			$(this).addClass('_active');
+			$(activeTab).addClass('_active');
+			$point.addClass('_show');
+
+			// 5. Перевірка країв (використовуємо повні розміри)
+			const pointW = $point.outerWidth();
+			const pointH = $point.outerHeight();
+
+			// Якщо клік (у перерахунку на пікселі карти) + ширина точки > 706
+			const realPixelX = (percentX * fullW) / 100;
+			const realPixelY = (percentY * fullH) / 100;
+
+			if (realPixelX + pointW > fullW) {
+				$point.addClass('_right');
+			}
+			if (realPixelY + pointH > fullH) {
+				$point.addClass('_bot');
+			}
+
+			// 6. Встановлюємо позицію
+			$point.css({
+				left: percentX + '%',
+				top: percentY + '%'
+			});
+
+			console.log({
+				'Видима ширина': rect.width,
+				'Повна ширина (scrollWidth)': fullW,
+				'Відсоток X': percentX
+			});
+		}
+	})
 })
 
 
