@@ -86,6 +86,15 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
+	$('body').on('click', '.radio__label_del', function(e) {
+		let delivery = $(this).data('del')
+
+		$('.calc-amount__data_del').removeClass('_show')
+
+		if ( $(delivery).length ) {
+			$(delivery).addClass('_show')
+		}
+	})
 
 	// Показать все
 	$('body').on('click', '.catalog-filter__more-btn', function (e) {

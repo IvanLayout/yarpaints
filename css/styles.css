@@ -1116,6 +1116,15 @@ button
     position: relative;
 }
 
+.form__label
+{
+	color: #8D95A1;
+	font-size: 14px;
+	line-height: 20px;
+
+	margin-bottom: 11px;
+}
+
 .form .form__input
 {
     color: #3A3B55;
@@ -1211,6 +1220,60 @@ button
         border-bottom-color: #3A3B55;
     }
 }
+
+.radio + .radio
+{
+	margin-top: 10px;
+}
+
+.radio input[type=radio]
+{
+    display: none;
+}
+
+.radio__label
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+.radio__text
+{
+    position: relative;
+
+    font-size: 16px;
+	color: #3A3B55;
+	line-height: 20px;
+
+    display: block;
+
+    padding-left: 30px;
+}
+
+.radio__text::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #E0E9EE;
+    border-radius: 50%;
+	transition: border .2s linear;
+}
+
+input[type=radio]:checked + .radio__text::before
+{
+	border: 4px solid #0D1387;
+}
+
 
 .checkbox input[type=checkbox]
 {
@@ -11825,6 +11888,144 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	width: 432px;
 }
 
+
+/*------------
+    calc-amount
+------------*/
+
+.calc-amount
+{
+	margin-top: 25px;
+}
+
+.calc-amount__item + .calc-amount__item
+{
+	margin-top: 20px;
+}
+
+.calc-amount__data_del{
+	display: none;
+}
+
+.calc-amount__data._show{
+	display: block;
+}
+
+.calc-amount__data
+{
+	padding-top: 18px;
+	padding-left: 30px;
+}
+
+.calc-amount__box
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.calc-amount__val
+{
+	margin-left: 15px;
+	color: #3A3B55;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.calc-amount__form.form .form__input,
+.calc-amount__form.form .select-wrap
+{
+	width: 272px;
+	max-width: 100%;
+
+	border-color: #E0E9EE;
+}
+
+.calc-amount__btn
+{
+	margin-left: 20px;
+	flex-shrink: 0;
+}
+
+.calc-amount__form .form__label
+{
+	width: 100%;
+}
+
+.calc-amount__wrap-flex
+{
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: nowrap;
+}
+
+.calc-amount__wrap-item + .calc-amount__wrap-item
+{
+	margin-left: 20px;
+}
+
+.calc-amount__field
+{
+	width: 100%;
+	max-width: 272px;
+}
+
+
+.calc-amount__total
+{
+	display: none;
+	
+	margin-top: 40px;
+	color: #3A3B55;
+	padding-left: 30px;
+}
+
+.calc-amount__total-item
+{
+	flex-wrap: nowrap;
+}
+
+.calc-amount__total-item + .calc-amount__total-item
+{
+	margin-top: 21px;
+}
+
+.alc-amount__total-name
+{
+	width: 242px;
+}
+
+.calc-amount__total-box
+{
+	white-space: nowrap;
+	margin-left: 37px;
+	flex-shrink: 0;
+}
+
+.calc-amount__btns
+{
+	margin-top: 11px;
+	margin-left: -15px;
+}
+
+.calc-amount__btns-btn
+{
+	margin: 15px 0 0 15px;
+}
+
+.calc-amount__btns .btn-red
+{
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.calc-amount__btns .btn-border
+{
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+
 /*------------
 @media (any-hover: hover)
 {
@@ -12103,6 +12304,11 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
     border-radius: 4px;
     background: #FFF;
+}
+
+.modal__box
+{
+	width: 100%;
 }
 
 .modal__title

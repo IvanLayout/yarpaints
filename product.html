@@ -1135,41 +1135,143 @@
 			<div class="modal__box">
 				<div class="modal__title">Расчет необходимого количества</div>
 
-				<div class="checkout-delivery">
-					<div id="checkout-delivery" class="checkout-modal">
-						<div class="radio-deliverys _flex">
-							<div class="radio-delivery">
-								<label data-delivery="#delivery-item1" data-delivery-btn="#delivery-btn1" class="radio-delivery__label radio-delivery__label_js">
-									<input type="radio" name="radio_delivery">
+				<div class="calc-amount">
+					<form action="" class="calc-amount__form form">
+						<div class="calc-amount__item">
+							<div class="radio">
+								<label class="radio__label radio__label_del" data-del="#calc1">
+									<input type="radio" name="calc" checked>
 
-									<span class="radio-delivery__wrap">
-										<span class="radio-delivery__box">
-											
-										</span>
+									<span class="radio__text">
+										По площади покрытия
 									</span>
 								</label>
 							</div>
-							<div class="radio-delivery">
-								<label data-delivery="#delivery-item2" data-delivery-btn="#delivery-btn2" class="radio-delivery__label radio-delivery__label_js">
-									<input type="radio" name="radio_delivery">
 
-									<span class="radio-delivery__wrap">
-										<span class="radio-delivery__box">
-											
-										</span>
+							<div class="calc-amount__data calc-amount__data_del _show" id="calc1">
+								<div class="calc-amount__line">
+									<div class="form__label">Площадь объекта</div>
+
+									<div class="calc-amount__line-flex _flex">
+										<div class="calc-amount__box _flex">
+											<div class="calc-amount__field">
+												<input type="text" value="" placeholder="Площадь объекта" class="calc-amount__input form__input">
+											</div>
+
+											<div class="calc-amount__val">м2</div>
+										</div>
+	
+										<div class="calc-amount__btn">
+											<button type="type" class="btn-red">
+												<span>Рассчитать</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calc-amount__item">
+							<div class="radio">
+								<label class="radio__label radio__label_del" data-del="#calc2">
+									<input type="radio" name="calc">
+
+									<span class="radio__text">
+										По типу и весуметаллоконструкции
 									</span>
 								</label>
 							</div>
-						</div>
-					</div>
 
-					<div id="checkout-delivery-info" class="checkout-modal">
-						<div class="checkout-modal__items">
-							<div id="delivery-item1" class="checkout-modal__item"></div>
+							<div class="calc-amount__data calc-amount__data_del" id="calc2">
+								<div class="calc-amount__wrap-flex _flex">
+									<div class="calc-amount__wrap-item">
+										<div class="form__label">Тип конструкции</div>
 
-							<div id="delivery-item2" class="checkout-modal__item"></div>
+										<div class="calc-amount__field">
+											<div class="select-wrap">
+												<select>
+													<option value="1">Внешняя</option>
+													<option value="2">Внешняя 2</option>
+													<option value="3">Внешняя 3</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<div class="calc-amount__wrap-item">
+										<div class="form__label">Вес в тоннах</div>
+
+										<div class="calc-amount__box _flex">
+											<div class="calc-amount__field">
+												<input type="text" value="" placeholder="Площадь объекта" class="calc-amount__input form__input">
+											</div>
+
+											<div class="calc-amount__val">т.</div>
+										</div>
+									</div>
+
+									<div class="calc-amount__btn">
+										<button type="type" class="btn-red">
+											<span>Рассчитать</span>
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+
+						<div class="calc-amount__total">
+							<div class="calc-amount__total-item _flex">
+								<div class="alc-amount__total-name">Требуется материала(на 2 слоя)</div>
+
+								<div class="calc-amount__total-box">14,4 кг</div>
+							</div>
+
+							<div class="calc-amount__total-item _flex">
+								<div class="alc-amount__total-name">Фасовка</div>
+								
+								<div class="calc-amount__total-box">
+									<div class="radio">
+										<label class="radio__label">
+											<input type="radio" name="radio-name" checked>
+		
+											<span class="radio__text">
+												25 кг - 1 шт
+											</span>
+										</label>
+									</div>
+									<div class="radio">
+										<label class="radio__label">
+											<input type="radio" name="radio-name">
+		
+											<span class="radio__text">
+												0,4 кг - 36 шт
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="calc-amount__btns _flex">
+								<div class="calc-amount__btns-btn">
+									<a href="/" class="btn-red">
+										<span>Добавить корзину</span>
+									</a>
+								</div>
+
+								<div class="calc-amount__btns-btn">
+									<a href="/" class="btn-border">
+										<span>
+											Продолжить покупки
+
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
