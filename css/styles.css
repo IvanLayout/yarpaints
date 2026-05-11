@@ -12006,11 +12006,15 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
 .calc-amount__total
 {
-	/* display: none; */
+	display: none;
 
 	margin-top: 40px;
 	color: #3A3B55;
 	padding-left: 30px;
+}
+
+.calc-amount__total._show{
+	display: block;
 }
 
 .calc-amount__total-item

@@ -399,21 +399,14 @@ $(() => {
 			const $map = parent.find('.map-contacts__wrap');
 			const mapEl = $map.get(0); 
 
-			// 1. Отримуємо позицію карти відносно ВІКНА (viewport)
 			const rect = mapEl.getBoundingClientRect();
 
-			// 2. Реальна повна ширина карти (твої 706px)
 			const fullW = mapEl.scrollWidth;
 			const fullH = mapEl.scrollHeight;
 
-			// 3. Рахуємо клік відносно видимого краю карти + додаємо скрол батька
-			// Але простіше: клік мінус початок карти на екрані
 			const relX = e.clientX - rect.left;
 			const relY = e.clientY - rect.top;
 
-			// 4. ПЕРЕРАХУНОК У ВІДСОТКИ ВІД ПОВНОГО РОЗМІРУ (706px)
-			// Ми знаємо, де клікнули у видимому вікні (relX)
-			// Нам треба знати, який це відсоток від ПОВНОЇ ширини
 			const percentX = (relX / rect.width) * 100;
 			const percentY = (relY / rect.height) * 100;
 
@@ -431,11 +424,9 @@ $(() => {
 			$(activeTab).addClass('_active');
 			$point.addClass('_show');
 
-			// 5. Перевірка країв (використовуємо повні розміри)
 			const pointW = $point.outerWidth();
 			const pointH = $point.outerHeight();
 
-			// Якщо клік (у перерахунку на пікселі карти) + ширина точки > 706
 			const realPixelX = (percentX * fullW) / 100;
 			const realPixelY = (percentY * fullH) / 100;
 
@@ -446,7 +437,6 @@ $(() => {
 				$point.addClass('_bot');
 			}
 
-			// 6. Встановлюємо позицію
 			$point.css({
 				left: percentX + '%',
 				top: percentY + '%'
@@ -458,6 +448,14 @@ $(() => {
 				'Відсоток X': percentX
 			});
 		}
+	})
+
+
+	$('body').on('click', '.calc-amount__calculate', function(e) {
+		e.preventDefault()
+		let parent = $(this).closest('.calc-amount')
+
+		parent.find('.calc-amount__total').addClass('_show')
 	})
 })
 
