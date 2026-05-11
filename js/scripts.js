@@ -59,6 +59,19 @@ $(() => {
 	// 	})
 	// })
 
+	// Редактировать данные профиля
+	$('body').on('click', '.personal-data__edit', function(e) {
+		e.preventDefault()
+
+		$(this).closest('.personal-data__item').addClass('_active')
+    })
+
+	$('body').on('click', '.personal-data__cancel', function(e) {
+		e.preventDefault()
+
+		$(this).closest('.personal-data__item').removeClass('_active')
+    })
+
 
 	// Изменение количества товара
 	$('body').on('click', '.amount__btn_minus', function (e) {
