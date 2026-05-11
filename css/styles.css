@@ -12477,15 +12477,21 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
 .personal-data__coll
 {
-	
+	/* width: 260px; */
+}
+
+.personal-data__colr
+{
+	/* width: 260px; */
+	margin-left: 184px;
 }
 
 .personal-data__item + .personal-data__item
 {
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
-.personal-data__evidence
+.personal-data__evidence-flex
 {
 	align-items: flex-end;
 	align-content: flex-end;
@@ -12608,6 +12614,17 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 {
 	top: 3px;
 	left: 3px;
+}
+
+.personal-data__evidence-info
+{
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.personal-data__evidence-desc
+{
+	margin-top: 10px;
 }
 /*------------
 @media (any-hover: hover)
