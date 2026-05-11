@@ -4601,6 +4601,113 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 .cart-page .sorting{
 	margin-top: 10px;
 }
+
+
+.chackout-page_marg{
+	margin-top: -10px;
+}
+
+.chackout-page__bord{
+	border-top: 1px solid #E0E9EE;
+	border-bottom: 1px solid #E0E9EE;
+	padding: 24px 0;
+}
+
+.chackout-page__flex{
+	gap: 24px;
+	flex-wrap: nowrap;
+}
+
+.chackout-page__coll{
+	width: 100%;
+}
+
+.chackout-page__colr{
+	width: 272px;
+	flex-shrink: 0;
+}
+
+.important{
+	padding: 20px;
+	background: rgba(205, 23, 25, 0.1);
+	border-radius: 4px;
+	color: #CD1719;
+}
+
+.checkout-total{
+	padding: 20px 20px 19px;
+	background: rgba(239, 247, 250, 0.7);
+}
+
+.checkout-total__items + .checkout-total__items{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 11px;
+}
+
+.checkout-total__item{
+	flex-wrap: nowrap;
+	gap: 16px;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 11px;
+}
+
+.checkout-total__item-name{
+	font-size: 16px;
+	line-height: 1.25;
+	color: #3A3B55;
+}
+
+.checkout-total__item-val{
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.88;
+	color: #3A3B55;
+	text-align: right;
+	width: 100%;
+}
+
+.checkout-total__item-val_normal{
+	line-height: normal;
+}
+
+.checkout-total__item-val._red{
+	color: #CD1719;
+}
+
+.checkout-total__item-val b{
+	font-weight: 600;
+}
+
+.checkout-total__item-val_big{
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 1.15;
+	color: #3a3b55;
+}
+
+.rub{
+	font-style: normal;
+	font-family: var(--font-family);
+}
+
+.checkout-smallinfo{
+	margin-top: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	padding: 19px;
+}
+
+.checkout-smallinfo__title{
+	color: #3a3b55;
+}
+
+.checkout-smallinfo__desc{
+	margin-top: 10px;
+
+	font-size: 12px;
+	line-height: 1.33;
+}
 /*------------
 	commit
 ------------*/
@@ -10218,12 +10325,12 @@ a.advantages__item
 	margin-top: 0;
 }
 
-.catalog-filter__box_mopad{
+.catalog-filter__box_nopad{
 	padding: 0;
 	border: none;
 }
 
-.catalog-filter__box_mopad:first-child{
+.catalog-filter__box_nopad:first-child{
 	padding-top: 2px;
 }
 

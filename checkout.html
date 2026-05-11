@@ -177,7 +177,7 @@
 				<section class="breadcrumbs breadcrumbs_pad">
 					<div class="cont">
 						<div class="breadcrumbs__text">
-							<a href="/">Главная</a> <span class="breadcrumbs_sep"></span> Оптовый прайс-лист
+							<a href="/">Главная</a> <span class="breadcrumbs_sep"></span> Оптовая корзина
 						</div>
 					</div>
 				</section>
@@ -185,18 +185,7 @@
 				<section class="top-page">
 					<div class="cont">
 						<div class="top-page__flex _flex">
-							<h1 class="inner-title">Оптовый прайс-лист</h1>
-
-							<div class="top-page__btn">
-								<a href="/" class="btn-border">
-									<span>
-										Оптовый прайс-лист
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow"></use>
-										</svg>
-									</span>
-								</a>
-							</div>
+							<h1 class="inner-title">Оптовая корзина</h1>
 						</div>
 					</div>
 				</section>
@@ -217,7 +206,7 @@
 							<div class="catalog-filter__title">Фильтр товаров</div>
 
 							<form action="" class="catalog-filter__form form">
-								<div class="catalog-filter__box catalog-filter__box_nopad">
+								<div class="catalog-filter__box">
 									<div class="catalog-filter__items _flex">
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
@@ -361,88 +350,67 @@
 					</div>
 				</section>
 
-				<section class="cart-page cart-page_marg">
+				<section class="chackout-page">
 					<div class="cont">
-						<div class="cart-page__top _flex">
-							<div class="main-title">Краска</div>
+						<form action="" class="form">
+							<div class="chackout-page__bord">
+								<div class="chackout-page__flex _flex">
+									<div class="chackout-page__coll">
+										<div class="important">Уважаемый клиент! Напоминаем, что сформированный заказ является предварительным. Точная сумма товара с учетом <br>всех ваших скидок, а также стоимость доставки будут отражены в счете, который вы получите от вашего менеджера</div>
 
-							<div class="cart-page__btn">
-								<a href="/" class="btn-red">
-									<span>Вывести все артикулы</span>
-								</a>
-							</div>
-						</div>
-						<div class="sorting _flex">
-							<div class="sorting__title">Сортировка:</div>
-							
-							<div class="sorting__items _flex">
-								<div class="sorting__item">
-									<a href="/" class="sorting__link">Дешевле</a>
-								</div>
-								<div class="sorting__item">
-									<a href="/" class="sorting__link">Дороже</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="main-form _marg">
-					<div class="cont">
-						<div class="main-form__bg">
-							<img data-src="images/main_form_bg.jpg" src="images/img_plug.png" alt="" class="main-form__img lazyload">
-
-							<div class="main-form__cols _flex">
-								<div class="main-form__col">
-									<div class="middle-title white main-form__title main-form__title_small">Станьте лидером в регионе и&nbsp;получайте стабильную прибыль уже сейчас</div>
-								</div>
-
-								<div class="main-form__col">
-									<form action="" class="form main-form__form">
-										<div class="form__flex _flex">
-											<div class="form__line">
-												<div class="form__field">
-													<input type="text" value="" placeholder="Имя" class="form__input">
+										<div class="chackout-delivery"></div>
+									</div>
+									<div class="chackout-page__colr">
+										<div class="checkout-total">
+											<div class="checkout-total__items">
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Товары</div>
+													<div class="checkout-total__item-val checkout-total__item-val_big">194 400 <i class="rub">₽</i></div>
 												</div>
 											</div>
-											<div class="form__line">
-												<div class="form__field">
-													<input type="text" value="" placeholder="Площадь объекта" class="form__input">
+											<div class="checkout-total__items">
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Скидка</div>
+													<div class="checkout-total__item-val"><b>20%</b></div>
+												</div>
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-val checkout-total__item-val_normal _red">38 880 <i class="rub">₽</i></div>
+												</div>
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Доставка</div>
+													<div class="checkout-total__item-val">1 000 ₽</div>
 												</div>
 											</div>
-											<div class="form__line">
-												<div class="form__field">
-													<input type="text" value="" placeholder="Задача" class="form__input">
-												</div>
-											</div>
-											<div class="form__line">
-												<div class="form__field">
-													<input type="tel" value="" placeholder="Контактный телефон" data-mask="+7 (999) 999-99-99" class="form__input">
+											<div class="checkout-total__items">
+												<div class="checkout-total__item _flex">
+													<div class="checkout-total__item-name">Итого</div>
+													<div class="checkout-total__item-val checkout-total__item-val_big">155 520 <i class="rub">₽</i></div>
 												</div>
 											</div>
 										</div>
-										
-										<div class="form__bot _flex">
-											<div class="checkbox form__agree">
-												<label class="checkbox__label">
-													<input type="checkbox" name="">
-	
-													<span class="checkbox__text">
-														Нажимая кнопку, вы соглашаетесь <br>с <a href="/">политикой обработки персональных данных</a>
-													</span>
-												</label>
-											</div>
-											
-											<div class="form__submit">
-												<button type="submit" class="form__submit-btn btn-red">
-													<span>Начать сотрудничество</span>
-												</button>
+
+										<div class="checkout-smallinfo">
+											<div class="checkout-smallinfo__title">
+												Добавьте товаров ещё на 10 000 <i class="rub">₽</i> и мы с радостью сделаем вам 25% скидку.
 											</div>
 										</div>
-									</form>
+
+										<div class="checkout-smallinfo">
+											<div class="checkout-smallinfo__title">
+												Подпишитесь на нашу рассылку — получите <br>3% скидку
+											</div>
+											<div class="checkout-smallinfo__desc">
+												Никакого спама, только полезное: советы по ЛКМ, новинки и честные акции. А в знак благодарности и небольшая скидка на ваш заказ
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
+
+							<div class="chackout-page__form">
+								<div class="main-title">Оформление заказа</div>
+							</div>
+						</form>
 					</div>
 				</section>
 			</div>
