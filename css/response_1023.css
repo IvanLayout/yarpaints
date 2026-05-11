@@ -1549,6 +1549,11 @@
 	.sales-geography__subtitle{
 		margin-top: 10px;
 	}
+
+
+	.cart-page .sorting{
+		justify-content: flex-end;
+	}
 	/*------------
 		commit
 	------------*/

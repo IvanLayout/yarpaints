@@ -1723,6 +1723,16 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	margin-bottom: 24px;
 }
 
+.top-page__flex{
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 30px;
+}
+
+.top-page__btn{
+	margin-top: 5px;
+}
+
 .inner-title{
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -4574,6 +4584,23 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 .services-inner__btn{
 	margin-top: 30px;
 }
+
+
+.cart-page_marg{
+	margin-top: 40px;
+}
+
+.cart-page__top{
+	flex-wrap: nowrap;
+	gap: 30px;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.cart-page .sorting{
+	margin-top: 10px;
+}
 /*------------
 	commit
 ------------*/
@@ -5736,6 +5763,7 @@ a.advantages__item
 	align-items: flex-start;
 	align-content: flex-start;
 	flex-wrap: wrap;
+	background: #227F9D;
 }
 
 .main-form__bg_pad{
@@ -10190,6 +10218,15 @@ a.advantages__item
 	margin-top: 0;
 }
 
+.catalog-filter__box_mopad{
+	padding: 0;
+	border: none;
+}
+
+.catalog-filter__box_mopad:first-child{
+	padding-top: 2px;
+}
+
 .catalog-filter__items
 {
 	margin: -24px 0 0 -24px;
@@ -10228,6 +10265,11 @@ a.advantages__item
 	align-content: center;
 	flex-wrap: wrap;
 	padding-right: 42px;
+}
+
+.catalog-filter__more_marg{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .catalog-filter__more::before

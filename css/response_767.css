@@ -932,6 +932,20 @@
 	.services-inner__colr{
 		width: 100%;
 	}
+
+
+	.top-page__flex{
+		flex-wrap: wrap;
+	}
+
+	.top-page__btn{
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.cart-page .sorting{
+		margin-top: 20px;
+	}
 	/*------------
 		commit
 	------------*/
