@@ -772,6 +772,28 @@
 	{
 		width: calc(50% - 5px);
 	}
+
+
+	.modal
+	{
+		border-radius: 0;
+	}
+
+	.modal__title
+	{
+		line-height: 1.2;
+	}
+
+	.fancybox__slide.has-close-btn
+	{
+		padding: 0;
+	}
+
+	.calc-amount__btns .btn-border 
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 

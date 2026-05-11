@@ -1692,4 +1692,69 @@
 
         stroke: currentColor;
     }
+
+
+	.modal__title 
+	{
+		font-size: 26px;
+	}
+
+	.calc-amount__line-flex,
+	.calc-amount__wrap-flex
+	{
+		flex-wrap: wrap;
+	}
+
+	.calc-amount__box
+	{
+		width: 100%;
+	}
+
+	.calc-amount__form.form .form__input, 
+	.calc-amount__form.form .select-wrap
+	{
+		width: 100%;
+	}
+
+	.calc-amount__field
+	{
+		max-width: 100%;
+	}
+
+	.calc-amount__btn
+	{
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.calc-amount__wrap-item
+	{
+		width: 100%;
+	}
+
+	.calc-amount__wrap-item + .calc-amount__wrap-item
+	{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.calc-amount__total
+	{
+		padding-left: 0;
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid #E0E9EE;
+	}
+
+	.alc-amount__total-name
+	{
+		width: calc(50% - 10px);
+	}
+
+	.calc-amount__total-box
+	{
+		margin-left: 20px;
+		width: calc(50% - 10px);
+	}
 }

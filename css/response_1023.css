@@ -2818,4 +2818,23 @@
 	{
 		margin-top: 0;
 	}
+
+
+	.modal
+	{
+		padding-top: 60px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.modal__title
+	{
+		font-size: 28px;
+	}
+
+	.calc-amount__form.form .form__input, 
+	.calc-amount__form.form .select-wrap
+	{
+		width: 210px;
+	}
 }

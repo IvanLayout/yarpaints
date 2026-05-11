@@ -11903,11 +11903,13 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	margin-top: 20px;
 }
 
-.calc-amount__data_del{
+.calc-amount__data_del
+{
 	display: none;
 }
 
-.calc-amount__data._show{
+.calc-amount__data._show
+{
 	display: block;
 }
 
@@ -11917,7 +11919,8 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	padding-left: 30px;
 }
 
-.calc-amount__box
+.calc-amount__box,
+.calc-amount__line-flex
 {
 	align-items: center;
 	align-content: center;
@@ -11973,8 +11976,8 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
 .calc-amount__total
 {
-	display: none;
-	
+	/* display: none; */
+
 	margin-top: 40px;
 	color: #3A3B55;
 	padding-left: 30px;
@@ -11987,7 +11990,7 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 
 .calc-amount__total-item + .calc-amount__total-item
 {
-	margin-top: 21px;
+	margin-top: 20px;
 }
 
 .alc-amount__total-name
@@ -12000,6 +12003,7 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 	white-space: nowrap;
 	margin-left: 37px;
 	flex-shrink: 0;
+	align-self: flex-end;
 }
 
 .calc-amount__btns
