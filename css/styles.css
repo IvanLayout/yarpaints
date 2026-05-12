@@ -13207,6 +13207,120 @@ input[type=radio]:checked + .radio-icon__flex
 
 
 /*------------
+    inner-form
+------------*/
+
+.inner-form
+{
+	margin-top: 25px;
+}
+
+.inner-form__bg
+{
+	border-radius: 4px;
+	background: #fff;
+	padding: 40px 20px;
+}
+
+.inner-form__wrap
+{
+	width: 100%;
+	max-width: 568px;
+	margin: 0 auto;
+}
+
+.inner-form__title
+{
+	text-align: center;
+	font-family: var(--font-family);
+	color: #3A3B55;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+
+	margin-bottom: 25px;
+}
+
+.inner-form__form .form__line
+{
+	margin-bottom: 10px;
+}
+
+.inner-form__bot
+{
+	margin-top: 26px;
+}
+
+.inner-form__btns
+{
+	justify-content: center;
+}
+
+.inner-form__btn + .inner-form__btn
+{
+	margin-left: 28px;
+}
+
+.inner-form__btn .btn-border
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.inner-form__btn .btn-red
+{
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.inner-form__link
+{
+	margin-top: 26px;
+	padding-top: 26px;
+	border-top: 1px solid #E0E9EE;
+
+	text-align: center;
+}
+
+.inner-form__link a
+{
+	color: #3A3B55;
+	text-decoration: none;
+	border-bottom: 1px solid #3A3B55;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.inner-form__link a:hover
+	{
+		border-color: transparent
+	}
+}
+
+.inner-form .tabs__border
+{
+	justify-content: center;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E0E9EE;
+	gap: 0;
+}
+
+.inner-form .tabs-link
+{
+	width: 50%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.inner-form__bot-center
+{
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*------------
     Footer
 ------------*/
 .footer
