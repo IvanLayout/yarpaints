@@ -86,10 +86,11 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
-	$('body').on('click', '.radio__label_del', function(e) {
+
+	$('body').on('click', '.radio-del', function(e) {
 		let delivery = $(this).data('del')
 
-		$('.calc-amount__data_del').removeClass('_show')
+		$('.radio-dataDel').removeClass('_show')
 
 		if ( $(delivery).length ) {
 			$(delivery).addClass('_show')
