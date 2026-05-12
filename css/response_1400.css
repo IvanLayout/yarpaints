@@ -528,4 +528,10 @@
 	{
 		font-size: 30px;
 	}
+
+	.delivery .main-title,
+	.subscribe-section .main-title
+	{
+		font-size: 36px;
+	}
 }
