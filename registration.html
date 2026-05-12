@@ -180,7 +180,7 @@
 							<div class="inner-form__wrap">
 								<div class="inner-form__title">Регистрация</div>
 
-								<form action="" class="inner-form__form form">
+								<form action="" class="form">
 									<div class="form__line">
 										<div class="form__field">
 											<input type="text" value="" placeholder="ИНН компании*" class="form__input">
@@ -209,6 +209,47 @@
 									<div class="form__line">
 										<div class="form__field">
 											<input type="tel" data-mask="+7 (999) 999-99-99" value="" placeholder="Телефон контактного лица" class="form__input">
+										</div>
+									</div>
+
+									<div class="inner-form__items">
+										<div class="inner-form__item">
+											<div class="inner-form__note"><span>*</span>Реквизиты компании</div>
+										</div>
+
+										<div class="inner-form__item">
+											<div class="inner-form__desc">Прикрепите ваши реквизиты для выставления счетов на оплату</div>
+
+											<div class="inner-form__file">
+												<div class="file-selection">
+													<input type="file" name="" id="file">
+													
+													<label for="file" data-name="Прикрепить реквизиты" class="file-selection__path">
+														<span>Прикрепить реквизиты</span>
+														<svg>
+															<use xlink:href="images/sprite.svg#ic_file"></use>
+														</svg>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="inner-form__item">
+											<div class="inner-form__captcha">
+												<img data-src="images/captcha.jpg" src="images/img_plug.png" alt="" class="inner-form__captcha-img lazyload">
+											</div>
+										</div>
+
+										<div class="inner-form__item">
+											<div class="checkbox form__agree">
+												<label class="checkbox__label">
+													<input type="checkbox" name="">
+
+													<span class="checkbox__text">
+														Нажимая кнопку «Зарегистрироваться», я даю своё <br>согласие на обработку моих <a href="/" target="_blank">персональных данных</a>.
+													</span>
+												</label>
+											</div>
 										</div>
 									</div>
 

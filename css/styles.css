@@ -13320,6 +13320,70 @@ input[type=radio]:checked + .radio-icon__flex
 	text-align: center;
 }
 
+.inner-form__item
+{
+	margin-bottom: 25px;
+}
+
+.inner-form__note
+{
+	font-size: 14px;
+	line-height: 1.42;
+}
+
+.inner-form__note span
+{
+	color: #CD1719;
+}
+
+.inner-form__desc
+{
+	color: #3A3B55;
+}
+
+.inner-form__captcha
+{
+	height: 74px;
+}
+
+.inner-form__captcha-img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.inner-form__file
+{
+	margin-top: 16px;
+}
+
+.inner-form .file-selection
+{
+	display: inline-block;
+}
+
+.inner-form .file-selection__path
+{
+	border: 1px dashed #3A3B55;
+	border-radius: 4px;
+	padding-right: 20px;
+	padding-left: 43px;
+}
+
+.inner-form .file-selection__path svg
+{
+	width: 18px;
+	height: 18px;
+
+	stroke: #CD1719;
+	fill: none;
+	margin-top: -9px;
+
+	right: auto;
+	left: 20px;
+}
+
 /*------------
     Footer
 ------------*/
