@@ -126,6 +126,22 @@ $(() => {
 		$('body').removeClass('_lock-menu')
 	})
 
+
+	// Моб. меню личного кабинета
+	$('body').on('click', '.content-lk__open-menu', function(e) {
+		e.preventDefault()
+
+		$('.aside-lk').addClass('_show')
+		$('body').addClass('_lock-menu')
+	})
+
+	$('body').on('click', '.aside-lk__close', function(e) {
+		e.preventDefault()
+
+		$('.aside-lk').removeClass('_show')
+		$('body').removeClass('_lock-menu')
+	})
+
 	
 	// Табы
 	var locationHash = window.location.hash
@@ -202,13 +218,13 @@ $(() => {
 		dragToClose: false,
 		placeFocusBack: false,
 		
-		// Налаштування для інлайнового контенту (HTML модалки)
+		
 		Html: {
-			// Замінюємо шаблон кнопки безпосередньо в модулі Html
+			
 			tpl: myCloseBtn
 		},
 		
-		// Налаштування для галерей (зображення)
+		
 		Toolbar: {
 			display: {
 				right: ["close"],

@@ -1780,4 +1780,87 @@
 		margin-left: 20px;
 		width: calc(50% - 10px);
 	}
+
+
+	.personal-data
+	{
+		flex-wrap: wrap;
+	}
+
+	.personal-data__coll
+	{
+		width: 100%;
+	}
+
+	.personal-data__colr
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.personal-data__item
+	{
+		width: 100%;
+	}
+
+	.personal-data__item._active
+	{
+		max-width: 100%;
+	}
+
+
+	.order-history__info
+	{
+		padding: 15px 0;
+	}
+
+	.order-history__items
+	{
+		margin-top: 15px;
+	}
+
+	.order-history__top
+	{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.order-history__download,
+	.order-history__item + .order-history__item
+	{
+		margin-top: 15px;
+	}
+
+	.content-lk__sorting .select-wrap
+	{
+		width: 100%;
+	}
+
+
+	.lk-favorites__grid 
+	{
+		margin-top: 20px;
+	}
+
+	.lk-favorites__item
+	{
+		width: 100%;
+		margin-top: 10px;
+		align-items: center;
+		align-content: center;
+	}
+
+	.lk-favorites__img-box
+	{
+		width: 100px;
+		height: 100px;
+	}
+
+	.lk-favorites__info 
+	{
+		width: calc(100% - 120px);
+		margin-left: 20px;
+		padding-top: 0;
+	}
 }

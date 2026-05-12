@@ -500,4 +500,32 @@
 	{
         font-size: 28px;
     }
+
+
+	.aside-lk 
+	{
+		width: 320px;
+	}
+
+	.lk-manager__item span
+	{
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.lk-favorites__item
+	{
+		width: calc(100% / 2 - 10px);
+	}
+
+
+	.content-lk
+	{
+		width: calc(100% - 350px);
+	}
+
+	.content-lk__title
+	{
+		font-size: 30px;
+	}
 }

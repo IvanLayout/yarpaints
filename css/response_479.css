@@ -797,6 +797,38 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+
+	.lk-manager__title
+	{
+		font-size: 22px;
+	}
+
+	.lk-favorites__name 
+	{
+		font-size: 20px;
+	}
+
+	.lk-favorites__desc
+	{
+		margin-top: 10px;
+	}
+
+
+	.order-history__img
+	{
+		margin-right: 20px;
+	}
+
+	.order-history__name a
+	{
+		border-bottom: none;
+	}
+
+	.content-lk__sorting .select-wrap .nice-select .current
+	{
+		font-size: 14px;
+	}
 }
 
 

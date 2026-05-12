@@ -636,4 +636,11 @@
 
 		font-size: 14px;
 	}
+
+
+	.lk-favorites__name 
+	{
+        font-size: 22px;
+    }
+
 }
