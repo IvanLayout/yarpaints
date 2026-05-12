@@ -1265,6 +1265,10 @@ $(window).on('load', () => {
 	}
 
 	const marquee = new LiMarquee('.partners__slider', { speed: 60 });
+
+	if ($('.document-file').length){
+		checkImageOverflow();
+	}
 });
 
 
@@ -1308,6 +1312,10 @@ $(window).on('resize', () => {
 
 	if ($('.our-team__slider').length){
 		ourTeamSlider()
+	}
+
+	if ($('.document-file').length){
+		checkImageOverflow();
 	}
 });
 
@@ -1534,3 +1542,21 @@ function ourTeamSlider(){
 		}
 	}
 }
+
+const checkImageOverflow = () => {
+	$('.document-file').each(function() {
+		const $item = $(this);
+		const $img = $item.find('.document-file__img');
+
+		if (!$img.length) return;
+
+		$img.removeClass('_right');
+
+		const imgRightEdge = $img.offset().left + $img.outerWidth();
+		const viewportRightEdge = $(window).scrollLeft() + $(window).width();
+
+		if (imgRightEdge > viewportRightEdge) {
+			$img.addClass('_right');
+		}
+	});
+};

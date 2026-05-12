@@ -1554,6 +1554,15 @@
 	.cart-page .sorting{
 		justify-content: flex-end;
 	}
+
+	.document-file{
+		gap: 15px;
+		min-height: 60px;
+	}
+
+	.document-file__icon{
+		align-self: flex-start;
+	}
 	/*------------
 		commit
 	------------*/
@@ -1977,9 +1986,37 @@
 
 	.accord-box__open
 	{
-		padding-top: 24px;
-		padding-bottom: 24px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
+
+	.accord-box_marg{
+		margin-top: 10px;
+	}
+
+	.accord-box_marg .accordion__item + .accordion__item{
+		margin-top: 20px;
+	}
+
+	.accord-box_marg .accord-box__open{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.accord-box_marg .accord-box__open{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.files-about__accord-box{
+		margin-top: -20px;
+	}
+
+	.files-about__accord-box .accord-box__open{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 
 	.accord-box__btn
 	{
@@ -1995,12 +2032,6 @@
 	.accord-box__btn::before
 	{
 		height: 11px;
-	}
-
-	.accord-box__item
-	{
-		padding-top: 20px;
-		padding-bottom: 20px;
 	}
 
 
@@ -2458,7 +2489,7 @@
 		flex-wrap: wrap;
 	}
 
-	.catalog-search__form
+	.catalog-filter__top .search-form
 	{
 		width: calc(100% - 70px);
 	}

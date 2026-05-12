@@ -302,12 +302,6 @@
 	}
 
 
-	.accord-box__title
-	{
-		font-size: 20px;
-	}
-
-
 	.main-banner__bg
 	{
 		object-position: 100%;
@@ -388,6 +382,15 @@
 	.accord-box__title
 	{
 		font-size: 16px;
+	}
+
+	.accord-box__title_big
+	{
+		font-size: 20px;
+	}
+
+	.accord-box__title_fix{
+		font-size: 26px;
 	}
 
 	.accord-box__open 

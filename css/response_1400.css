@@ -55,6 +55,10 @@
 		font-size: 26px;
 	}
 
+	.accord-box__title_big{
+		font-size: 26px;
+	}
+
 	.reviews__title{
 		font-size: 30px;
 	}
@@ -262,6 +266,15 @@
 		margin-left: 20px;
 		padding-top: 20px;
 		padding-bottom: 40px;
+	}
+
+
+	.document-file__img{
+		width: 220px;
+	}
+
+	.document-file__img._right{
+		margin-left: -260px;
 	}
     /*------------
 		commit
