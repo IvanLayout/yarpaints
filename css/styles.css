@@ -4713,6 +4713,11 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	font-size: 12px;
 	line-height: 1.33;
 }
+
+.chackout-page__form
+{
+	margin-top: 30px;
+}
 /*------------
 	commit
 ------------*/
@@ -10864,6 +10869,7 @@ a.advantages__item
 	font-size: 26px;
 	line-height: 1.15;
 	color: #3A3B55;
+	margin-bottom: 20px;
 }
 
 /*------------
