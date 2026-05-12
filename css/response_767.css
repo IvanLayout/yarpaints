@@ -1914,4 +1914,12 @@
 		padding-bottom: 0;
 		border-bottom: none;
 	}
+
+
+	.inner-form__bg
+	{
+		border-radius: 0;
+		padding: 0;
+		background: none;
+	}
 }

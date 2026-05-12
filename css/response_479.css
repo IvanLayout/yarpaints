@@ -835,6 +835,55 @@
 	{
 		width: 100%;
 	}
+
+
+	.inner-form__btns
+	{
+		gap: 10px;
+	}
+
+	.inner-form__btn
+	{
+		width: calc(50% - 5px);
+	}
+
+	.inner-form__btn + .inner-form__btn
+	{
+		margin-left: 0;
+	}
+
+	.inner-form__btn a,
+	.inner-form__btn button
+	{
+		width: 100%;
+	}
+
+	.inner-form__btn .btn-red
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.tabs__text-none
+	{
+		display: none;
+	}
+
+	.inner-form .tabs-link
+	{
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+
+	.inner-form__item
+	{
+		margin-bottom: 30px;
+	}
+
+	.inner-form__item .btn-red
+	{
+		width: 100%;
+	}
 }
 
 
