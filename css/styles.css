@@ -12987,12 +12987,6 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
     delivery
 ------------*/
 
-.delivery__box
-{
-	border-bottom: 1px solid #EAEAEA;
-	/* padding-bottom: 20px; */
-}
-
 .delivery__items
 {
 	max-width: 1456px;
@@ -13010,17 +13004,12 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 {
 	border-top: 1px solid #EAEAEA;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 20px;
 }
 
 .delivery__item._show 
 {
     display: block;
-}
-
-.delivery__item + .delivery__item
-{
-	
 }
 
 .delivery__title
@@ -13188,15 +13177,16 @@ input[type=radio]:checked + .radio-icon__flex
 }
 
 
-.subscribe-section
-{
-	margin-top: 30px;
-}
+/*------------
+    subscribe-section
+------------*/
 
 .subscribe-section__border
 {
 	padding-bottom: 25px;
+	padding-top: 30px;
 	border-bottom: 1px solid #E0E9EE;
+	border-top: 1px solid #E0E9EE;
 }
 
 .subscribe-section__wrap
