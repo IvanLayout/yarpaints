@@ -973,6 +973,10 @@
 	.cart-page td.cart-page__delete{
 		padding-top: 20px;
 	}
+
+	.main-cats_article .main-cats__item:nth-child(n + 8){
+		display: none;
+	}
 	/*------------
 		commit
 	------------*/
@@ -1732,6 +1736,10 @@
 
         opacity: .5;
     }
+
+	.tooltip__wrap_small{
+		padding: 35px 19px 19px;
+	}
 
     .mini-modal__close svg
     {

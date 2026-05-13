@@ -643,4 +643,13 @@
         font-size: 22px;
     }
 
+
+	.product-list{
+		overflow: hidden;
+		overflow-x: auto;
+	}
+
+	.product-list table{
+		min-width: 1200px;
+	}
 }

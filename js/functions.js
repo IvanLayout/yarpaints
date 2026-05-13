@@ -470,15 +470,52 @@ $(() => {
 
 		parent.find('.calc-amount__total').addClass('_show')
 	})
+
+	if ($('.main-cats').length){
+		checkHiddenItems();
+	}
+
+	$('body').on('click', '.main-cats__open', function(e) {
+		e.preventDefault()
+		
+		$(this).addClass('_active')
+		$(this).closest('.main-cats').find('.main-cats__item').addClass('_show')
+	})
+
+	$('body').on('click', '.product-list__more-btn', function(e) {
+		const $btn = $(this);
+		const groupId = $btn.data('open-group');
+		const $parentRow = $btn.closest('.product-list__row');
+		const $groupRows = $(`.product-list__group[data-group="${groupId}"]`);
+		const rowCount = $groupRows.length + 1;
+
+		$btn.toggleClass('_active');
+
+		$groupRows.toggleClass('_show');
+
+		const $thumb = $parentRow.find('.product-list__thumb, .product-list__info, .product-list__more');
+
+		if ($groupRows.hasClass('_show')) {
+			$thumb.attr('rowspan', rowCount);
+		} else {
+			$thumb.removeAttr('rowspan');
+		}
+	});
 })
 
 
 $(window).on('load', () => {
 	
 	// commit
-	
+
+    
 })
 
+$(window).on('resize', function() {
+	if ($('.main-cats').length){
+		checkHiddenItems();
+	}
+})
 
 // Вспомогательные функции
 const widthScroll = () => {
@@ -512,3 +549,18 @@ function setHeight(className){
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+function checkHiddenItems() {
+	const $container = $('.main-cats');
+	const $items = $('.main-cats__item');
+	const $openBtn = $('.main-cats__open');
+
+	$items.each(function() {
+		const $item = $(this);
+		if ($item.is(':hidden')) {
+			$openBtn.addClass('_show');
+		} else {
+			$openBtn.removeClass('_show');
+		}
+	})
+}

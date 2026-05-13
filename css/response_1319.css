@@ -106,6 +106,29 @@
 	.checkout-sector{
 		width: 100%;
 	}
+
+
+	.product-list th{
+		font-size: 14px;
+		padding-right: 16px;
+	}
+
+	.product-list td{
+		font-size: 14px;
+	}
+
+	.product-list td{
+		padding-right: 16px;
+	}
+
+	.product-list td.product-list__thumb {
+   		width: 110px;
+		padding-left: 10px;
+	}
+
+	.product-list td.product-list__info{
+		width: 160px;
+	}
 	/*------------
 		commit
 	------------*/
