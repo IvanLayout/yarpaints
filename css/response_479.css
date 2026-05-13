@@ -124,6 +124,19 @@
 		aspect-ratio: 1 / .9;
 		height: auto;
 	}
+
+
+	.cart-page td.cart-page__state{
+		width: 100%;
+	}
+
+	.cart-page td.cart-page__amount{
+		width: 100%;
+	}
+
+	.cart-page__amount .amount .amount__input{
+		font-size: 16px;
+	}
 	/*------------
 		commit
 	------------*/

@@ -276,6 +276,34 @@
 	.document-file__img._right{
 		margin-left: -260px;
 	}
+
+	.cart-page td.cart-page__info {
+		width: 23%;
+	}
+
+	.cart-page td.cart-page__state{
+		width: 23%;
+	}
+
+	.cart-page__amount .amount {
+		width: 120px;
+	}
+
+	.chackout-page__flex{
+		gap: 20px;
+	}
+
+	.chackout-page__colr{
+		width: 242px;
+	}
+
+	.delivery__box {
+		width: calc(100% - 262px);
+	}
+
+	.checkout-sector{
+		width: calc(100% - 262px);
+	}
     /*------------
 		commit
 	------------*/

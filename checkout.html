@@ -212,7 +212,7 @@
 									<div class="catalog-filter__items _flex">
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Тип поверхности</option>
 													<option value="2">Тип поверхности 2</option>
 													<option value="3">Тип поверхности 3</option>
@@ -221,7 +221,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Место использования</option>
 													<option value="2">Место использования 2</option>
 													<option value="3">Место использования 3</option>
@@ -230,7 +230,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Тип эксплуатации</option>
 													<option value="2">Тип эксплуатации 2</option>
 													<option value="3">Тип эксплуатации 3</option>
@@ -239,7 +239,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Торговая марка</option>
 													<option value="2">Торговая марка 2</option>
 													<option value="3">Торговая марка 3</option>
@@ -248,7 +248,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Эксклюзивный ассортимент</option>
 													<option value="2">Эксклюзивный ассортимент 2</option>
 													<option value="3">Эксклюзивный ассортимент 3</option>
@@ -257,7 +257,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Класс</option>
 													<option value="2">Класс 2</option>
 													<option value="3">Класс 3</option>
@@ -266,7 +266,7 @@
 										</div>
 										<div class="catalog-filter__item _hide">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Тип поверхности 1</option>
 													<option value="2">Тип поверхности 2</option>
 													<option value="3">Тип поверхности 3</option>
@@ -275,7 +275,7 @@
 										</div>
 										<div class="catalog-filter__item _hide">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Место использования 1</option>
 													<option value="2">Место использования 2</option>
 													<option value="3">Место использования 3</option>
@@ -284,7 +284,7 @@
 										</div>
 										<div class="catalog-filter__item _hide">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Тип эксплуатации 1</option>
 													<option value="2">Тип эксплуатации 2</option>
 													<option value="3">Тип эксплуатации 3</option>
@@ -311,7 +311,7 @@
 									<div class="catalog-filter__items _flex">
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Площадь объекта</option>
 													<option value="2">Площадь объекта 2</option>
 													<option value="3">Площадь объекта 3</option>
@@ -320,7 +320,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">Колеровка</option>
 													<option value="2">Колеровка 2</option>
 													<option value="3">Колеровка 3</option>
@@ -329,7 +329,7 @@
 										</div>
 										<div class="catalog-filter__item">
 											<div class="select-wrap">
-												<select>
+												<select class="select-js">
 													<option value="1">1 500 000 </option>
 													<option value="2">1 700 000</option>
 													<option value="3">2 500 000</option>
@@ -358,89 +358,222 @@
 							<div class="chackout-page__bord">
 								<div class="chackout-page__flex _flex">
 									<div class="chackout-page__coll">
-										<div class="important">Уважаемый клиент! Напоминаем, что сформированный заказ является предварительным. Точная сумма товара с учетом <br>всех ваших скидок, а также стоимость доставки будут отражены в счете, который вы получите от вашего менеджера</div>
+										<div class="important">Уважаемый клиент! Напоминаем, что&nbsp;сформированный заказ является предварительным. Точная сумма товара с&nbsp;учетом <br>всех ваших скидок, а также стоимость доставки будут отражены в счете, который вы получите от вашего менеджера</div>
 
-										<div class="chackout-delivery"></div>
+										<div class="cart-page cart-page_marg">
+											<table>
+												<thead>
+													<tr>
+														<th colspan="7" class="title-th">Краски</th>
+													</tr>
+													<tr>
+														<th></th>
+														<th>Наименование</th>
+														<th>Цвет</th>
+														<th>Блеск</th>
+														<th>Фасовка</th>
+														<th>Цена с НДС</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="cart-page__thumb" data-label="Наименование">
+															<a href="/" class="cart-page__img">
+																<img data-src="images/tmp/product_img1.png" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</td>
+														<td class="cart-page__info">
+															<div class="cart-page__name">
+																<a href="/">Краска для стен и потолков моющаяся ЯРКО</a>
+															</div>
 
+															<div class="cart-page__volume _flex">
+																<div class="cart-page__volume-item">0.25 л</div>
+																<div class="cart-page__volume-item">1 л</div>
+																<div class="cart-page__volume-item">2,5 л</div>
+																<div class="cart-page__volume-item">5 л</div>
+																<div class="cart-page__volume-item">9 л</div>
+															</div>
+														</td>
+														<td class="cart-page__color" data-label="Цвет">
+															<div class="select-color">
+																<select class="select-js">
+																	<option value="color1" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color1.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color2" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color2.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color3" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color3.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color4" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color4.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																</select>
+															</div>
+															<div class="cart-page__chose" data-label="">
+																<div class="cart-page__chose-item">
+																	<div class="cart-page__chose-label">Нужен другой цвет</div>
 
+																	<div class="checkbox-another">
+																		<label class="checkbox-another__label">
+																			<input type="checkbox" name="">
+																			<span class="checkbox-another__text">
+																				<span>Нет</span>
+																				<span>Да</span>
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<div class="cart-page__chose-item">
+																	<div class="cart-page__chose-label">Нужна колеровка?</div>
 
-
-										<div class="delivery _marg">
-											<div class="delivery__box">
-												<div class="main-title">Доставка</div>
-				
-												<div class="delivery__items">
-													<div class="delivery__item">
-														<div class="delivery__title">Регион доставки</div>
-						
-														<div class="form__flex _flex">
-															<div class="form__line">
-																<div class="form__field">
-																	<input type="text" value="" placeholder="Местоположение*" class="form__input">
+																	<div class="checkbox-another">
+																		<label class="checkbox-another__label">
+																			<input type="checkbox" name="">
+																			<span class="checkbox-another__text">
+																				<span>Нет</span>
+																				<span>Да</span>
+																			</span>
+																		</label>
+																	</div>
 																</div>
 															</div>
-															<div class="form__line">
-																<div class="form__field">
-																	<input type="text" value="" placeholder="Индекс*" class="form__input">
+
+															<div class="cart-page__field">
+																<input type="text" value="" placeholder="Введите номер цвета" class="form__input">
+															</div>
+														</td>
+														<td class="cart-page__state" data-label="Блеск">
+															<div class="cart-page__state-flex _flex">
+																<div class="cart-page__state-item">Глубокоматовый</div>
+																<div class="cart-page__state-item">Матовый</div>
+																<div class="cart-page__state-item">Матовый</div>
+																<div class="cart-page__state-item">Глянцевый</div>
+															</div>
+														</td>
+														<td class="cart-page__amount" data-label="Фасовка">
+															<div class="amount">
+																<div class="amount__val _flex">
+																	<button type="button" class="amount__btn amount__btn_minus"></button>
+
+																	<input type="text" value="20 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+
+																	<button type="button" class="amount__btn amount__btn_plus"></button>
 																</div>
 															</div>
-														</div>
-													</div>
-						
-													<div class="delivery__item">
-														<div class="delivery__title">Доставка</div>
-						
-														<div class="radio-icons _flex">
-															<div class="radio-icon">
-																<label class="radio-icon__label radio-del" data-del="#delivery1">
-																	<input type="radio" name="delivery" checked>
-						
-																	<span class="radio-icon__flex _flex">
-																		<span class="radio-icon__icon">
-																			<img data-src="images/ic_delivery1.svg" src="images/img_plug.png" alt="" class="lazyload">
-																		</span>
-																		<span class="radio-icon__box">
-																			<span class="radio-icon__text">Самовывоз</span>
-																			<span class="radio-icon__desc">Бесплатно</span>
-																		</span>
-																	</span>
-																</label>
+														</td>
+														<td class="cart-page__price" data-label="Цена с НДС">1200 <i class="rub">₽</i></td>
+														<td class="cart-page__delete">
+															<a href="/" class="cart-page__delete-btn">
+																<svg>
+																	<use xlink:href="images/sprite.svg#delete"></use>
+																</svg>
+															</a>
+														</td>
+													</tr>
+													<tr class="cart-page__fott">
+														<td colspan="5" class="cart-page__hide"></td>
+														<td class="cart-page__total"><b>31 200 <i class="rub">₽</i></b></td>
+														<td class="cart-page__hide"></td>
+													</tr>
+													<tr>
+														<th colspan="7" class="title-th">Краски</th>
+													</tr>
+													<tr>
+														<td class="cart-page__thumb" data-label="Наименование">
+															<a href="/" class="cart-page__img">
+																<img data-src="images/tmp/product_img1.png" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</td>
+														<td class="cart-page__info">
+															<div class="cart-page__name">
+																<a href="/">Краска для стен и потолков моющаяся ЯРКО</a>
 															</div>
-															<div class="radio-icon">
-																<label class="radio-icon__label radio-del" data-del="#delivery2">
-																	<input type="radio" name="delivery">
-						
-																	<span class="radio-icon__flex _flex">
-																		<span class="radio-icon__icon">
-																			<img data-src="images/ic_delivery2.svg" src="images/img_plug.png" alt="" class="lazyload">
-																		</span>
-																		<span class="radio-icon__box">
-																			<span class="radio-icon__text">Доставка транспортом ЯК</span>
-																			<span class="radio-icon__desc">Рассчитать стоимость</span>
-																		</span>
-																	</span>
-																</label>
+
+															<div class="cart-page__volume _flex">
+																<div class="cart-page__volume-item">0.25 л</div>
+																<div class="cart-page__volume-item">1 л</div>
+																<div class="cart-page__volume-item">2,5 л</div>
+																<div class="cart-page__volume-item">5 л</div>
+																<div class="cart-page__volume-item">9 л</div>
 															</div>
-														</div>
-													</div>
-						
-													<div class="delivery__item radio-dataDel _show" id="delivery1">
-														<div class="delivery__title">Самовывоз</div>
-						
-														<div class="delivery__adres">г. Хабаровск, Хабаровская <br>улица, д. 23, корп. 4</div>
-						
-														<div class="delivery__desc">В магазине 1 шт, забирайте сегодня</div>
-													</div>
-						
-													<div class="delivery__item radio-dataDel" id="delivery2">
-														<div class="delivery__title">Доставка транспортом ЯК</div>
-						
-														<div class="delivery__adres">г. Хабаровск, Хабаровская <br>улица, д. 23, корп. 4</div>
-						
-														<div class="delivery__desc">В магазине 1 шт, забирайте сегодня. Стоимость 10 000 руб.</div>
-													</div>
-												</div>
-											</div>
+														</td>
+														<td class="cart-page__color" data-label="Цвет">
+															<div class="select-color">
+																<select class="select-js">
+																	<option value="color1" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color1.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color2" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color2.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color3" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color3.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																	<option value="color4" data-content="<span class='select-color__wrap'><span class='select-color__img'><img src='images/tmp/color4.jpg' alt=''></option></span><span class='select-color__name'>+16</span></span>"></option>
+																</select>
+															</div>
+															<div class="cart-page__chose">
+																<div class="cart-page__chose-item">
+																	<div class="cart-page__chose-label">Нужен другой цвет</div>
+
+																	<div class="checkbox-another">
+																		<label class="checkbox-another__label">
+																			<input type="checkbox" name="">
+																			<span class="checkbox-another__text">
+																				<span>Нет</span>
+																				<span>Да</span>
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<div class="cart-page__chose-item">
+																	<div class="cart-page__chose-label">Нужна колеровка?</div>
+
+																	<div class="checkbox-another">
+																		<label class="checkbox-another__label">
+																			<input type="checkbox" name="">
+																			<span class="checkbox-another__text">
+																				<span>Нет</span>
+																				<span>Да</span>
+																			</span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+
+															<div class="cart-page__field">
+																<input type="text" value="" placeholder="Введите номер цвета" class="form__input">
+															</div>
+														</td>
+														<td class="cart-page__state" data-label="Блеск">
+															<div class="cart-page__state-flex _flex">
+																<div class="cart-page__state-item">Глубокоматовый</div>
+																<div class="cart-page__state-item">Матовый</div>
+																<div class="cart-page__state-item">Матовый</div>
+																<div class="cart-page__state-item">Глянцевый</div>
+															</div>
+														</td>
+														<td class="cart-page__amount" data-label="Фасовка">
+															<div class="amount">
+																<div class="amount__val _flex">
+																	<button type="button" class="amount__btn amount__btn_minus"></button>
+
+																	<input type="text" value="20 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+
+																	<button type="button" class="amount__btn amount__btn_plus"></button>
+																</div>
+															</div>
+														</td>
+														<td class="cart-page__price" data-label="Цена с НДС">1200 <i class="rub">₽</i></td>
+														<td class="cart-page__delete">
+															<a href="/" class="cart-page__delete-btn">
+																<svg>
+																	<use xlink:href="images/sprite.svg#delete"></use>
+																</svg>
+															</a>
+														</td>
+													</tr>
+													<tr class="cart-page__fott">
+														<td colspan="5" class="cart-page__hide">
+															<a href="/" class="cart-page__download">
+																<span>Скачать заказ в Exel</span>
+															</a>
+														</td>
+														<td class="cart-page__total"><b>31 200 <i class="rub">₽</i></b></td>
+														<td class="cart-page__hide"></td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 									</div>
 									<div class="chackout-page__colr">
@@ -490,58 +623,134 @@
 								</div>
 							</div>
 
-							<div class="chackout-page__form delivery">
-								<div class="main-title">Оформление заказа</div>
+							<div class="delivery _marg">
+								<div class="main-title">Доставка</div>
 
 								<div class="delivery__box">
-									<div class="delivery__items checkout-sector">
-										<div class="checkout-sector__desc">Вводите данные вручную или <a href="/">авторизуйтесь</a> для автозаполнения данных</div>
-	
-										<div class="checkout-sector__box">
+									<div class="delivery__items">
+										<div class="delivery__item">
+											<div class="delivery__title">Регион доставки</div>
+			
 											<div class="form__flex _flex">
 												<div class="form__line">
 													<div class="form__field">
-														<input type="text" value="" placeholder="Название компании" class="form__input">
+														<input type="text" value="" placeholder="Местоположение*" class="form__input">
 													</div>
 												</div>
 												<div class="form__line">
 													<div class="form__field">
-														<input type="email" value="" placeholder="Электронная почта контактного лица" class="form__input">
+														<input type="text" value="" placeholder="Индекс*" class="form__input">
 													</div>
 												</div>
-												<div class="form__line">
-													<div class="form__field">
-														<input type="text" value="" placeholder="ФИО контактного лица" class="form__input">
-													</div>
+											</div>
+										</div>
+			
+										<div class="delivery__item">
+											<div class="delivery__title">Доставка</div>
+			
+											<div class="radio-icons _flex">
+												<div class="radio-icon">
+													<label class="radio-icon__label radio-del" data-del="#delivery1">
+														<input type="radio" name="delivery" checked>
+			
+														<span class="radio-icon__flex _flex">
+															<span class="radio-icon__icon">
+																<img data-src="images/ic_delivery1.svg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+															<span class="radio-icon__box">
+																<span class="radio-icon__text">Самовывоз</span>
+																<span class="radio-icon__desc">Бесплатно</span>
+															</span>
+														</span>
+													</label>
 												</div>
-												<div class="form__line">
-													<div class="form__field">
-														<input type="tel" value="" placeholder="Телефон контактного лица" data-mask="+7 (999) 999-99-99" class="form__input">
-													</div>
+												<div class="radio-icon">
+													<label class="radio-icon__label radio-del" data-del="#delivery2">
+														<input type="radio" name="delivery">
+			
+														<span class="radio-icon__flex _flex">
+															<span class="radio-icon__icon">
+																<img data-src="images/ic_delivery2.svg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+															<span class="radio-icon__box">
+																<span class="radio-icon__text">Доставка транспортом ЯК</span>
+																<span class="radio-icon__desc">Рассчитать стоимость</span>
+															</span>
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+			
+										<div class="delivery__item radio-dataDel _show" id="delivery1">
+											<div class="delivery__title">Самовывоз</div>
+			
+											<div class="delivery__adres">г. Хабаровск, Хабаровская <br>улица, д. 23, корп. 4</div>
+			
+											<div class="delivery__desc">В магазине 1 шт, забирайте сегодня</div>
+										</div>
+			
+										<div class="delivery__item radio-dataDel" id="delivery2">
+											<div class="delivery__title">Доставка транспортом ЯК</div>
+			
+											<div class="delivery__adres">г. Хабаровск, Хабаровская <br>улица, д. 23, корп. 4</div>
+			
+											<div class="delivery__desc">В магазине 1 шт, забирайте сегодня. Стоимость 10 000 руб.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chackout-page__form">
+								<div class="main-title">Оформление заказа</div>
+
+								<div class="checkout-sector">
+									<div class="checkout-sector__desc">Вводите данные вручную или <a href="/">авторизуйтесь</a> для автозаполнения данных</div>
+
+									<div class="checkout-sector__box">
+										<div class="form__flex _flex">
+											<div class="form__line">
+												<div class="form__field">
+													<input type="text" value="" placeholder="Название компании" class="form__input">
 												</div>
 											</div>
 											<div class="form__line">
 												<div class="form__field">
-													<textarea name="" id="" placeholder="Комментарий" class="form__textarea form__textarea_height"></textarea>
+													<input type="email" value="" placeholder="Электронная почта контактного лица" class="form__input">
 												</div>
 											</div>
-											<div class="checkout-sector__bot _flex">
-												<div class="checkbox checkbox_big form__agree">
-													<label class="checkbox__label">
-														<input type="checkbox" name="">
-				
-														<span class="checkbox__text">
-	
-															Нажимая на кнопку, вы соглашаетесь <br>c <a href="/" target="_blank">политикой обработки персональных данных</a>
-														</span>
-													</label>
+											<div class="form__line">
+												<div class="form__field">
+													<input type="text" value="" placeholder="ФИО контактного лица" class="form__input">
 												</div>
-												
-												<div class="checkout-sector__btn">
-													<button type="submit" class="form__submit-btn btn-red">
-														<span>Отправить заказ</span>
-													</button>
+											</div>
+											<div class="form__line">
+												<div class="form__field">
+													<input type="tel" value="" placeholder="Телефон контактного лица" data-mask="+7 (999) 999-99-99" class="form__input">
 												</div>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__field">
+												<textarea name="" id="" placeholder="Комментарий" class="form__textarea form__textarea_height"></textarea>
+											</div>
+										</div>
+										<div class="checkout-sector__bot _flex">
+											<div class="checkbox checkbox_big form__agree">
+												<label class="checkbox__label">
+													<input type="checkbox" name="">
+			
+													<span class="checkbox__text">
+
+														Нажимая на кнопку, вы соглашаетесь <br>c <a href="/" target="_blank">политикой обработки персональных данных</a>
+													</span>
+												</label>
+											</div>
+											
+											<div class="checkout-sector__btn">
+												<button type="submit" class="form__submit-btn btn-red">
+													<span>Отправить заказ</span>
+												</button>
 											</div>
 										</div>
 									</div>

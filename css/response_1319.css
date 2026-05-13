@@ -84,6 +84,28 @@
 	.document-file__btn{
 		display: none;
 	}
+
+
+	.chackout-page__flex{
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	.chackout-page__colr{
+		width: 100%;
+	}
+
+	.checkout-smallinfo__title br{
+		display: none;
+	}
+
+	.delivery__box{
+		width: 100%;
+	}
+
+	.checkout-sector{
+		width: 100%;
+	}
 	/*------------
 		commit
 	------------*/

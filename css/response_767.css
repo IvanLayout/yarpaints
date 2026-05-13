@@ -943,8 +943,35 @@
 		width: 100%;
 	}
 
-	.cart-page .sorting{
+	.catalog-list .sorting{
 		margin-top: 20px;
+	}
+
+	.chackout-page .form__flex .form__line{
+		margin-bottom: 10px;
+	}
+
+	.radio-icons{
+		margin: -10px 0 20px 0;
+	}
+
+	.radio-icon{
+		width: 100%;
+		margin: 10px 0 0;
+	}
+	
+
+	.cart-page td.cart-page__color{
+		width: 100%;
+	}
+
+	.cart-page td.cart-page__price{
+		width: calc(100% - 44px);
+		padding-top: 20px;
+	}
+
+	.cart-page td.cart-page__delete{
+		padding-top: 20px;
 	}
 	/*------------
 		commit

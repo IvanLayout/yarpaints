@@ -314,10 +314,6 @@ $(() => {
 			parent.find('.accordion__data').slideDown(300)
 		}
 	})
-
-	// Кастомный select
-	$('.select-marker select').niceSelect()
-
 	// commit
 
 	// Маска ввода
@@ -330,7 +326,7 @@ $(() => {
 	})
 
 	// Кастомный select
-	$('.select-wrap select').niceSelect()
+	$('.select-js').niceSelect()
 
 	$('body').on('click', '.header__change', function(e) {
 		e.preventDefault();
