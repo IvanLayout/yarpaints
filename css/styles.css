@@ -5433,6 +5433,137 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	height: 11px;
 	background: url(../images/tinting.png) 50%/contain no-repeat;
 }
+
+
+.mob-product-list
+	{
+		margin-top: 30px;
+	}
+
+	.mob-product-list__box + .mob-product-list__box
+	{
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid #E0E9EE;
+	}
+
+	.mob-product-list__top
+	{
+		align-items: center;
+		align-content: center;
+	}
+
+	.mob-product-list__img
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		
+		text-decoration: none;
+		
+		width: 84px;
+		height: 76px
+	}
+
+	.mob-product-list__img img 
+	{
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.mob-product-list__name
+	{
+		width: calc(100% - 104px);
+		margin-left: auto;
+	}
+
+	.mob-product-list__name a 
+	{
+		color: #3a3b55;
+		text-decoration: none;
+		border-bottom: 1px solid #3a3b55;
+	}
+
+	.mob-product-list__items
+	{
+		margin-left: -10px;
+		margin-top: 10px;
+	}
+
+	.mob-product-list__items + .mob-product-list__items
+	{
+		padding-top: 10px;
+		margin-top: 20px;
+		border-top: 1px solid #E0E9EE;
+	}
+
+	.mob-product-list__item
+	{
+		width: calc(100%/4 - 10px);
+		margin: 10px 0 0 10px;
+	}
+
+	.mob-product-list__label
+	{
+		margin-bottom: 5px;
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.mob-product-list__text
+	{
+		color: #3A3B55;
+	}
+
+	.mob-product-list__incart-btn
+	{
+		margin-top: 20px;
+
+		position: relative;
+		color: #FFF;
+		font-size: 14px;
+		line-height: 40px;
+		display: block;
+		padding: 0 15px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 4px;
+		background: #CD1719;
+	}
+
+	.mob-product-list__incart-btn span 
+	{
+		position: relative;
+		padding-right: 24px;
+	}
+
+	.mob-product-list__incart-btn svg 
+	{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		display: block;
+		width: 16px;
+		height: 14px;
+		
+		margin-top: -7px;
+		fill: none;
+		stroke: currentColor;
+	}
+	
+	.mob-product-list__dash
+	{
+		height: 40px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		color: #3A3B55;
+	}
 /*------------
 	commit
 ------------*/
@@ -14465,6 +14596,8 @@ input[type=radio]:checked + .radio-icon__flex
 	.product-list td.product-list__info{
 		width: 180px;
 	}
+
+	
 	/*------------
 		commit
 	------------*/

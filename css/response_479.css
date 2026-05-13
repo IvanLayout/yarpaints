@@ -897,6 +897,19 @@
 	{
 		width: 100%;
 	}
+
+
+	.mob-product-list__label
+	{
+		font-size: 12px;
+	}
+
+	.mob-product-list__incart-btn
+	{
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 36px;
+	}
 }
 
 
