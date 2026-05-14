@@ -12163,20 +12163,20 @@ a.advantages__item
 
 .product-info__another-color
 {
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 .product-info__form
 {
 	align-items: center;
 	align-content: center;
-
-	margin-left: -10px;
+	flex-wrap: nowrap;
 }
 
-.product-info__form > div
+.checkbox-another
 {
-	margin: 20px 0 0 10px;
+	flex-shrink: 0;
+	margin-right: 10px;
 }
 
 .product-info__another-title
@@ -12185,6 +12185,8 @@ a.advantages__item
 	line-height: 1.4;
 	font-size: 14px;
 	margin-right: 10px;
+	white-space: nowrap;
+	flex-shrink: 0;
 }
 
 .checkbox-another input[type=checkbox]
@@ -12263,7 +12265,8 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 .product-info__input-color
 {
 	display: none;
-	margin-left: 10px;
+	max-width: 200px;
+	width: 100%;
 }
 
 .product-info__input-color._show
@@ -12275,6 +12278,8 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 {
 	height: 26px;
 	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
