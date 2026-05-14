@@ -12179,11 +12179,6 @@ a.advantages__item
 	margin: 20px 0 0 10px;
 }
 
-.product-info__input-color
-{
-	margin-left: 10px;
-}
-
 .product-info__another-title
 {
 	color: #3A3B55;
@@ -12268,6 +12263,7 @@ input[type=checkbox]:checked + .checkbox-another__text span + span
 .product-info__input-color
 {
 	display: none;
+	margin-left: 10px;
 }
 
 .product-info__input-color._show

@@ -95,6 +95,11 @@ $(() => {
 		}
 	})
 
+	// checkbox for another color
+	$('body').on('change', '#checkbox-another1', function() {
+		$('.product-info__input-color').toggleClass('_show', $(this).is(':checked'));
+	})
+
 	if ($('#datepicker').length) {
 		new AirDatepicker('#datepicker', {
 			container: '#datepicker-here1',
