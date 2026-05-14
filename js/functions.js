@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload, .production-process__flex')
+	const boxes = document.querySelectorAll('.lazyload, .history-main__items')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -16,11 +16,22 @@ $(() => {
 				entry.target.classList.add('loaded')
 			}
 
-			if (entry.intersectionRatio > 0 && entry.target.classList.contains('production-process__flex') && !entry.target.classList.contains('act')) {
-				console.log(entry.target)
-				tabsTimer()
+			if (entry.target.classList.contains('history-main__items')) {
+				const midpoint = window.innerHeight / 2;
+				const rect = entry.boundingClientRect;
 
-				entry.target.classList.add('act')
+				const isTopPassedMid = rect.top <= midpoint;
+				const isBottomPassedMid = rect.bottom <= midpoint;
+
+				if (entry.isIntersecting) {
+					if (isTopPassedMid && !isBottomPassedMid) {
+						entry.target.classList.add('act');
+					} else {
+						entry.target.classList.remove('act');
+					}
+				} else {
+					entry.target.classList.remove('act');
+				}
 			}
 		}
 	}
