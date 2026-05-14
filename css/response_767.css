@@ -1050,7 +1050,7 @@
 		margin-top: 30px;
 	}
 
-	.history-main__wrap::before
+	.history-main__items::before
 	{
 		left: 10px;
 		margin-left: 0;
