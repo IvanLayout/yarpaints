@@ -5405,8 +5405,8 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 }
 
 .tinting{
-	margin-top: 5px;
-	font-size: 10px;
+	margin-top: 6px;
+	font-size: 12px;
 	line-height: 11px;
 	color: #8D95A1;
 	position: relative;
@@ -5417,9 +5417,9 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 0;
-	width: 11px;
-	height: 11px;
+	top: -1px;
+	width: 12px;
+	height: 12px;
 	background: url(../images/tinting.png) 50%/contain no-repeat;
 }
 
