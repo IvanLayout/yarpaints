@@ -5423,6 +5423,36 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	background: url(../images/tinting.png) 50%/contain no-repeat;
 }
 
+.tinting > span
+{
+	display: inline-block;
+	padding-right: 22px;
+	position: relative;
+}
+
+.tinting .tooltip
+{
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	width: 18px;
+	height: 18px;
+
+	margin-top: -9px;
+}
+
+.tinting .tooltip__icon
+{
+	width: 18px;
+	height: 18px;
+}
+
+.tinting .tooltip__wrap
+{
+	padding: 10px;
+}
+
 
 .mob-product-list
 	{
