@@ -3868,7 +3868,6 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	font-size: 32px;
 	line-height: 1.25;
 	letter-spacing: -0.01em;
-	text-decoration: line-through;
 	color: #3a3b55;
 	text-align: center;
 	border-radius: 4px;
@@ -11752,7 +11751,7 @@ a.advantages__item
 
 	pointer-events: none;
 	white-space: nowrap;
-	opacity: .4;
+	opacity: .8;
 }
 
 .often-bought__slider
