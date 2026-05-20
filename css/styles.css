@@ -5098,6 +5098,18 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	height: 100%;
 }
 
+.select-color__wrap-line{
+	font-size: 12px;
+}
+
+.list_item .select-color__wrap-line{
+	border-top: 1px dashed currentColor;
+	width: calc(100% + 18px);
+	margin: -7px -9px;
+	padding: 7px 9px;
+	font-size: 12px;
+}
+
 .select-color__img{
 	width: 18px;
 	height: 18px;
@@ -5110,6 +5122,12 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	height: 100%;
 	object-fit: cover;
 	border-radius: 50%;
+	border: 1px solid rgba(141, 149, 161, 0.4);
+	transition: border .2s linear;
+}
+
+.list_item.selected .select-color__img img{
+	border-color: #B71517;
 }
 
 .select-color .nice-select .list
@@ -12152,7 +12170,6 @@ a.advantages__item
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	overflow: hidden;
 	position: relative;
 	display: block;
 	margin: 0 auto;
@@ -12185,6 +12202,9 @@ a.advantages__item
     width: 100%;
     height: 100%;
     object-fit: cover;
+	border-radius: 50%;
+	border: 1px solid rgba(141, 149, 161, 0.4);
+	transition: border .2s linear;
 }
 
 .product-info__color.active .product-info__color-img::after
@@ -12214,6 +12234,10 @@ a.advantages__item
 {
 	color: #B71517;
 	font-weight: 500;
+}
+
+.product-info__color.active img{
+	border-color: #B71517;
 }
 
 .product-info__another-color
