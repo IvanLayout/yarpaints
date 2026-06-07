@@ -5535,6 +5535,7 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	{
 		width: calc(100% - 104px);
 		margin-left: auto;
+		font-size: 16px;
 	}
 
 	.mob-product-list__name a 
