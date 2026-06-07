@@ -113,7 +113,7 @@ $(() => {
 
 	if ($('.reviews__slider').length) {
 		new Swiper(".reviews__slider", {
-			loop: true,
+			loop: false,
 			spaceBetween: 24,
 			slidesPerView: 1,
 			speed: 500,
