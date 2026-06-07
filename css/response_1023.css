@@ -803,6 +803,18 @@
 		margin-top: 65px;
 	}
 
+	.partners__item img
+	{
+		filter: none;
+		opacity: 1;
+	}
+
+	.partners__item ._light
+	{
+		opacity: 1;
+		filter: none;
+	}
+
 	.partners__slide{
 		margin-right: 30px;
 	}
