@@ -5774,6 +5774,13 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	z-index: 1;
 }
 
+.achievements__map-img img
+{
+	display: block;
+	width: 409px;
+	height: 228px;
+}
+
 .achievements__title
 {
 	margin-bottom: 30px;
