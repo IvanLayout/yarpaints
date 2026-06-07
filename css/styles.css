@@ -7371,6 +7371,7 @@ a.advantages__item
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
+	transition: background .2s linear;
 }
 
 .paint-suitable__img-abc
@@ -7499,6 +7500,11 @@ a.advantages__item
 		color: #B71517;
 	}
 
+	.paint-suitable__item._all-hover:hover
+	{
+		background: #B71517;
+	}
+
 	.paint-suitable__item:hover .paint-suitable__img span
 	{
 		padding-bottom: 35px;
@@ -7558,6 +7564,11 @@ a.advantages__item
 		left: 0;
 		opacity: 1;
 	}
+
+	.paint-suitable__item._all-hover:hover .paint-suitable__arrow svg
+	{
+		fill: #fff;
+	}
 }
 
 
@@ -7594,7 +7605,7 @@ a.advantages__item
 {
 	.paint-suitable__item:hover .paint-suitable__all
 	{
-		color: #CD1719;
+		color: #fff;
 	}
 }
 /*------------
