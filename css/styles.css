@@ -3186,12 +3186,27 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	transition: border .2s linear, color .2s linear;
 }
 
+.main-cats__open-text span + span
+{
+	display: none;
+}
+
 .main-cats__open._show{
 	display: block;
 }
 
-.main-cats__open._active{
+/* .main-cats__open._active{
 	display: none;
+} */
+
+.main-cats__open._active .main-cats__open-text span
+{
+	display: none;
+}
+
+.main-cats__open._active .main-cats__open-text span + span
+{
+	display: block;
 }
 
 @media (any-hover: hover){
@@ -3211,7 +3226,7 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	color: #fff;
 }
 
-.main-cats__open span{
+.main-cats__open > span{
 	display: inline-block;
 	padding-right: 20px;
 	position: relative;
@@ -3226,6 +3241,11 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	height: 6px;
 	fill: none;
 	stroke: currentColor;
+}
+
+.main-cats__open._active svg
+{
+	transform: rotate(180deg);
 }
 
 

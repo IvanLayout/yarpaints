@@ -486,11 +486,20 @@ $(() => {
 		checkHiddenItems();
 	}
 
-	$('body').on('click', '.main-cats__open', function(e) {
+
+	// Показать все теги
+	$('body').on('click', '.main-cats__open', function (e) {
 		e.preventDefault()
-		
-		$(this).addClass('_active')
-		$(this).closest('.main-cats').find('.main-cats__item').addClass('_show')
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.main-cats').find('.main-cats__item').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.main-cats').find('.main-cats__item').addClass('_show')
+		}
 	})
 
 	$('body').on('click', '.product-list__more-btn', function(e) {
