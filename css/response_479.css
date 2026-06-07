@@ -336,15 +336,6 @@
 		margin-top: 24px;
 	}
 
-	.development__fact-img 
-	{
-		top: 14px;
-		right: -65px;
-		aspect-ratio: 1 / 0.73;
-
-		min-width: 70px;
-	}
-
 	.development__img 
 	{
 		aspect-ratio: 1 / .749;

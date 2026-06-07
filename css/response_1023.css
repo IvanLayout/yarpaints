@@ -2497,9 +2497,17 @@
 
 	.development__fact-img
 	{
-		top: 2px;
-		right: -42px;
-        aspect-ratio: 1 / 0.8;
+		top: 0;
+		padding-top: 15px;
+		right: 0;
+        aspect-ratio: 1;
+		height: 100%;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
 	}
 
 
