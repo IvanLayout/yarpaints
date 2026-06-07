@@ -419,9 +419,19 @@
 		font-size: 12px;
 	}
 
+	.inner-form__form.form .form__input
+	{
+		font-size: 14px;
+	}
+
 	.form .form__textarea
 	{
 		font-size: 12px;
+	}
+
+	.inner-form__form.form .form__textarea
+	{
+		font-size: 14px;
 	}
 
 	.form__agree .checkbox__text
