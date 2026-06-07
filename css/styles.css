@@ -2630,6 +2630,7 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 }
 
 .map__adres{
+	font-size: 16px;
 	margin-top: 15px;
 }
 

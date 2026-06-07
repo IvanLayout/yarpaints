@@ -558,7 +558,8 @@
 	}
 
 	.delivery .main-title,
-	.subscribe-section .main-title
+	.subscribe-section .main-title,
+	.chackout-page__form .main-title
 	{
 		font-size: 36px;
 	}
