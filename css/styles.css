@@ -2519,6 +2519,7 @@ input[type=checkbox]:checked + .checkbox-big__text::after
 	font-size: 26px;
 	line-height: 1.15;
 	color: #3a3b55;
+	font-family: var(--font-family);
 }
 
 .contacts__items{
